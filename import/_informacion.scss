@@ -1,0 +1,34 @@
+/*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/	
+
+.boxInformacion__{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	.boxNosotros__titulos--informacion{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		color: #485a54;
+		font-size: 30px;
+		word-spacing: .25em;
+		justify-content: center;
+		padding:  8rem 0 0 0;
+		font-weight: 600;
+	}
+		.boxNosotros__content--informacion{
+			padding: 5rem 10rem 0rem 15rem;
+			line-height: 3.5em;
+			word-spacing: .25em;
+	}	
+			.boxNosotros__content--link{
+			display: flex;
+			justify-content: center	;
+			padding: 2rem;
+			}
+
+			.lineNosotros__informacion{
+				margin-bottom: 10rem;
+			}
+
+		}
+	

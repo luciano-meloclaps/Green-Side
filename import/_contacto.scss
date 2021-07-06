@@ -1,0 +1,103 @@
+/*------------------------------------------------------------ PESTAÑA CONTACTO ------------------------------------------------------------*/	
+
+.contentContact__{	
+	display: flex;
+	justify-content:center;
+	padding: 80px;
+	margin: 0 0 10rem 0;
+		form{
+			display: flex;
+			flex-direction: column;
+			background-color: #485a54;
+			padding: 3rem;
+			border-radius: .5rem;
+			color: #d9d3cc;
+			line-height: 3em;
+		}
+		textarea{
+			background-color: #d9d3cc;
+			color:  #485a54;
+			min-width: 30rem;
+			min-height: 10rem;
+			border: 0;
+			border-radius: .5rem;
+			margin: 1rem;
+			padding: .5rem 1rem;
+			line-height: 3em;
+			font-size: 13px;
+			font-weight: 600;
+		}
+		input[type="text" i]{
+			background-color: #d9d3cc;
+			color:  #485a54;	
+			border: 0;
+			border-radius: .5rem;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			padding: 1px 0;
+		}
+		input[type="number" i]{
+			padding: 1px 2px;
+			background-color: #d9d3cc;
+			color:  #485a54; 
+			border-radius: .5rem;
+			border: 0;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+		input[type="checkbox" i]{
+			padding: 1px 2px;
+			margin: 1rem;
+			display: inline;
+			border-radius: 8rem;
+			cursor: pointer;
+		}
+		input[type="reset" i]{
+			margin: 0;
+			background-color: #d9d3cc;
+			color:  #485a54; 
+			border-radius: .5rem;
+			border: 0;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			padding: 0;
+			width: 100%;
+		}
+		.btn-primary{	
+			background-color: #d9d3cc;
+			color: #485a54;
+			border-radius: .5rem;
+			border: 0;
+			padding: 1rem;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			width: 100%;
+			.contentContact__ .btn-primary{
+				padding: 1rem 0;
+			  display: block;
+			  margin: .5 0rem 0;
+			  width: 50%;
+		}
+	}
+		.content__modal{	
+				.modal-header{
+					background-color: #485a54;
+					color: #d9d3cc;
+				}
+				.modal-body{
+					background-color: #d9d3cc;
+					color: #485a54;
+				}
+				.modal-footer{
+					background-color: #d9d3cc;
+					.btn-secondary{
+					background-color: #485a54;
+					color: #d9d3cc;
+					font-weight: 600;
+					}		
+				}	}						
+}

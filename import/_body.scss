@@ -1,0 +1,153 @@
+/*---------------------------------------------------------- VARIABLES ------------------------------------------------------------*/	
+
+$colorWhite: #CFCFCF;
+
+$colorGreenCake: #656868;
+
+$colorDark: #262621;
+
+$colorGreenDark: #485a54;
+
+$colorGreenFirst: #5c7466;
+/* body */
+
+body{
+	background-color: $colorGreenFirst;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: White;	
+}
+
+
+/* navbar */
+.navbar{
+    color: red;
+}
+.navbar-brand{
+    color: blue;
+}
+.nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7f9244;
+    &:hover{
+        color: #d4d9d9;
+        transition: .3s;
+}    
+}
+
+/* footer */
+
+.footer-style {
+    padding-top: 50px;
+    background-color: #262621;
+}
+	footer {
+	color: white;
+		
+		h3 {
+			margin-bottom: 30px;
+			font-weight: 600;
+		}
+
+	.footer-above {
+	padding-top: 50px;
+	background-color: #2C3E50;
+	}
+	.footer-col {
+	margin-bottom: 50px;
+		
+		a{
+			display: block;
+			color: white;
+			cursor: pointer;
+		}
+	}
+
+	.footer-below {
+	padding: 50px 0;
+	background-color: #233140;
+	}
+	.list-inline{
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	img{
+		width: 40px;
+		display: inline;
+		margin: 1rem .8rem;
+		cursor: pointer;
+		&:hover{
+			transform: scale(1.2);
+			
+			transition: .5s;
+		}
+	
+	}
+}
+
+
+/* button */
+
+.go-top-container{
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 3rem;
+	height: 3rem;
+	z-index: -1;
+}
+.go-top-button{
+	width: 0rem;
+	height: 0rem;
+	background-color: whitesmoke;
+	border-radius: 50%;
+	transition: .2s;
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+		i{
+			position: absolute;
+			font-size: 1.2rem;
+			top: 48%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			color: #fff;
+			transition: .2s;
+		}
+	}
+
+
+.show{
+	z-index: 10;
+	.go-top-button{
+		animation: popup .3s ease-in-out;
+		width: 4rem;
+		height: 4rem;
+		z-index: 11;
+	}
+	i{
+		transform: translate(-50%, -50%) scale(1);
+	}
+	
+}
+
+@keyframes popup{
+	0%{
+		width: 0rem;
+		height: 0rem;
+	}
+	50%{
+		width: 7.5rem;
+		height: 7.5rem;
+	}
+	100%{
+		width: 5rem;
+		height: 5rem;
+	}
+}

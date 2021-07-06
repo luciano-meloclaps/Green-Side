@@ -1,0 +1,64 @@
+/*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/	
+
+.nosotros-banner{ 
+	color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+	.banner-img{
+		width: 100%;
+		filter: brightness(0.35);
+		height: 100%;
+		box-shadow: 1px 6px 20px 1px grey;
+		object-fit: cover;
+		overflow: hidden
+		}
+
+}
+
+hr{
+	height: 1px;
+    width: 80%;
+    background-color: #485a54;
+    margin: 2.5rem 10rem;
+}
+
+.foodVector__{
+	display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: flex-end;
+	 img{
+		 width: 50px;
+		 vertical-align:none;
+		 margin-bottom: 3rem;
+	 }
+}
+
+.boxNosotros__{
+	.boxNosotros__titulosNosotros{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		color: #485a54;
+		font-size: 30px;
+		word-spacing: .25em;
+		justify-content: center;
+		padding:  8rem 0 0 0;
+		font-weight: 600;	
+	}
+	.boxNosotros__infoNosotros{
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		text-align: flex-start;
+		padding: 5rem 10rem 0 10rem;
+		line-height: 3.5em;
+		word-spacing: .25em;
+		}	
+}

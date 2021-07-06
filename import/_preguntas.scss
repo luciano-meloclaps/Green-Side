@@ -1,0 +1,43 @@
+.banner-preguntas{    
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+        img{
+             width: 100%;
+            filter: brightness(0.35);
+            height: 100%;
+            box-shadow: 1px 6px 20px 1px grey;
+            position: fixed;
+            overflow: hidden;
+            
+        }
+
+        .titulo-preguntas{
+        position: relative;
+        font-size: 5rem;
+        margin: 20rem 40rem 10rem 40rem;
+    
+        
+        }
+}
+
+.container-preguntas{
+    padding: 10rem;
+    position: relative;
+    
+}
+
+    
+    p{
+        padding: 0rem 0;
+    }
+    strong{
+        margin: 0;
+    }
