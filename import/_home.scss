@@ -1,14 +1,21 @@
 /*------------------------------------------------------------ TEXT HOME ------------------------------------------------------------*/	
-
+@media (max-width: 700px){
+	#container-index{
+		margin: 1rem;
+	}
+	
+}
 #container-index{
 	display: flex;
 	flex-direction: column;
 	margin: 10rem 0;
 
+
 	@media (max-width: 700px){
 		.container-slogan{
 			font-size: 1.6rem;
 		}}
+		
 	.container-slogan{
 		display: flex;
 		align-items: center;
@@ -30,6 +37,7 @@
 			.card-block-forward{
 				background-color: brown;
 				font-size: 1rem;
+				color: green;
 			}}
 		
 		.card-content-forward{

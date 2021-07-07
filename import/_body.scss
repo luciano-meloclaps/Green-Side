@@ -6,18 +6,21 @@ $colorGreenCake: #656868;
 
 $colorDark: #262621;
 
+$colorGreenFluor: #8FFF19;
+
 $colorGreenDark: #485a54;
 
 $colorGreenFirst: #5c7466;
 /* body */
 
 body{
-	background-color: $colorGreenFirst;
+	background-color: $colorDark;
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	color: White;	
+	box-sizing: border-box;
 }
 
 

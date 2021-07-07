@@ -1,51 +1,76 @@
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/	
 
-.nosotros-banner{ 
-	color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-	.banner-img{
-		width: 100%;
-		filter: brightness(0.35);
-		height: 100%;
-		box-shadow: 1px 6px 20px 1px grey;
-		object-fit: cover;
-		overflow: hidden
-		}
-
-}
-
-hr{
-	height: 1px;
-    width: 80%;
-    background-color: #485a54;
-    margin: 2.5rem 10rem;
-}
-
-.foodVector__{
+.banner-nosotros{
+	width: 100%;
+	height: 100%;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
 	display: flex;
-    justify-content: center;
-    align-items: baseline;
-    align-content: flex-end;
-	 img{
-		 width: 50px;
-		 vertical-align:none;
-		 margin-bottom: 3rem;
-	 }
+	justify-content: center;
+	align-items: center;
+	padding: 30rem;
+	background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
 }
+
+.capa-nosotros{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
+}
+
+.info-nosotros{
+	z-index: 1;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+		
+	h4{
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 45px;
+		margin-bottom: 30px;
+		letter-spacing: 1px;
+		}
+	p{
+		color: #c7c7c7;
+		line-height: 1.7;
+		margin-bottom: 30px;
+		}
+	hr{
+		height: 1px;
+		width: 80%;
+		background-color: #485a54;
+		margin: 2.5rem 10rem;
+		}
+}
+
+.scroll-button{
+	padding-top: 60px;
+	 
+	.scroll-button span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+  }}
 
 .boxNosotros__{
 	.boxNosotros__titulosNosotros{
 		display: flex;
 		flex-wrap: wrap;
 		text-align: center;
-		color: #485a54;
+		color: $colorWhite	;
 		font-size: 30px;
 		word-spacing: .25em;
 		justify-content: center;
@@ -56,6 +81,7 @@ hr{
 		display: flex;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
+		color: $colorDark;
 		text-align: flex-start;
 		padding: 5rem 10rem 0 10rem;
 		line-height: 3.5em;

@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /*------------------------------------------------------------ MODULOS ------------------------------------------------------------*/
 /*------------------------------------------------------------ TEXT HOME ------------------------------------------------------------*/
+@media (max-width: 700px) {
+  #container-index {
+    margin: 1rem;
+  }
+}
+
 #container-index {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +61,7 @@
   #container-index .card-block-forward .card-block-forward {
     background-color: brown;
     font-size: 1rem;
+    color: green;
   }
 }
 
@@ -188,12 +195,14 @@
 /*---------------------------------------------------------- VARIABLES ------------------------------------------------------------*/
 /* body */
 body {
-  background-color: #5c7466;
+  background-color: #262621;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: White;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* navbar */
@@ -361,62 +370,81 @@ footer img:hover {
 }
 
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/
-.nosotros-banner {
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.nosotros-banner .banner-img {
+.banner-nosotros {
   width: 100%;
-  -webkit-filter: brightness(0.35);
-          filter: brightness(0.35);
   height: 100%;
-  -webkit-box-shadow: 1px 6px 20px 1px grey;
-          box-shadow: 1px 6px 20px 1px grey;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-}
-
-hr {
-  height: 1px;
-  width: 80%;
-  background-color: #485a54;
-  margin: 2.5rem 10rem;
-}
-
-.foodVector__ {
+  -webkit-animation: banner 10s infinite linear alternate;
+          animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30rem;
+  background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
 }
 
-.foodVector__ img {
-  width: 50px;
-  vertical-align: none;
-  margin-bottom: 3rem;
+.capa-nosotros {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.info-nosotros {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info-nosotros h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.info-nosotros p {
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.info-nosotros hr {
+  height: 1px;
+  width: 80%;
+  background-color: #485a54;
+  margin: 2.5rem 10rem;
+}
+
+.scroll-button {
+  padding-top: 60px;
+}
+
+.scroll-button .scroll-button span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .boxNosotros__ .boxNosotros__titulosNosotros {
@@ -426,7 +454,7 @@ hr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  color: #485a54;
+  color: #CFCFCF;
   font-size: 30px;
   word-spacing: .25em;
   -webkit-box-pack: center;
@@ -446,6 +474,7 @@ hr {
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #262621;
   text-align: flex-start;
   padding: 5rem 10rem 0 10rem;
   line-height: 3.5em;
@@ -453,57 +482,231 @@ hr {
 }
 
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
-.boxInformacion__ {
+.banner-info img {
+  width: 100%;
+}
+
+#container-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10rem 0;
+}
+
+#container-info .card-block-forward {
+  background-color: #2d2d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 15rem 10rem;
+  word-spacing: .30em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 700px) {
+  #container-info .card-block-forward .card-block-forward {
+    background-color: brown;
+    font-size: 1rem;
+    color: green;
+  }
+}
+
+#container-info .card-block-forward .card-content-forward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.boxInformacion__ .boxNosotros__titulos--informacion {
+#container-info .card-block-forward .card-content-forward .card-titulo-forward {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  color: #485a54;
-  font-size: 30px;
-  word-spacing: .25em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 8rem 0 0 0;
+  padding: 1rem 1rem 0rem 4rem;
+  color: #fff;
   font-weight: 600;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-style: italic;
 }
 
-.boxInformacion__ .boxNosotros__content--informacion {
-  padding: 5rem 10rem 0rem 15rem;
-  line-height: 3.5em;
-  word-spacing: .25em;
-}
-
-.boxInformacion__ .boxNosotros__content--link {
+#container-info .card-block-forward .card-content-forward .card-parrafos-forward {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2rem;
+  color: #7f9244;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
-.boxInformacion__ .lineNosotros__informacion {
-  margin-bottom: 10rem;
+#container-info .card-block-forward .card-img-forward_info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#container-info .card-block-reverse {
+  background-color: #CFCFCF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 0 10rem;
+  word-spacing: .30em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-spacing: 0.25rem;
+}
+
+#container-info .card-block-reverse .card-content-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container-info .card-block-reverse .card-content-reverse .card-titulo-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1rem 0rem 4rem;
+  color: #2d2d2d;
+  font-weight: 600;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-style: italic;
+}
+
+#container-info .card-block-reverse .card-content-reverse .card-parrafos-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7f9244;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  padding: 2rem 4rem 4rem 4rem;
+}
+
+#container-info .card-block-reverse .card-img-reverse_info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#container-info .line-index {
+  background-color: #CFCFCF;
+  margin: auto;
+  padding: .05rem;
 }
 
 /*------------------------------------------------------------ PESTAÑA CONTACTO ------------------------------------------------------------*/
+.banner-contacto {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: banner 10s infinite linear alternate;
+          animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30rem;
+  background-image: url("https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.capa-contacto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.info-contacto {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info-contacto h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.info-contacto p {
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.info-contacto hr {
+  height: 1px;
+  width: 80%;
+  background-color: #485a54;
+  margin: 2.5rem 10rem;
+}
+
 .contentContact__ {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,6 +716,9 @@ hr {
           justify-content: center;
   padding: 80px;
   margin: 0 0 10rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contentContact__ form {
@@ -523,8 +729,7 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #485a54;
-  padding: 3rem;
+  padding: 0 8rem;
   border-radius: .5rem;
   color: #d9d3cc;
   line-height: 3em;
@@ -627,6 +832,64 @@ hr {
 }
 
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
+.banner-productos {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: banner 10s infinite linear alternate;
+          animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30rem;
+  background-image: url("https://images.unsplash.com/photo-1610360339320-32bffde7711d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+}
+
+.capa-productos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.info-productos {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info-productos h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.info-productos p {
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.info-productos hr {
+  height: 1px;
+  width: 80%;
+  background-color: #485a54;
+  margin: 2.5rem 10rem;
+}
+
 .containerProductos__ {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +974,57 @@ hr {
 }
 
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
+.banner {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: banner 10s infinite linear alternate;
+          animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30rem;
+  background-image: url("https://images.pexels.com/photos/6455823/pexels-photo-6455823.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+.capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.info {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.info p {
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
 .contentReferences__ .contentReferences__Opiniones {
   margin-top: 5rem;
   padding: 2rem;
@@ -807,50 +1121,43 @@ hr {
   width: 80%;
 }
 
-.banner-comprar {
-  background-image: url("https://images.unsplash.com/photo-1541921671-aef0a20d0787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2478&q=80");
-  background-size: cover;
-  background-position: center;
+.banner-shop {
+  color: white;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  -webkit-filter: brightness(0.35);
-          filter: brightness(0.35);
+}
+
+.banner-shop img {
   width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-items: center;
-}
-
-.banner-comprar img {
   -webkit-filter: brightness(0.35);
           filter: brightness(0.35);
+  height: 100%;
+  -webkit-box-shadow: 1px 6px 20px 1px grey;
+          box-shadow: 1px 6px 20px 1px grey;
+  position: fixed;
+  overflow: hidden;
 }
 
-.banner-comprar .titulo-comprar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.banner-shop .titulo-shop {
+  position: relative;
+  font-size: 5rem;
+  margin: 20rem;
 }
 
-.container-comprar {
-  color: white;
-  margin: 15rem;
+.container-shop {
+  padding: 5rem 20rem;
+  position: relative;
+  margin-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,28 +1165,24 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.subtitulo-comprar {
+.container-shop .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 8rem;
+  width: 30px;
+  border: 2px solid white;
+  padding: 0px 4px;
 }
 
-p {
-  padding: 1.5rem 0;
+.container-shop h4 {
+  margin-bottom: 4rem;
+  margin-top: 6rem;
 }
 
-.foot-pad {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.container-shop p {
+  margin: 2rem 0;
 }
 
 .banner-preguntas {
@@ -915,19 +1218,20 @@ p {
 .banner-preguntas .titulo-preguntas {
   position: relative;
   font-size: 5rem;
-  margin: 20rem 40rem 10rem 40rem;
+  margin: 20rem 40rem 15rem 40rem;
 }
 
 .container-preguntas {
-  padding: 10rem;
+  padding: 5rem 20rem;
   position: relative;
+  margin-bottom: 10rem;
 }
 
-p {
-  padding: 0rem 0;
+.container-preguntas .box-question {
+  padding: .8rem 0;
 }
 
-strong {
-  margin: 0;
+.container-preguntas .box-question p {
+  padding: .5rem 0rem;
 }
 /*# sourceMappingURL=estilos.css.map */
