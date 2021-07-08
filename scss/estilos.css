@@ -454,7 +454,7 @@ footer img:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  color: #CFCFCF;
+  color: #6eaf29;
   font-size: 30px;
   word-spacing: .25em;
   -webkit-box-pack: center;
@@ -474,7 +474,7 @@ footer img:hover {
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #262621;
+  color: #CFCFCF;
   text-align: flex-start;
   padding: 5rem 10rem 0 10rem;
   line-height: 3.5em;
@@ -1156,8 +1156,8 @@ footer img:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 5rem;
-  color: #e6e6e6;
-  background-color: #CFCFCF;
+  color: #6eaf29;
+  background-color: #656868;
 }
 
 .contact__ .contact__Parrafos {
@@ -1168,7 +1168,7 @@ footer img:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 3rem;
-  color: #656868;
+  color: #CFCFCF;
 }
 
 .contact__ .contact__lineNosotrosContact {

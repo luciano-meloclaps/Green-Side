@@ -16,14 +16,14 @@
 			letter-spacing: 2px; 
 			text-transform: uppercase;
 			padding: 5rem;
-			color: #e6e6e6;
-			background-color: $colorWhite;
+			color: $colorGreenFluor;
+			background-color: $colorGreenCake;
 		}
 		.contact__Parrafos{
 			display: flex;
 			justify-content: center;
 			margin-top: 3rem;
-			color: #656868;
+			color: $colorWhite;
 		}
 		.contact__lineNosotrosContact{
 				width: 80%;	
