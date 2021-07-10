@@ -40,17 +40,11 @@
 		line-height: 1.7;
 		margin-bottom: 30px;
 		}
-	hr{
-		height: 1px;
-		width: 80%;
-		background-color: #485a54;
-		margin: 2.5rem 10rem;
-		}
-}
+	}
 
 .scroll-button{
 	padding-top: 60px;
-	 
+
 	.scroll-button span {
 	position: absolute;
 	top: 0;
@@ -63,7 +57,10 @@
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	box-sizing: border-box;
-  }}
+	}
+}
+
+
 
 .boxNosotros__{
 	.boxNosotros__titulosNosotros{
@@ -76,6 +73,11 @@
 		justify-content: center;
 		padding:  8rem 0 0 0;
 		font-weight: 600;	
+		@media  (max-width: 700px){
+			padding: 1rem;
+		}
+			
+		
 	}
 	.boxNosotros__infoNosotros{
 		display: flex;
@@ -86,5 +88,17 @@
 		padding: 5rem 10rem 0 10rem;
 		line-height: 3.5em;
 		word-spacing: .25em;
-		}	
+		font-weight: 500;
+		@media (max-width: 700px){
+			display: flex;
+			margin: 0;
+			padding: 2rem;;
+		}
+	}
+		.line-nosotros{
+			border: 1px solid $colorGreenFluor;
+			margin: 5rem 10rem;
+			}
+		
+		
 }

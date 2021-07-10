@@ -19,6 +19,10 @@ body{
 	font-weight: 600;
 	color: White;	
 	box-sizing: border-box;
+	@media (max-width: 700px){
+		overflow: hidden;
+		
+	}
 }
 
 
@@ -42,23 +46,24 @@ body{
 /* footer */
 
 .footer-style {
-    padding-top: 50px;
+	margin: 10rem 0 6rem 0;
+    padding-top: 6rem;
     background-color: #262621;
+	border-top: 1.5px solid $colorWhite;
 }
 	footer {
 	color: white;
 		
 		h3 {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			font-weight: 600;
 		}
 
 	.footer-above {
-	padding-top: 50px;
-	background-color: #2C3E50;
+	padding-top: 20px;
 	}
 	.footer-col {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 		
 		a{
 			display: block;
