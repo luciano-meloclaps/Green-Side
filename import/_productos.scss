@@ -75,7 +75,7 @@
 	justify-content: space-around;
 	flex-direction: row;
 		.card{	
-			margin: 50px 80px;
+			margin: 120px 100px;
 			background-color: $colorGreenCake;		
 			box-shadow: 2px 2px 10px .5px black;
 			&:hover{
@@ -83,14 +83,20 @@
 				transform: scale(1.06);
 				transition: .5s;
 				cursor: pointer;
+				box-shadow: 20px 20px 15px 0px black;
 			}
 			img{
-				filter: opacity(75%);
+				filter: opacity(70%);
 			&:hover{
 				filter: opacity(100%);
 				}	
 			}
 			.card-body{
+				min-height: 1px;
+				padding: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
 				.card-title{
 					color: #262621;
     				font-weight: 600;	
@@ -100,6 +106,7 @@
   		  			color: $colorGreenFluor;
     				font-weight: 600;
 					display: block;
+					border: none;
 					}
 			}
 		}	
