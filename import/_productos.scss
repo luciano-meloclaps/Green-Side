@@ -48,28 +48,96 @@
 }
 
 
+#container-productos{
+	display: flex;
+	flex-direction: column;
+	margin: 10rem 0;
 
+	.card-block-reverse__productos{
+		background-color: #CFCFCF;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 10rem;
+		word-spacing: .30em;	
+		align-items: center;	
+		word-spacing: 0.25rem;
+
+		.card-content-reverse__productos{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 3.5rem;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			align-content: space-around;
+			/* align-items: center; */
+			justify-content: space-evenly;
+
+			.card-titulo-reverse__productos{
+				display: flex;
+				padding:1rem 1rem 2rem 4rem;
+				color: #2d2d2d;
+				font-weight: 600;
+				justify-content: flex-start;
+				font-style: italic;
+			}
+
+			.card-parrafos-reverse__productos{	
+				display: flex;
+				color: #7f9244;
+				align-items: center;
+				font-weight: 500;
+				line-height: 1.8rem;
+				font-size: 1.1rem;
+				padding: 2rem 4rem 4rem 4rem;
+				}
+		}
+
+		.card-img-reverse__productos{
+			width: 25%;
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+		}	
+		.line-index{
+			background-color: #CFCFCF;
+			margin: auto;
+			padding: .5rem;
+		}
+	}	
+}
 .containerProductos__{
 	display: flex;
 	justify-content: center;
-	.buttonContainer__{
-		display: flex;
-		justify-content: space-evenly;
-		margin: 10rem 0 0 0 ;
-		background-color: $colorGreenCake;
-		border-radius: .5rem;
-			.btn{	
-				color: #d9d3cc;
-				display: flex;
-				font-weight: 600;
-			}
+	padding: .5rem;
+	font-weight: 600;
+	word-spacing: .5rem;
+	.botonera{
+		border: 1.5px solid #CFCFCF;
+		padding: .3rem;
+		margin: 1rem;
+		border-radius: .52rem;
+		.btn{
+			color: $colorWhite;
+			font-weight: 600;
+		}
 	}
-}	
+	.new-button{
+		background-color: black;
+		color: #34e89e;
+		padding: 1rem;
+		margin: 1rem 1rem;
+		border-radius: 1rem;
+		font-style: italic;
+	}
+}
 
 .contentCards__{
 	max-width: 1500px;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 50px;
 	display: flex;	
 	flex-wrap: wrap;
 	justify-content: space-around;

@@ -18,18 +18,15 @@
 			color: $colorDark;
 			background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  
 			background: linear-gradient(to right, #0f3443, #34e89e); 
-
 		}
+
 		.contact__Parrafos{
 			display: flex;
 			justify-content: center;
-			margin-top: 3rem;
 			color: $colorWhite;
 		}
 		.contact__lineNosotrosContact{
 			margin: 5rem 20rem;
 			border: 1px solid $colorGreenFluor;
-	
-		}
-			
+		}		
 }
