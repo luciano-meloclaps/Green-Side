@@ -47,14 +47,16 @@
 		}
 }
 
+
+
 .containerProductos__{
 	display: flex;
 	justify-content: center;
 	.buttonContainer__{
 		display: flex;
 		justify-content: space-evenly;
-		margin: 2rem 0 0 0 ;
-		background-color: #485a54;
+		margin: 10rem 0 0 0 ;
+		background-color: $colorGreenCake;
 		border-radius: .5rem;
 			.btn{	
 				color: #d9d3cc;
@@ -70,32 +72,34 @@
 	margin-top: 100px;
 	display: flex;	
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: row;
 		.card{	
 			margin: 50px 80px;
-			padding: 6px;
-			background-color: #485a54;		
-			color: #d9d3cc;
-			box-shadow: 2px 2px 10px .5px #656868;
+			background-color: $colorGreenCake;		
+			box-shadow: 2px 2px 10px .5px black;
 			&:hover{
-				backdrop-filter: blur(5px);
-				transform: scale(1.05);
+				backdrop-filter: blur(7px);
+				transform: scale(1.06);
 				transition: .5s;
 				cursor: pointer;
 			}
 			img{
-				border-radius: .5rem;
 				filter: opacity(75%);
 			&:hover{
 				filter: opacity(100%);
 				}	
 			}
 			.card-body{
+				.card-title{
+					color: #262621;
+    				font-weight: 600;	
+				}
 				.btn-primary{
-					background-color: #d9d3cc;
-					color: #485a54;
-					font-weight: 600;
+					background-color: #262621;
+  		  			color: $colorGreenFluor;
+    				font-weight: 600;
+					display: block;
 					}
 			}
 		}	

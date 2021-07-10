@@ -454,7 +454,7 @@ footer img:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  color: #6eaf29;
+  color: #34e89e;
   font-size: 30px;
   word-spacing: .25em;
   -webkit-box-pack: center;
@@ -761,18 +761,12 @@ footer img:hover {
   margin: 2.5rem 10rem;
 }
 
-.contentContact__ {
+.contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 80px;
-  margin: 0 0 10rem 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
 }
 
 .contentContact__ form {
@@ -785,18 +779,15 @@ footer img:hover {
           flex-direction: column;
   padding: 0 8rem;
   border-radius: .5rem;
-  color: #d9d3cc;
+  color: #CFCFCF;
   line-height: 3em;
 }
 
 .contentContact__ textarea {
-  background-color: #d9d3cc;
-  color: #485a54;
+  background-color: #CFCFCF;
+  color: #7f9244;
   min-width: 30rem;
   min-height: 10rem;
-  border: 0;
-  border-radius: .5rem;
-  margin: 1rem;
   padding: .5rem 1rem;
   line-height: 3em;
   font-size: 13px;
@@ -804,10 +795,9 @@ footer img:hover {
 }
 
 .contentContact__ input[type="text" i] {
-  background-color: #d9d3cc;
-  color: #485a54;
+  background-color: #CFCFCF;
+  color: #7f9244;
   border: 0;
-  border-radius: .5rem;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -816,9 +806,8 @@ footer img:hover {
 
 .contentContact__ input[type="number" i] {
   padding: 1px 2px;
-  background-color: #d9d3cc;
-  color: #485a54;
-  border-radius: .5rem;
+  background-color: #CFCFCF;
+  color: #7f9244;
   border: 0;
   font-size: 14px;
   font-weight: 600;
@@ -833,56 +822,19 @@ footer img:hover {
   cursor: pointer;
 }
 
-.contentContact__ input[type="reset" i] {
-  margin: 0;
-  background-color: #d9d3cc;
-  color: #485a54;
-  border-radius: .5rem;
-  border: 0;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-  width: 100%;
+.maps-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contentContact__ .btn-primary {
-  background-color: #d9d3cc;
-  color: #485a54;
-  border-radius: .5rem;
-  border: 0;
-  padding: 1rem;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%;
-}
-
-.contentContact__ .btn-primary .contentContact__ .btn-primary {
-  padding: 1rem 0;
-  display: block;
-  margin: .5 0rem 0;
-  width: 50%;
-}
-
-.contentContact__ .content__modal .modal-header {
-  background-color: #485a54;
-  color: #d9d3cc;
-}
-
-.contentContact__ .content__modal .modal-body {
-  background-color: #d9d3cc;
-  color: #485a54;
-}
-
-.contentContact__ .content__modal .modal-footer {
-  background-color: #d9d3cc;
-}
-
-.contentContact__ .content__modal .modal-footer .btn-secondary {
-  background-color: #485a54;
-  color: #d9d3cc;
-  font-weight: 600;
+.maps-contacto .maps-container {
+  background-color: aqua;
+  border-radius: 2rem;
 }
 
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
@@ -960,8 +912,8 @@ footer img:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 2rem 0 0 0;
-  background-color: #485a54;
+  margin: 10rem 0 0 0;
+  background-color: #656868;
   border-radius: .5rem;
 }
 
@@ -982,9 +934,8 @@ footer img:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -993,25 +944,22 @@ footer img:hover {
 
 .contentCards__ .card {
   margin: 50px 80px;
-  padding: 6px;
-  background-color: #485a54;
-  color: #d9d3cc;
-  -webkit-box-shadow: 2px 2px 10px .5px #656868;
-          box-shadow: 2px 2px 10px .5px #656868;
+  background-color: #656868;
+  -webkit-box-shadow: 2px 2px 10px .5px black;
+          box-shadow: 2px 2px 10px .5px black;
 }
 
 .contentCards__ .card:hover {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
 .contentCards__ .card img {
-  border-radius: .5rem;
   -webkit-filter: opacity(75%);
           filter: opacity(75%);
 }
@@ -1021,10 +969,16 @@ footer img:hover {
           filter: opacity(100%);
 }
 
-.contentCards__ .card .card-body .btn-primary {
-  background-color: #d9d3cc;
-  color: #485a54;
+.contentCards__ .card .card-body .card-title {
+  color: #262621;
   font-weight: 600;
+}
+
+.contentCards__ .card .card-body .btn-primary {
+  background-color: #262621;
+  color: #34e89e;
+  font-weight: 600;
+  display: block;
 }
 
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
@@ -1121,7 +1075,8 @@ footer img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #485a54;
+  background-color: #656868;
+  border-radius: 2rem;
   margin: 100px;
   padding: 50px;
 }
@@ -1135,10 +1090,8 @@ footer img:hover {
           justify-content: center;
 }
 
-/*----------------------------------------------------- INTRODUCCION SECCION ------------------------------------------------------*/
 .contact__ {
   display: block;
-  padding: 10rem 0 0 0;
 }
 
 .contact__ .contact__Titulo {
@@ -1148,7 +1101,6 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 0;
   line-height: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -1156,8 +1108,10 @@ footer img:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 5rem;
-  color: #6eaf29;
-  background-color: #656868;
+  margin-bottom: 8rem;
+  color: #262621;
+  background: -webkit-gradient(linear, left top, right top, from(#0f3443), to(#34e89e));
+  background: linear-gradient(to right, #0f3443, #34e89e);
 }
 
 .contact__ .contact__Parrafos {
@@ -1172,7 +1126,8 @@ footer img:hover {
 }
 
 .contact__ .contact__lineNosotrosContact {
-  width: 80%;
+  margin: 5rem 20rem;
+  border: 1px solid #34e89e;
 }
 
 .banner-shop {

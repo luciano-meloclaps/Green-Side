@@ -54,55 +54,66 @@
 		</div>
 	</section>
 
-	<div class="contact__">
-						<h3 class="contact__Titulo">Queremos escucharte</h3>
-						<p class="contact__Parrafos"> Hola! ¿como estas?, ¿Te podemos ayudar en algo? Dejanos tu consulta y estaremos en contacto a la brevedad.</p>
-						<p class="contact__Parrafos">Gracias por elegirnos.</p>
-						<hr class="contact__lineNosotrosContact">
-	</div>
+	<section class="contact__">
+		<div>
+			<h3 class="contact__Titulo">Queremos escucharte</h3>
+			<p class="contact__Parrafos"> Hola! ¿como estas?, ¿Te podemos ayudar en algo? Dejanos tu consulta y estaremos en contacto a la brevedad.</p>
+			<p class="contact__Parrafos">Gracias por elegirnos.</p>
+			<hr class="contact__lineNosotrosContact">
+		</div>
+	</section>
 
-	<main class="contentContact__">
-		<form>
-   	 		Nombre <input type="text" name="nombre">
-   	 		Numero <input type="number" name="numero">	
-			Email <input type="text" name="correo">
-			<p> Tu mensaje:<br>
-    		<textarea name="mensaje" placeholder="Escribi aqui!"></textarea></p>
-    		<p><input type="checkbox" name="checkbox">He leído y acepto los términos y condiciones</p>
-			<p>	<input type="reset" value="Reiniciar el formulario"></p>
+	<main class="contact-content">
 
-    			<!-- Button trigger modal -->
-				<button type="button" class="contentContact--modifier btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-					Enviar mensaje
-				</button>
-					
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="content__modal modal-content">
-
-						<div class="content__modal modal-header">
-						<h5 class="modal-title " id="exampleModalLabel">Gracias!</h5>
-						</div>
-
-						<div class="content__modal modal-body">	
-						Ya  enviamos tus datos y en breve nos estaremos comunicando con vos, que tengas un buen dia!	
-						</div>
-
-						<div class="content__modal modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-
-					</div>
-					</div>
-				</div>
-			</p>
-		</form>
-	
-		<div style="width: 100%"><iframe width="60%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=es&amp;q=Rioja%20y%20Laprida+(Ubicacion)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/marcar-radio-circulo-mapa/">Dibujar radio en el mapa</a></div>
-
+		<section class="contentContact__">
+			<form>
+				Nombre<input type="text" name="nombre">
+				Numero<input type="number" name="numero">	
+				Email<input type="text" name="correo">
+				<p> Tu mensaje:<br>
+				<textarea name="mensaje" placeholder="Escribi aqui!"></textarea></p>
+				<p><input type="checkbox" name="checkbox">He leído y acepto los términos y condiciones</p>
+				
+			</form>
+		</section>
+				
+		
+		<section class="maps-contacto">
+			<div style="width: 100%"><iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=550&amp;hl=es&amp;q=Laprida%20y%20RIoja+(Locacion)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+			
+		</section>
 		<!-- <P>Las redes sociales han creado un puente muy importante entre la empresa y sus consumidores, que  nos permiten poder contarles sobre novedades, tendencias, y los últimos lanzamientos.</p> -->
 	</main>
+
+	<footer class="text-center footer-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-col">
+					<h3>Dirección</h3>
+					<p>
+						Santa Fe - Argentina <br/>	
+						CODIGO POSTAL 2000
+					</p>
+				</div>
+				<div class="col-md-4 footer-col">
+					<h3>Nuestras redes</h3>
+					<ul class="list-inline">
+						<li>
+							<img src="../galeria/Whatsapp2.jpg" target="_blank" href="#" class="btn-social btn-outline">
+						</li>
+						<li>
+							<img src="../galeria/Instagram2.jpg"  target="_blank" href="#" class="btn-social btn-outline">
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-col">
+					<h3>Importantes</h3>
+					<a href="../html/comprar.html">Como comprar</a>
+					<a href="../html/preguntas.html">Preguntas Frecuentes</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
  	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

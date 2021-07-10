@@ -48,42 +48,35 @@
 		}
 }
 
-
-  
+.contact-content{
+	display: flex;
+	align-content: space-evenly;
+}
 
 .contentContact__{	
-	display: flex;
-	justify-content:center;
-	padding: 80px;
-	margin: 0 0 10rem 0;
-	align-items: center;
 		form{
 			display: flex;
 			flex-direction: column;
 			// background-color: #485a54;
 			padding: 0 8rem;
 			border-radius: .5rem;
-			color: #d9d3cc;
+			color: $colorWhite;
 			line-height: 3em;
 		}
 		textarea{
-			background-color: #d9d3cc;
-			color:  #485a54;
+			background-color: $colorWhite;
+			color:  $colorGreenFirst;
 			min-width: 30rem;
 			min-height: 10rem;
-			border: 0;
-			border-radius: .5rem;
-			margin: 1rem;
 			padding: .5rem 1rem;
 			line-height: 3em;
 			font-size: 13px;
 			font-weight: 600;
 		}
 		input[type="text" i]{
-			background-color: #d9d3cc;
-			color:  #485a54;	
+			background-color: $colorWhite;
+			color:  $colorGreenFirst;	
 			border: 0;
-			border-radius: .5rem;
 			font-size: 14px;
 			font-weight: 600;
 			cursor: pointer;
@@ -91,9 +84,8 @@
 		}
 		input[type="number" i]{
 			padding: 1px 2px;
-			background-color: #d9d3cc;
-			color:  #485a54; 
-			border-radius: .5rem;
+			background-color: $colorWhite;
+			color:  $colorGreenFirst; 
 			border: 0;
 			font-size: 14px;
 			font-weight: 600;
@@ -106,50 +98,46 @@
 			border-radius: 8rem;
 			cursor: pointer;
 		}
-		input[type="reset" i]{
-			margin: 0;
-			background-color: #d9d3cc;
-			color:  #485a54; 
-			border-radius: .5rem;
-			border: 0;
-			font-size: 14px;
-			font-weight: 600;
-			cursor: pointer;
-			padding: 0;
-			width: 100%;
-		}
-		.btn-primary{	
-			background-color: #d9d3cc;
-			color: #485a54;
-			border-radius: .5rem;
-			border: 0;
-			padding: 1rem;
-			font-size: 14px;
-			font-weight: 600;
-			cursor: pointer;
-			width: 100%;
-			.contentContact__ .btn-primary{
-				padding: 1rem 0;
-			  display: block;
-			  margin: .5 0rem 0;
-			  width: 50%;
-		}
 	}
-		.content__modal{	
-				.modal-header{
-					background-color: #485a54;
-					color: #d9d3cc;
-				}
-				.modal-body{
-					background-color: #d9d3cc;
-					color: #485a54;
-				}
-				.modal-footer{
-					background-color: #d9d3cc;
-					.btn-secondary{
-					background-color: #485a54;
-					color: #d9d3cc;
-					font-weight: 600;
-					}		
-				}	}						
+
+			
+// 		.content__modal{	
+// 			.btn-primary{	
+// 				background-color: $colorWhite;
+// 				color: $colorGreenFirst;
+// 				padding: .5rem;
+// 				font-size: 14px;
+// 				font-weight: 600;
+// 				cursor: pointer;
+// 				width: 100%;
+// 				}
+// 				.modal-header{
+// 					background-color: $colorGreenFirst;
+// 					color: $colorWhite;
+// 				}
+// 				.modal-body{
+// 					background-color: $colorWhite;
+// 					color: $colorGreenFirst;
+// 				}
+// 				.modal-footer{
+// 					background-color: $colorWhite;
+
+// 					.btn-secondary{
+// 					background-color: $colorGreenFirst;
+// 					color: $colorWhite;
+// 					font-weight: 600;
+// 					}		
+// 				}	
+// 		}						
+// }
+
+.maps-contacto{
+	display: flex;
+	margin: rem;
+	align-items: center;
+	.maps-container{
+		background-color: aqua;
+		border-radius: 2rem;
+	}
+	
 }

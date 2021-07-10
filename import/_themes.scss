@@ -1,14 +1,12 @@
 
-/*----------------------------------------------------- INTRODUCCION SECCION ------------------------------------------------------*/	
+// /*----------------------------------------------------- INTRODUCCION SECCION ------------------------------------------------------*/	
 
 .contact__{
     display: block;	
-    padding: 10rem 0 0 0;
 
 		.contact__Titulo{
 			display: flex;
 			justify-content: center;
-			margin-top: 0;
 			line-height: 1rem;
 			font-size: 1.5rem;
 			font-weight: 600;
@@ -16,8 +14,11 @@
 			letter-spacing: 2px; 
 			text-transform: uppercase;
 			padding: 5rem;
-			color: $colorGreenFluor;
-			background-color: $colorGreenCake;
+            margin-bottom: 8rem;
+			color: $colorDark;
+			background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  
+			background: linear-gradient(to right, #0f3443, #34e89e); 
+
 		}
 		.contact__Parrafos{
 			display: flex;
@@ -26,7 +27,9 @@
 			color: $colorWhite;
 		}
 		.contact__lineNosotrosContact{
-				width: 80%;	
+			margin: 5rem 20rem;
+			border: 1px solid $colorGreenFluor;
+	
 		}
 			
 }

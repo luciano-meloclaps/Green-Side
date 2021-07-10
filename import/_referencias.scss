@@ -65,7 +65,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: #485a54;
+    background-color: $colorGreenCake;
+    border-radius: 2rem;
     margin: 100px;
     padding: 50px;
 }
