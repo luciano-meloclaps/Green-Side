@@ -12,7 +12,8 @@
 		font-weight: 600;	
 		@media (max-width: 700px){
 			font-size: 1.6rem;
-			margin: 3rem 2rem;
+			line-height: 3rem;
+			margin: 8rem 2rem;
 		}	
 	}
 	.card-block-forward{
@@ -22,15 +23,27 @@
 		margin: 15rem 10rem;
 		word-spacing: .30em;	
 		align-items: center;	
+		
 		@media (max-width: 700px){
 				margin: 0rem;
 				font-size: 1rem;
 				padding: 0;
+				display: flex;
+				flex-direction: column;
+				margin: 5rem 0;
+				border-radius: 1.5rem;
 			}
 		.card-content-forward{
 			display: flex;
 			padding: 3.5rem;
 			flex-direction: column;
+			
+			@media (max-width: 700px){
+				margin: 0rem;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
 
 			.card-titulo-forward{
 				display: flex;
@@ -39,6 +52,12 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+				
+				@media (max-width: 700px){
+					display: flex;
+					align-items: center;
+					padding: 2rem 3rem;
+				}
 			}
 
 			.card-parrafos-forward{	
@@ -49,6 +68,10 @@
 				line-height: 1.8rem;
 				font-size: 1.1rem;
 				padding: 2rem 4rem 4rem 4rem;
+				
+				@media (max-width:700){
+					padding: 2rem 1rem;
+					}
 				}
 		}
 
@@ -57,6 +80,12 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: end;
+			
+			@media (max-width: 700px){
+				width: 60%;
+				border-radius: 1rem;
+				margin: 2rem;
+			}
 		}	
 	}		
 
@@ -68,11 +97,29 @@
 		word-spacing: .30em;	
 		align-items: center;	
 		word-spacing: 0.25rem;
+		
+		@media (max-width: 700px){
+			margin: 0rem;
+			font-size: 1rem;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			margin: 5rem 0;
+			border-radius: 1.5rem;
+		}
 
 		.card-content-reverse{
 			display: flex;
 			padding: 3.5rem;
 			flex-direction: column;
+		
+			@media (max-width: 700px){
+				margin: 0rem;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
+			
 
 			.card-titulo-reverse{
 				display: flex;
@@ -81,6 +128,12 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+
+				@media (max-width: 700px){
+					display: flex;
+					align-items: center;
+					padding: 2rem 3rem;
+				}
 			}
 
 			.card-parrafos-reverse{	
@@ -91,6 +144,10 @@
 				line-height: 1.8rem;
 				font-size: 1.1rem;
 				padding: 2rem 4rem 4rem 4rem;
+				
+				@media (max-width:700){
+					padding: 2rem 1rem;
+					}
 				}
 		}
 
@@ -99,6 +156,12 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: end;
+			
+			@media (max-width: 700px){
+				width: 60%;
+				border-radius: 1rem;
+				margin: 2rem;
+			}
 		}	
 	}
 
