@@ -51,6 +51,11 @@
 .contact-content{
 	display: flex;
 	align-content: space-evenly;
+
+		@media (max-width:700px){
+			display: flex;
+			flex-direction: column;
+		}
 }
 
 .contentContact__{	
@@ -62,6 +67,10 @@
 			border-radius: .5rem;
 			color: $colorWhite;
 			line-height: 3em;
+
+				@media (max-width:700px){
+					padding: 0;
+				}
 		}
 		textarea{
 			background-color: $colorWhite;
@@ -72,6 +81,10 @@
 			line-height: 3em;
 			font-size: 13px;
 			font-weight: 600;
+
+			@media (max-width:700px){
+				min-width: 22.5rem;
+			}
 		}
 		input[type="text" i]{
 			background-color: $colorWhite;
@@ -133,11 +146,16 @@
 
 .maps-contacto{
 	display: flex;
-	margin: rem;
+	flex-direction: column;
 	align-items: center;
-	.maps-container{
-		background-color: aqua;
-		border-radius: 2rem;
-	}
-	
+	margin: auto;
+	border: 5px solid $colorWhite;
 }
+
+// 		@media (max-width:700px){
+// 			// padding: 15rem;
+// 			max-width: 20rem;
+// 		}
+	
+	
+// }

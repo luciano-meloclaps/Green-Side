@@ -11,6 +11,10 @@
 	align-items: center;
 	padding: 30rem;
 	background-image: url("https://images.pexels.com/photos/4391478/pexels-photo-4391478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+		@media(max-width:700px){
+			width: 25%;
+		}
 }
 
 
