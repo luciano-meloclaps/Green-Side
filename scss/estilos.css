@@ -341,6 +341,12 @@ body {
   border-top: 1.5px solid #CFCFCF;
 }
 
+@media (max-width: 700px) {
+  .footer-style {
+    margin: 0;
+  }
+}
+
 footer {
   color: white;
 }
@@ -501,7 +507,7 @@ footer img:hover {
           align-items: center;
   padding: 30rem;
   margin-bottom: 10rem;
-  background-image: url("../galeria/imgNosotros.jpg");
+  background-image: url("../galeria/img-nosotros.jpg");
 }
 
 .capa-nosotros {
@@ -722,7 +728,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("../galeria/imgInformacion.jpeg");
+  background-image: url("../galeria/img-informacion.jpg");
 }
 
 @media (max-width: 700px) {
@@ -1003,7 +1009,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("../galeria/imgContacto.jpeg");
+  background-image: url("../galeria/img-contacto.jpg");
 }
 
 .capa-contacto {
@@ -1211,7 +1217,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("../galeria/imgProductos.jpg");
+  background-image: url("../galeria/img-productos.jpg");
 }
 
 .capa-productos {
@@ -1568,7 +1574,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("../galeria/imgReferencias.jpg");
+  background-image: url("../galeria/img-referencias.jpg");
 }
 
 .capa {

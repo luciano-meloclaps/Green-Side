@@ -50,6 +50,10 @@ body{
     padding-top: 6rem;
     background-color: #262621;
 	border-top: 1.5px solid $colorWhite;
+
+		@media(max-width:700px){
+			margin: 0;
+		}
 }
 	footer {
 	color: white;
