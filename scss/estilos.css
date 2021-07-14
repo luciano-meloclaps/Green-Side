@@ -335,7 +335,7 @@ body {
 
 /* footer */
 .footer-style {
-  margin: 10rem 0 6rem 0;
+  margin: 20rem 0 6rem 0;
   padding-top: 6rem;
   background-color: #262621;
   border-top: 1.5px solid #CFCFCF;
@@ -500,6 +500,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
+  margin-bottom: 10rem;
   background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
 }
 
@@ -553,7 +554,17 @@ footer img:hover {
           box-sizing: border-box;
 }
 
-.boxNosotros__ .boxNosotros__titulosNosotros {
+.boxNosotros__ .section-nosotros-foward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boxNosotros__ .section-nosotros-foward .content-nosotros-section {
+  padding: 0 0 0 5rem;
+}
+
+.boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,17 +577,95 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8rem 0 0 0;
+  padding: 0 3rem;
   font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 700px) {
-  .boxNosotros__ .boxNosotros__titulosNosotros {
+  .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
     padding: 1rem;
   }
 }
 
-.boxNosotros__ .boxNosotros__infoNosotros {
+.boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__info-foward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #CFCFCF;
+  text-align: flex-start;
+  padding: 5rem 10rem 0 10rem;
+  line-height: 3.5em;
+  word-spacing: .25em;
+  font-weight: 500;
+  padding: 5rem 12rem 0rem 0rem;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__info-foward {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 2rem;
+  }
+}
+
+.boxNosotros__ .section-nosotros-foward img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 0 0 12rem;
+}
+
+.boxNosotros__ .section-nosotros-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.boxNosotros__ .section-nosotros-reverse .content-nosotros-section {
+  padding: 0 0 0 5rem;
+}
+
+.boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  color: #34e89e;
+  font-size: 30px;
+  word-spacing: .25em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 3rem;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
+    padding: 1rem;
+  }
+}
+
+.boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__info-reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +684,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .boxNosotros__ .boxNosotros__infoNosotros {
+  .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__info-reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,9 +693,15 @@ footer img:hover {
   }
 }
 
+.boxNosotros__ .section-nosotros-reverse img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 12rem 0 0;
+}
+
 .boxNosotros__ .line-nosotros {
   border: 1px solid #34e89e;
-  margin: 5rem 10rem;
+  margin: 3rem 10rem 12rem 10rem;
 }
 
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
