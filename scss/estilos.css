@@ -1048,8 +1048,13 @@ footer img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 700px) {
@@ -1064,7 +1069,18 @@ footer img:hover {
   }
 }
 
-.contentContact__ form {
+.contact-content .contentContact__ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-content .contentContact__ img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contact-content .contentContact__ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,15 +1092,16 @@ footer img:hover {
   border-radius: .5rem;
   color: #CFCFCF;
   line-height: 3em;
+  margin-top: 5rem;
 }
 
 @media (max-width: 700px) {
-  .contentContact__ form {
+  .contact-content .contentContact__ form {
     padding: 0;
   }
 }
 
-.contentContact__ textarea {
+.contact-content .contentContact__ textarea {
   background-color: #CFCFCF;
   color: #7f9244;
   min-width: 30rem;
@@ -1096,12 +1113,12 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contentContact__ textarea {
+  .contact-content .contentContact__ textarea {
     min-width: 22.5rem;
   }
 }
 
-.contentContact__ input[type="text" i] {
+.contact-content .contentContact__ input[type="text" i] {
   background-color: #CFCFCF;
   color: #7f9244;
   border: 0;
@@ -1111,7 +1128,7 @@ footer img:hover {
   padding: 1px 0;
 }
 
-.contentContact__ input[type="number" i] {
+.contact-content .contentContact__ input[type="number" i] {
   padding: 1px 2px;
   background-color: #CFCFCF;
   color: #7f9244;
@@ -1121,7 +1138,7 @@ footer img:hover {
   cursor: pointer;
 }
 
-.contentContact__ input[type="checkbox" i] {
+.contact-content .contentContact__ input[type="checkbox" i] {
   padding: 1px 2px;
   margin: 1rem;
   display: inline;
@@ -1129,7 +1146,15 @@ footer img:hover {
   cursor: pointer;
 }
 
-.maps-contacto {
+.contact-content .maps-contacto {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6rem;
+}
+
+.contact-content .maps-contacto .block-maps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,11 +1162,35 @@ footer img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  border: 5px solid #CFCFCF;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.contact-content .maps-contacto .block-maps p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem;
+  font-size: 1.3rem;
+  color: #7f9244;
+}
+
+.contact-content .maps-contacto .block-maps iframe {
+  border-radius: 1rem;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.contact-content .maps-contacto .block-maps iframe:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/

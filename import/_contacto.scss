@@ -50,15 +50,21 @@
 
 .contact-content{
 	display: flex;
-	align-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
 
 		@media (max-width:700px){
 			display: flex;
 			flex-direction: column;
-		}
-}
+			}
+	
 
-.contentContact__{	
+.contentContact__{		
+	display: flex;
+
+		img{
+			object-fit: contain;
+		}
 		form{
 			display: flex;
 			flex-direction: column;
@@ -67,6 +73,7 @@
 			border-radius: .5rem;
 			color: $colorWhite;
 			line-height: 3em;
+			margin-top: 5rem;
 
 				@media (max-width:700px){
 					padding: 0;
@@ -145,13 +152,37 @@
 // }
 
 .maps-contacto{
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: auto;
-	border: 5px solid $colorWhite;
-}
+	margin-top: 6rem;
 
+	.block-maps{
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		margin: 3rem;
+
+		p{
+			display: flex;
+			justify-content: center;
+			margin: 3rem;
+			font-size: 1.3rem;
+			color: $colorGreenFirst;
+		}
+		iframe{
+			border-radius: 1rem;
+			filter: brightness(50%);
+			&:hover{
+				filter: brightness(100%);
+				transform: scale(1.03);
+				transition: .5s;
+			}
+		}
+	}
+
+	
+}
+}
 // 		@media (max-width:700px){
 // 			// padding: 15rem;
 // 			max-width: 20rem;
