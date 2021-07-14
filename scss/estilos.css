@@ -501,7 +501,7 @@ footer img:hover {
           align-items: center;
   padding: 30rem;
   margin-bottom: 10rem;
-  background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("../galeria/imgNosotros.jpg");
 }
 
 .capa-nosotros {
@@ -722,7 +722,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("https://images.pexels.com/photos/4391478/pexels-photo-4391478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../galeria/imgInformacion.jpeg");
 }
 
 @media (max-width: 700px) {
@@ -1003,7 +1003,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../galeria/imgContacto.jpeg");
 }
 
 .capa-contacto {
@@ -1211,7 +1211,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("https://images.unsplash.com/photo-1610360339320-32bffde7711d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("../galeria/imgProductos.jpg");
 }
 
 .capa-productos {
@@ -1568,7 +1568,7 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("https://images.pexels.com/photos/6455823/pexels-photo-6455823.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("../galeria/imgReferencias.jpg");
 }
 
 .capa {
