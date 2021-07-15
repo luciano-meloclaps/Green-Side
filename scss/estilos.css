@@ -491,7 +491,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/
 .banner-nosotros {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -523,22 +523,61 @@ footer img:hover {
 .info-nosotros {
   z-index: 1;
   width: 100%;
-  max-width: 550px;
   text-align: center;
+  -o-object-fit: none;
+     object-fit: none;
 }
 
-.info-nosotros h4 {
+.info-nosotros .title-general {
+  display: inline-block;
+  text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
+  color: #CFCFCF;
+  font-size: 4rem;
+  letter-spacing: .35rem;
+}
+
+.info-nosotros .title-general:before, .info-nosotros .title-general:after {
+  color: #34e89e;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-nosotros .title-general:before {
+  border-bottom: 3px solid #34e89e;
+  border-left: 3px solid #34e89e;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.info-nosotros .title-general:after {
+  border-top: 3px solid #34e89e;
+  border-right: 3px solid #34e89e;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+
+.info-nosotros .title-general:hover:after, .info-nosotros .title-general:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.info-nosotros .title-general:hover {
+  color: #34e89e;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 .info-nosotros p {
-  color: #c7c7c7;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  color: #CFCFCF;
+  line-height: 1.7rem;
+  padding: 2rem 5rem;
 }
 
 .scroll-button {
@@ -567,7 +606,17 @@ footer img:hover {
 }
 
 .boxNosotros__ .section-nosotros-foward .content-nosotros-section {
-  padding: 0 0 0 5rem;
+  padding: 0 0 0 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
@@ -583,7 +632,6 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 3rem;
   font-weight: 600;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -642,7 +690,17 @@ footer img:hover {
 }
 
 .boxNosotros__ .section-nosotros-reverse .content-nosotros-section {
-  padding: 0 0 0 5rem;
+  padding: 0 0 0 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
@@ -653,16 +711,9 @@ footer img:hover {
       flex-wrap: wrap;
   text-align: center;
   color: #34e89e;
-  font-size: 30px;
+  font-size: 2rem;
   word-spacing: .25em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 3rem;
   font-weight: 600;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 700px) {
@@ -683,7 +734,7 @@ footer img:hover {
       flex-wrap: wrap;
   color: #CFCFCF;
   text-align: flex-start;
-  padding: 5rem 10rem 0 10rem;
+  padding: 5rem 10rem 0 0rem;
   line-height: 3.5em;
   word-spacing: .25em;
   font-weight: 500;
