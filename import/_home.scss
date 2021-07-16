@@ -6,10 +6,11 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin: 10rem 0 0 0;
+		margin: 12rem 0 0 0;
 		text-transform: uppercase;
 		color: #d4d9d9;
 		font-weight: 600;	
+		font-size: 3rem;
 		@media (max-width: 700px){
 			font-size: 1.6rem;
 			line-height: 3rem;

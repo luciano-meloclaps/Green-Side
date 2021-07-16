@@ -1,0 +1,201 @@
+/*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/	
+.banner-catalogo{
+	width: 100%;
+	height: 1080px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30rem;
+	background-image: url("../galeria/img-catalogo.jpg");
+}
+
+.capa-catalogo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
+}
+
+#container-catalogo{
+	display: flex;
+	flex-direction: column;
+	margin: 10rem 0;
+	@media (max-width: 700px){
+		margin: 5rem 0;
+	}
+
+	.card-block-reverse__catalogo{
+		background-color: #CFCFCF;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 10rem;
+		word-spacing: .30em;	
+		align-items: center;	
+		word-spacing: 0.25rem;
+		@media (max-width: 700px){
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.card-content-reverse__catalogo{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 3.5rem;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			align-content: space-around;
+			/* align-items: center; */
+			justify-content: space-evenly;
+			@media (max-width: 700px){
+				flex-direction: column;	
+				padding: rem;	
+			}	
+		}
+
+			.card-titulo-reverse__catalogo{
+				display: flex;
+				padding:1rem 1rem 2rem 4rem;
+				color: #2d2d2d;
+				font-weight: 600;
+				justify-content: flex-start;
+				font-style: italic;
+				@media (max-width: 700px){
+					padding: 3rem 0;
+					margin: 0;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+
+			.card-parrafos-reverse__catalogo{	
+				display: flex;
+				color: #7f9244;
+				align-items: center;
+				font-weight: 500;
+				line-height: 1.8rem;
+				font-size: 1.1rem;
+				padding: 2rem 4rem 4rem 4rem;
+				@media (max-width: 700px){
+					padding: 0rem;
+				}
+			}
+		}
+		.card-img-reverse__catalogo{
+			width: 25%;
+			@media (max-width: 700px){
+				width: 80%;
+				border-radius: 2rem;
+				display: flex;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-box-pack: end;
+				-ms-flex-pack: end;
+				justify-content: end;
+				object-fit: none;
+				margin: 1rem;
+			}	
+		}
+		.line-index{
+			background-color: #CFCFCF;
+			margin: auto;
+			padding: .5rem;
+		}
+		
+}
+.containerCatalogo__{
+	display: flex;
+	justify-content: center;
+	padding: .5rem;
+	font-weight: 600;
+	word-spacing: .5rem;
+	@media (max-width: 700px){
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		}
+		
+	}
+	.botonera{
+		border: 1.5px solid #CFCFCF;
+		padding: .3rem;
+		margin: 1rem;
+		border-radius: .52rem;
+		.btn{
+			color: $colorWhite;
+			font-weight: 600;
+		}
+	}
+	.new-button{
+		background-color: black;
+		color: #34e89e;
+		padding: 1rem;
+		margin: 1rem 1rem;
+		border-radius: 1rem;
+		font-style: italic;
+		@media (max-width: 750px){
+			display: flex;
+			align-items: center;
+		}	
+	}
+
+
+.contentCards__{
+	max-width: 1500px;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+	@media (max-width: 700px){
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+		.card{	
+			margin: 120px 100px;
+			background-color: $colorGreenCake;		
+			box-shadow: 2px 2px 10px .5px black;
+			&:hover{
+				backdrop-filter: blur(7px);
+				transform: scale(1.06);
+				transition: .5s;
+				cursor: pointer;
+				box-shadow: 20px 20px 15px 0px black;
+			}
+			img{
+				filter: opacity(70%);
+			&:hover{
+				filter: opacity(100%);
+				}	
+			}
+			.card-body{
+				min-height: 1px;
+				padding: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				.card-title{
+					color: #262621;
+					font-weight: 600;	
+				}
+				.btn-primary{
+					background-color: #262621;
+					color: $colorGreenFluor;
+					font-weight: 600;
+					display: block;
+					border: none;
+					}
+			}
+		}	
+}

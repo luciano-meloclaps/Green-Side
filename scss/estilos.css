@@ -22,10 +22,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10rem 0 0 0;
+  margin: 12rem 0 0 0;
   text-transform: uppercase;
   color: #d4d9d9;
   font-weight: 600;
+  font-size: 3rem;
 }
 
 @media (max-width: 700px) {
@@ -520,66 +521,6 @@ footer img:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.info-nosotros {
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  -o-object-fit: none;
-     object-fit: none;
-}
-
-.info-nosotros .title-general {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #CFCFCF;
-  font-size: 4rem;
-  letter-spacing: .35rem;
-}
-
-.info-nosotros .title-general:before, .info-nosotros .title-general:after {
-  color: #34e89e;
-  content: "";
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info-nosotros .title-general:before {
-  border-bottom: 3px solid #34e89e;
-  border-left: 3px solid #34e89e;
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
-}
-
-.info-nosotros .title-general:after {
-  border-top: 3px solid #34e89e;
-  border-right: 3px solid #34e89e;
-  -webkit-transform-origin: 100% 0%;
-          transform-origin: 100% 0%;
-}
-
-.info-nosotros .title-general:hover:after, .info-nosotros .title-general:hover:before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.info-nosotros .title-general:hover {
-  color: #34e89e;
-  -webkit-transition: .7s;
-  transition: .7s;
-}
-
-.info-nosotros p {
-  color: #CFCFCF;
-  line-height: 1.7rem;
-  padding: 2rem 5rem;
-}
-
 .scroll-button {
   padding-top: 60px;
 }
@@ -764,7 +705,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
 .banner-info {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1045,7 +986,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA CONTACTO ------------------------------------------------------------*/
 .banner-contacto {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1071,34 +1012,6 @@ footer img:hover {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
-}
-
-.info-contacto {
-  z-index: 1;
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-}
-
-.info-contacto h4 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.info-contacto p {
-  color: #c7c7c7;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.info-contacto hr {
-  height: 1px;
-  width: 80%;
-  background-color: #485a54;
-  margin: 2.5rem 10rem;
 }
 
 .contact-content {
@@ -1251,9 +1164,9 @@ footer img:hover {
 }
 
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
-.banner-productos {
+.banner-catalogo {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1268,10 +1181,10 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
-  background-image: url("../galeria/img-productos.jpg");
+  background-image: url("../galeria/img-catalogo.jpg");
 }
 
-.capa-productos {
+.capa-catalogo {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1281,35 +1194,7 @@ footer img:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.info-productos {
-  z-index: 1;
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-}
-
-.info-productos h4 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.info-productos p {
-  color: #c7c7c7;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.info-productos hr {
-  height: 1px;
-  width: 80%;
-  background-color: #485a54;
-  margin: 2.5rem 10rem;
-}
-
-#container-productos {
+#container-catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1321,12 +1206,12 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  #container-productos {
+  #container-catalogo {
     margin: 5rem 0;
   }
 }
 
-#container-productos .card-block-reverse__productos {
+#container-catalogo .card-block-reverse__catalogo {
   background-color: #CFCFCF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,7 +1229,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  #container-productos .card-block-reverse__productos {
+  #container-catalogo .card-block-reverse__catalogo {
     margin: 0;
     padding: 0;
     display: -webkit-box;
@@ -1357,7 +1242,7 @@ footer img:hover {
   }
 }
 
-#container-productos .card-block-reverse__productos .card-content-reverse__productos {
+#container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1375,7 +1260,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  #container-productos .card-block-reverse__productos .card-content-reverse__productos {
+  #container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1384,7 +1269,7 @@ footer img:hover {
   }
 }
 
-#container-productos .card-block-reverse__productos .card-titulo-reverse__productos {
+#container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1398,7 +1283,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  #container-productos .card-block-reverse__productos .card-titulo-reverse__productos {
+  #container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
     padding: 3rem 0;
     margin: 0;
     display: -webkit-box;
@@ -1411,7 +1296,7 @@ footer img:hover {
   }
 }
 
-#container-productos .card-block-reverse__productos .card-parrafos-reverse__productos {
+#container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1426,17 +1311,17 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  #container-productos .card-block-reverse__productos .card-parrafos-reverse__productos {
+  #container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
     padding: 0rem;
   }
 }
 
-#container-productos .card-img-reverse__productos {
+#container-catalogo .card-img-reverse__catalogo {
   width: 25%;
 }
 
 @media (max-width: 700px) {
-  #container-productos .card-img-reverse__productos {
+  #container-catalogo .card-img-reverse__catalogo {
     width: 80%;
     border-radius: 2rem;
     display: -webkit-box;
@@ -1455,13 +1340,13 @@ footer img:hover {
   }
 }
 
-#container-productos .line-index {
+#container-catalogo .line-index {
   background-color: #CFCFCF;
   margin: auto;
   padding: .5rem;
 }
 
-.containerProductos__ {
+.containerCatalogo__ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1474,7 +1359,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .containerProductos__ {
+  .containerCatalogo__ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1610,7 +1495,7 @@ footer img:hover {
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
 .banner {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1636,27 +1521,6 @@ footer img:hover {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
-}
-
-.info {
-  z-index: 1;
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-}
-
-.info h4 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.info p {
-  color: #c7c7c7;
-  line-height: 1.7;
-  margin-bottom: 30px;
 }
 
 .contentReferences__ .contentReferences__Opiniones {
@@ -1730,6 +1594,126 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.info-general {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.info-general .title-general {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #CFCFCF;
+  font-size: 4rem;
+  letter-spacing: .35rem;
+}
+
+.info-general .title-general:before, .info-general .title-general:after {
+  color: #34e89e;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-general .title-general:before {
+  border-bottom: 3px solid #34e89e;
+  border-left: 3px solid #34e89e;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.info-general .title-general:after {
+  border-top: 3px solid #34e89e;
+  border-right: 3px solid #34e89e;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+
+.info-general .title-general:hover:after, .info-general .title-general:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.info-general .title-general:hover {
+  color: #34e89e;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.info-general p {
+  color: #CFCFCF;
+  line-height: 1.7rem;
+  padding: 2rem 5rem;
+}
+
+.info-general {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.info-general .title-general {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #CFCFCF;
+  font-size: 4rem;
+  letter-spacing: .35rem;
+}
+
+.info-general .title-general:before, .info-general .title-general:after {
+  color: #34e89e;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-general .title-general:before {
+  border-bottom: 3px solid #34e89e;
+  border-left: 3px solid #34e89e;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.info-general .title-general:after {
+  border-top: 3px solid #34e89e;
+  border-right: 3px solid #34e89e;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+
+.info-general .title-general:hover:after, .info-general .title-general:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.info-general .title-general:hover {
+  color: #34e89e;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.info-general p {
+  color: #CFCFCF;
+  line-height: 1.7rem;
+  padding: 2rem 5rem;
 }
 
 .contact__ {
