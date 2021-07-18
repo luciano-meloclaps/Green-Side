@@ -1,56 +1,5 @@
 
-// /*----------------------------------------------------- BANNER TITULO Y PARRAFG ------------------------------------------------------*/	
-
-.info-general{
-	z-index: 1;
-	width: 100%;
-	text-align: center;
-	object-fit: none;
-		
-	.title-general{
-		display: inline-block;
-		text-decoration: none;
-		text-transform: uppercase;
-		color: $colorWhite;
-		font-size: 4rem;
-		letter-spacing: .35rem;
-		&:before,
-		&:after {
-			color: $colorGreenFluor;
-			content: "";
-			transform: scale(0);
-			transition: 0.5s;
-			display: flex;
-		}
-
-		&:before {
-			border-bottom: 3px solid $colorGreenFluor;
-			border-left: 3px solid $colorGreenFluor;
-			transform-origin: 0 100%;
-
-		}
-		&:after {
-			border-top: 3px solid $colorGreenFluor;
-			border-right: 3px solid $colorGreenFluor;
-			transform-origin: 100% 0%;
-
-		}
-		&:hover:after,
-		&:hover:before {
-			transform: scale(1);
-		}
-		
-		&:hover{
-			color: $colorGreenFluor;
-			transition: .7s;
-		}	
-	}
-	p{
-		color: $colorWhite;
-		line-height: 1.7rem;
-		padding: 2rem 5rem;
-		}
-	}
+// /*----------------------------------------------------- BANNER TITULO Y PARRAFOS ------------------------------------------------------*/		
 	.info-general{
 		z-index: 1;
 		width: 100%;
@@ -64,6 +13,11 @@
 			color: $colorWhite;
 			font-size: 4rem;
 			letter-spacing: .35rem;
+
+				@media(max-width:700px){
+					font-size: 2rem;
+					margin: 1rem;
+				}
 			&:before,
 			&:after {
 				color: $colorGreenFluor;
@@ -99,6 +53,10 @@
 			color: $colorWhite;
 			line-height: 1.7rem;
 			padding: 2rem 5rem;
+
+				@media(max-width:700px){
+					font-size: .8rem;
+				}
 			}
 		}
 

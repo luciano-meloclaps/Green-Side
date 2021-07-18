@@ -314,26 +314,6 @@ body {
 }
 
 /* navbar */
-.navbar {
-  color: red;
-}
-
-.navbar-brand {
-  color: blue;
-}
-
-.nav-link {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #7f9244;
-}
-
-.nav-link:hover {
-  color: #d4d9d9;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
 /* footer */
 .footer-style {
   margin: 20rem 0 6rem 0;
@@ -1492,6 +1472,43 @@ footer img:hover {
   border: none;
 }
 
+.banner-productos {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: banner 10s infinite linear alternate;
+          animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30rem;
+  background-image: url("../galeria/img-productos.jpg");
+}
+
+@media (max-width: 700px) {
+  .banner-productos {
+    background-image: url("../galeria/img-productos-mobile.jpg");
+    padding: 0;
+  }
+}
+
+.capa-productos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
+}
+
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
 .banner {
   width: 100%;
@@ -1613,64 +1630,11 @@ footer img:hover {
   letter-spacing: .35rem;
 }
 
-.info-general .title-general:before, .info-general .title-general:after {
-  color: #34e89e;
-  content: "";
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info-general .title-general:before {
-  border-bottom: 3px solid #34e89e;
-  border-left: 3px solid #34e89e;
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
-}
-
-.info-general .title-general:after {
-  border-top: 3px solid #34e89e;
-  border-right: 3px solid #34e89e;
-  -webkit-transform-origin: 100% 0%;
-          transform-origin: 100% 0%;
-}
-
-.info-general .title-general:hover:after, .info-general .title-general:hover:before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.info-general .title-general:hover {
-  color: #34e89e;
-  -webkit-transition: .7s;
-  transition: .7s;
-}
-
-.info-general p {
-  color: #CFCFCF;
-  line-height: 1.7rem;
-  padding: 2rem 5rem;
-}
-
-.info-general {
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  -o-object-fit: none;
-     object-fit: none;
-}
-
-.info-general .title-general {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #CFCFCF;
-  font-size: 4rem;
-  letter-spacing: .35rem;
+@media (max-width: 700px) {
+  .info-general .title-general {
+    font-size: 2rem;
+    margin: 1rem;
+  }
 }
 
 .info-general .title-general:before, .info-general .title-general:after {
@@ -1714,6 +1678,12 @@ footer img:hover {
   color: #CFCFCF;
   line-height: 1.7rem;
   padding: 2rem 5rem;
+}
+
+@media (max-width: 700px) {
+  .info-general p {
+    font-size: .8rem;
+  }
 }
 
 .contact__ {
