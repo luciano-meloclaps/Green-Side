@@ -99,8 +99,22 @@
 				font-weight: 500;
 				line-height: 1.8rem;
 				font-size: 1.1rem;
-				padding: 2rem 4rem 4rem 4rem;
+				padding: 2rem 4rem;
+
+				@media (max-width: 700px){
+					display: flex;
+				flex-direction: column;	
+
+				a{
+					margin: 2rem 0 0 0;
+					padding: .5rem;
+					border-radius: .4rem;
+					background-color: $colorWhite;
+					color: $colorDark;
+					box-shadow:1px 13px 10px 0.5px #171010;
 				}
+				}
+			}
 		}
 
 		.card-img-forward_info{

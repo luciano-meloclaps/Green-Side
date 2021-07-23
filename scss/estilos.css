@@ -900,7 +900,28 @@ footer img:hover {
   font-weight: 500;
   line-height: 1.8rem;
   font-size: 1.1rem;
-  padding: 2rem 4rem 4rem 4rem;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 700px) {
+  #container-info .card-block-forward .card-content-forward .card-parrafos-forward {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #container-info .card-block-forward .card-content-forward .card-parrafos-forward a {
+    margin: 2rem 0 0 0;
+    padding: .5rem;
+    border-radius: .4rem;
+    background-color: #CFCFCF;
+    color: #262621;
+    -webkit-box-shadow: 1px 13px 10px 0.5px #171010;
+            box-shadow: 1px 13px 10px 0.5px #171010;
+  }
 }
 
 #container-info .card-block-forward .card-img-forward_info {
@@ -1078,8 +1099,14 @@ footer img:hover {
           align-items: center;
 }
 
+.contact-content .contentContact__ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 700px) {
-  .contact-content {
+  .contact-content .contentContact__ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1087,18 +1114,27 @@ footer img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-}
-
-.contact-content .contentContact__ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .contact-content .contentContact__ img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .contact-content .contentContact__ img {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact-content .contentContact__ form {
@@ -1113,12 +1149,13 @@ footer img:hover {
   border-radius: .5rem;
   color: #CFCFCF;
   line-height: 3em;
+  z-index: 200;
   margin-top: 5rem;
 }
 
 @media (max-width: 700px) {
   .contact-content .contentContact__ form {
-    padding: 0;
+    margin: 6rem;
   }
 }
 
@@ -1167,12 +1204,44 @@ footer img:hover {
   cursor: pointer;
 }
 
+.contact-content .contentContact__ .modal-content {
+  background-color: #262621;
+}
+
+.contact-content .contentContact__ .modal-header {
+  background-color: #262621;
+  color: #34e89e;
+  border: 0;
+  margin: 0;
+}
+
+.contact-content .contentContact__ .btn-primary {
+  background-color: black;
+  color: #CFCFCF;
+  font-weight: 600;
+  border: 0;
+  -webkit-box-shadow: 1px 13px 10px 0.5px #171010;
+          box-shadow: 1px 13px 10px 0.5px #171010;
+}
+
 .contact-content .maps-contacto {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 6rem;
+}
+
+@media (max-width: 700px) {
+  .contact-content .maps-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact-content .maps-contacto .block-maps {
@@ -1187,6 +1256,14 @@ footer img:hover {
   margin: 3rem;
 }
 
+@media (max-width: 700px) {
+  .contact-content .maps-contacto .block-maps {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+}
+
 .contact-content .maps-contacto .block-maps p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,6 +1274,12 @@ footer img:hover {
   margin: 3rem;
   font-size: 1.3rem;
   color: #7f9244;
+}
+
+@media (max-width: 700px) {
+  .contact-content .maps-contacto .block-maps p {
+    padding: 2rem 0;
+  }
 }
 
 .contact-content .maps-contacto .block-maps iframe {
@@ -1689,6 +1772,15 @@ footer img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem;
+}
+
+.contentTestimonios iframe {
+  width: 1000px;
 }
 
 .info-general {

@@ -27,17 +27,25 @@
 	flex-direction: column;
 	align-items: center;
 
-		@media (max-width:700px){
-			display: flex;
-			flex-direction: column;
-			}
-	
 
 .contentContact__{		
 	display: flex;
+			
+	@media (max-width:700px){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
 
+		
 		img{
 			object-fit: contain;
+
+			@media (max-width:700px){
+			width: 400px;
+			display: flex;
+			align-items: center;
+			}
 		}
 		form{
 			display: flex;
@@ -47,10 +55,12 @@
 			border-radius: .5rem;
 			color: $colorWhite;
 			line-height: 3em;
+			z-index: 200;
 			margin-top: 5rem;
 
-				@media (max-width:700px){
-					padding: 0;
+				@media (max-width:700px){		
+					margin: 6rem;
+
 				}
 		}
 		textarea{
@@ -92,43 +102,35 @@
 			border-radius: 8rem;
 			cursor: pointer;
 		}
+
+		.modal-content {
+			background-color: $colorDark;
+		}
+			.modal-header{
+				background-color: $colorDark;
+				color:$colorGreenFluor;
+				border: 0;
+				margin: 0;
+			}
+			.btn-primary{
+				background-color: black;
+				color: $colorWhite;
+				font-weight: 600;
+				border: 0;
+				box-shadow:1px 13px 10px 0.5px #171010;
+	
+		}
 	}
-
-			
-// 		.content__modal{	
-// 			.btn-primary{	
-// 				background-color: $colorWhite;
-// 				color: $colorGreenFirst;
-// 				padding: .5rem;
-// 				font-size: 14px;
-// 				font-weight: 600;
-// 				cursor: pointer;
-// 				width: 100%;
-// 				}
-// 				.modal-header{
-// 					background-color: $colorGreenFirst;
-// 					color: $colorWhite;
-// 				}
-// 				.modal-body{
-// 					background-color: $colorWhite;
-// 					color: $colorGreenFirst;
-// 				}
-// 				.modal-footer{
-// 					background-color: $colorWhite;
-
-// 					.btn-secondary{
-// 					background-color: $colorGreenFirst;
-// 					color: $colorWhite;
-// 					font-weight: 600;
-// 					}		
-// 				}	
-// 		}						
-// }
 
 .maps-contacto{
 	width: 100%;
 	display: flex;
 	margin-top: 6rem;
+
+	@media (max-width:700px){
+		display: flex;
+		flex-direction: column;
+	}
 
 	.block-maps{
 		display: flex;
@@ -136,12 +138,21 @@
 		padding: 2rem;
 		margin: 3rem;
 
+		@media (max-width:700px){
+			margin: 0;
+			padding: 0;
+			width: 50%;
+		}
 		p{
 			display: flex;
 			justify-content: center;
 			margin: 3rem;
 			font-size: 1.3rem;
 			color: $colorGreenFirst;
+
+			@media (max-width:700px){
+				padding: 2rem 0;
+			}
 		}
 		iframe{
 			border-radius: 1rem;
