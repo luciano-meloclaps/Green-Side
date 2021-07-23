@@ -33,7 +33,7 @@
   #container-index .container-slogan {
     font-size: 1.6rem;
     line-height: 3rem;
-    margin: 8rem 2rem;
+    margin: 8rem 2rem 0 2rem;
   }
 }
 
@@ -46,7 +46,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 15rem 10rem;
+  margin: 12rem 10rem;
   word-spacing: .30em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -307,12 +307,6 @@ body {
           box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 /* navbar */
 /* footer */
 .footer-style {
@@ -324,7 +318,7 @@ body {
 
 @media (max-width: 700px) {
   .footer-style {
-    margin: 0;
+    margin-top: 8rem;
   }
 }
 
@@ -491,6 +485,14 @@ footer img:hover {
   background-image: url("../galeria/img-nosotros.jpg");
 }
 
+@media (max-width: 700px) {
+  .banner-nosotros {
+    background-image: url("../galeria/img-nosotros-mobile.jpg");
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .capa-nosotros {
   width: 100%;
   height: 100%;
@@ -526,6 +528,21 @@ footer img:hover {
   display: flex;
 }
 
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-foward {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .boxNosotros__ .section-nosotros-foward .content-nosotros-section {
   padding: 0 0 0 10rem;
   display: -webkit-box;
@@ -538,6 +555,12 @@ footer img:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-foward .content-nosotros-section {
+    padding: 0;
+  }
 }
 
 .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
@@ -561,7 +584,8 @@ footer img:hover {
 
 @media (max-width: 700px) {
   .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
-    padding: 1rem;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -591,6 +615,7 @@ footer img:hover {
     display: flex;
     margin: 0;
     padding: 2rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -598,6 +623,14 @@ footer img:hover {
   -o-object-fit: contain;
      object-fit: contain;
   padding: 0 0 0 12rem;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-foward img {
+    padding: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 .boxNosotros__ .section-nosotros-reverse {
@@ -608,6 +641,21 @@ footer img:hover {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .boxNosotros__ .section-nosotros-reverse .content-nosotros-section {
@@ -622,6 +670,12 @@ footer img:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-reverse .content-nosotros-section {
+    padding: 0;
+  }
 }
 
 .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
@@ -639,7 +693,8 @@ footer img:hover {
 
 @media (max-width: 700px) {
   .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
-    padding: 1rem;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -668,6 +723,7 @@ footer img:hover {
     display: flex;
     margin: 0;
     padding: 2rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -677,9 +733,23 @@ footer img:hover {
   padding: 0 12rem 0 0;
 }
 
+@media (max-width: 700px) {
+  .boxNosotros__ .section-nosotros-reverse img {
+    padding: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .boxNosotros__ .line-nosotros {
   border: 1px solid #34e89e;
   margin: 3rem 10rem 12rem 10rem;
+}
+
+@media (max-width: 700px) {
+  .boxNosotros__ .line-nosotros {
+    margin: 0 2rem;
+  }
 }
 
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
@@ -706,6 +776,7 @@ footer img:hover {
 @media (max-width: 700px) {
   .banner-info {
     width: 25%;
+    background-image: url("../galeria/img-informacion-mobile.jpg");
   }
 }
 
@@ -1510,9 +1581,9 @@ footer img:hover {
 }
 
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
-.banner {
+.banner-referencia {
   width: 100%;
-  height: 1080px;
+  height: 100%;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1530,7 +1601,14 @@ footer img:hover {
   background-image: url("../galeria/img-referencias.jpg");
 }
 
-.capa {
+@media (max-width: 700px) {
+  .banner-referencia {
+    background-image: url("../galeria/img-referencias-mobile.jpg");
+    padding: 0;
+  }
+}
+
+.capa-referencia {
   width: 100%;
   height: 100%;
   position: absolute;

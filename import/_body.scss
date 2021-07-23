@@ -20,7 +20,7 @@ body{
 	color: White;	
 	box-sizing: border-box;
 	@media (max-width: 700px){
-		overflow: hidden;
+		
 		
 	}
 }
@@ -37,7 +37,7 @@ body{
 	border-top: 1.5px solid $colorWhite;
 
 		@media(max-width:700px){
-			margin: 0;
+			margin-top: 8rem;
 		}
 }
 	footer {
