@@ -31,9 +31,9 @@
 
 @media (max-width: 700px) {
   #container-index .container-slogan {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 3rem;
-    margin: 8rem 2rem 0 2rem;
+    margin: 4rem 2rem;
   }
 }
 
@@ -56,7 +56,6 @@
 @media (max-width: 700px) {
   #container-index .card-block-forward {
     margin: 0rem;
-    font-size: 1rem;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -65,7 +64,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 5rem 0;
+    margin: 0 1rem;
     border-radius: 1.5rem;
   }
 }
@@ -181,8 +180,6 @@
 
 @media (max-width: 700px) {
   #container-index .card-block-reverse {
-    margin: 0rem;
-    font-size: 1rem;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -191,7 +188,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 5rem 0;
+    margin: 4rem 1rem;
     border-radius: 1.5rem;
   }
 }
@@ -305,6 +302,12 @@ body {
   color: White;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: .8rem;
+  }
 }
 
 /* navbar */
@@ -466,7 +469,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/
 .banner-nosotros {
   width: 100%;
-  height: 1080px;
+  height: 100%;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -503,25 +506,6 @@ footer img:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.scroll-button {
-  padding-top: 60px;
-}
-
-.scroll-button .scroll-button span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .boxNosotros__ .section-nosotros-foward {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,6 +524,8 @@ footer img:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
 }
 
@@ -584,8 +570,8 @@ footer img:hover {
 
 @media (max-width: 700px) {
   .boxNosotros__ .section-nosotros-foward .content-nosotros-section .boxNosotros__titulos-foward {
-    padding: 1rem 4rem;
     font-size: 1.2rem;
+    padding: 4rem 2rem 0;
   }
 }
 
@@ -655,6 +641,8 @@ footer img:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
 }
 
@@ -693,8 +681,8 @@ footer img:hover {
 
 @media (max-width: 700px) {
   .boxNosotros__ .section-nosotros-reverse .content-nosotros-section .boxNosotros__titulos-reverse {
-    padding: 1rem 4rem;
     font-size: 1.2rem;
+    padding: 4rem 2rem 0;
   }
 }
 
@@ -755,7 +743,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
 .banner-info {
   width: 100%;
-  height: 1080px;
+  height: 100%;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -770,13 +758,15 @@ footer img:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 30rem;
+  margin-bottom: 10rem;
   background-image: url("../galeria/img-informacion.jpg");
 }
 
 @media (max-width: 700px) {
   .banner-info {
-    width: 25%;
     background-image: url("../galeria/img-informacion-mobile.jpg");
+    padding: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -786,36 +776,8 @@ footer img:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
-}
-
-.info-info {
-  z-index: 1;
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-}
-
-.info-info h4 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 45px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.info-info p {
-  color: #c7c7c7;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.info-info hr {
-  height: 1px;
-  width: 80%;
-  background-color: #485a54;
-  margin: 2.5rem 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
 #container-info {
@@ -827,6 +789,12 @@ footer img:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10rem 0;
+}
+
+@media (max-width: 700px) {
+  #container-info {
+    margin: 6rem 0;
+  }
 }
 
 #container-info .card-block-forward {
@@ -847,7 +815,6 @@ footer img:hover {
 
 @media (max-width: 700px) {
   #container-info .card-block-forward {
-    margin: 5rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -856,6 +823,7 @@ footer img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 1.5rem;
+    margin: 4rem 1rem;
   }
 }
 
@@ -901,6 +869,13 @@ footer img:hover {
   line-height: 1.8rem;
   font-size: 1.1rem;
   padding: 2rem 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 700px) {
@@ -913,14 +888,25 @@ footer img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+#container-info .card-block-forward .card-content-forward .card-parrafos-forward a {
+  margin: 2rem 0 0 0;
+  padding: .5rem;
+  border-radius: .4rem;
+  background-color: #CFCFCF;
+  color: #262621;
+  -webkit-box-shadow: 0px 1px 7px 0px #171010;
+          box-shadow: 0px 1px 7px 0px #171010;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
   #container-info .card-block-forward .card-content-forward .card-parrafos-forward a {
     margin: 2rem 0 0 0;
     padding: .5rem;
-    border-radius: .4rem;
-    background-color: #CFCFCF;
-    color: #262621;
-    -webkit-box-shadow: 1px 13px 10px 0.5px #171010;
-            box-shadow: 1px 13px 10px 0.5px #171010;
+    font-size: .8rem;
   }
 }
 
@@ -968,7 +954,6 @@ footer img:hover {
 
 @media (max-width: 700px) {
   #container-info .card-block-reverse {
-    margin: 5rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -976,6 +961,7 @@ footer img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 1rem;
     border-radius: 1.5rem;
   }
 }
@@ -1058,7 +1044,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA CONTACTO ------------------------------------------------------------*/
 .banner-contacto {
   width: 100%;
-  height: 1080px;
+  height: 100%;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1076,37 +1062,31 @@ footer img:hover {
   background-image: url("../galeria/img-contacto.jpg");
 }
 
+@media (max-width: 700px) {
+  .banner-contacto {
+    background-image: url("../galeria/img-contacto-mobile.jpg");
+    padding: 0;
+  }
+}
+
 .capa-contacto {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.contact-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-content .contentContact__ {
+.contentContact__ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 700px) {
-  .contact-content .contentContact__ {
+  .contentContact__ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1120,13 +1100,13 @@ footer img:hover {
   }
 }
 
-.contact-content .contentContact__ img {
+.contentContact__ img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 @media (max-width: 700px) {
-  .contact-content .contentContact__ img {
+  .contentContact__ img {
     width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1137,7 +1117,7 @@ footer img:hover {
   }
 }
 
-.contact-content .contentContact__ form {
+.contentContact__ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,12 +1134,12 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contact-content .contentContact__ form {
+  .contentContact__ form {
     margin: 6rem;
   }
 }
 
-.contact-content .contentContact__ textarea {
+.contentContact__ textarea {
   background-color: #CFCFCF;
   color: #7f9244;
   min-width: 30rem;
@@ -1171,12 +1151,12 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contact-content .contentContact__ textarea {
+  .contentContact__ textarea {
     min-width: 22.5rem;
   }
 }
 
-.contact-content .contentContact__ input[type="text" i] {
+.contentContact__ input[type="text" i] {
   background-color: #CFCFCF;
   color: #7f9244;
   border: 0;
@@ -1186,7 +1166,7 @@ footer img:hover {
   padding: 1px 0;
 }
 
-.contact-content .contentContact__ input[type="number" i] {
+.contentContact__ input[type="number" i] {
   padding: 1px 2px;
   background-color: #CFCFCF;
   color: #7f9244;
@@ -1196,7 +1176,7 @@ footer img:hover {
   cursor: pointer;
 }
 
-.contact-content .contentContact__ input[type="checkbox" i] {
+.contentContact__ input[type="checkbox" i] {
   padding: 1px 2px;
   margin: 1rem;
   display: inline;
@@ -1204,18 +1184,18 @@ footer img:hover {
   cursor: pointer;
 }
 
-.contact-content .contentContact__ .modal-content {
+.contentContact__ .modal-content {
   background-color: #262621;
 }
 
-.contact-content .contentContact__ .modal-header {
+.contentContact__ .modal-header {
   background-color: #262621;
   color: #34e89e;
   border: 0;
   margin: 0;
 }
 
-.contact-content .contentContact__ .btn-primary {
+.contentContact__ .btn-primary {
   background-color: black;
   color: #CFCFCF;
   font-weight: 600;
@@ -1224,7 +1204,7 @@ footer img:hover {
           box-shadow: 1px 13px 10px 0.5px #171010;
 }
 
-.contact-content .maps-contacto {
+.maps-contacto {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1233,7 +1213,7 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contact-content .maps-contacto {
+  .maps-contacto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1244,7 +1224,7 @@ footer img:hover {
   }
 }
 
-.contact-content .maps-contacto .block-maps {
+.maps-contacto .block-maps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,14 +1237,14 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contact-content .maps-contacto .block-maps {
+  .maps-contacto .block-maps {
     margin: 0;
     padding: 0;
     width: 50%;
   }
 }
 
-.contact-content .maps-contacto .block-maps p {
+.maps-contacto .block-maps p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1277,18 +1257,18 @@ footer img:hover {
 }
 
 @media (max-width: 700px) {
-  .contact-content .maps-contacto .block-maps p {
+  .maps-contacto .block-maps p {
     padding: 2rem 0;
   }
 }
 
-.contact-content .maps-contacto .block-maps iframe {
+.maps-contacto .block-maps iframe {
   border-radius: 1rem;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
-.contact-content .maps-contacto .block-maps iframe:hover {
+.maps-contacto .block-maps iframe:hover {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
   -webkit-transform: scale(1.03);
@@ -1300,7 +1280,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
 .banner-catalogo {
   width: 100%;
-  height: 1080px;
+  height: 100%;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1316,6 +1296,13 @@ footer img:hover {
           align-items: center;
   padding: 30rem;
   background-image: url("../galeria/img-catalogo.jpg");
+}
+
+@media (max-width: 700px) {
+  .banner-catalogo {
+    background-image: url("../galeria/img-catalogo-mobile.jpg");
+    padding: 0;
+  }
 }
 
 .capa-catalogo {
@@ -1364,8 +1351,7 @@ footer img:hover {
 
 @media (max-width: 700px) {
   #container-catalogo .card-block-reverse__catalogo {
-    margin: 0;
-    padding: 0;
+    margin: 4rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1373,6 +1359,7 @@ footer img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-radius: 1.5rem;
   }
 }
 
@@ -1420,6 +1407,7 @@ footer img:hover {
   #container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
     padding: 3rem 0;
     margin: 0;
+    font-size: 1.2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1447,6 +1435,7 @@ footer img:hover {
 @media (max-width: 700px) {
   #container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
     padding: 0rem;
+    font-size: .9rem;
   }
 }
 
@@ -1575,6 +1564,12 @@ footer img:hover {
   background-color: #656868;
   -webkit-box-shadow: 2px 2px 10px .5px black;
           box-shadow: 2px 2px 10px .5px black;
+}
+
+@media (max-width: 700px) {
+  .contentCards__ .card {
+    margin: 4rem 	0rem;
+  }
 }
 
 .contentCards__ .card:hover {
@@ -1930,6 +1925,25 @@ footer img:hover {
   .contact__ .contact__lineNosotrosContact {
     margin: 0rem 2.5rem;
   }
+}
+
+.scroll-button {
+  padding-top: 60px;
+}
+
+.scroll-button .scroll-button span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .banner-shop {
