@@ -43,11 +43,14 @@
 		word-spacing: .30em;	
 		align-items: center;	
 		word-spacing: 0.25rem;
+		@include shadow-card(); 
+		
 		@media (max-width: 700px){
 			margin: 4rem 1rem;	
 			display: flex;
 			flex-direction: column;
 			border-radius: 1.5rem;
+			@include shadow-mob(); 
 		}
 
 		.card-content-reverse__catalogo{
@@ -76,7 +79,7 @@
 				justify-content: flex-start;
 				font-style: italic;
 				@media (max-width: 700px){
-					padding: 3rem 0;
+					padding: 2rem 0;
 					margin: 0;
 					font-size: 1.2rem;
 					display: flex;
@@ -94,7 +97,7 @@
 				padding: 2rem 4rem 4rem 4rem;
 				@media (max-width: 700px){
 					padding: 0rem;
-					font-size: .9rem;
+					font-size: .8rem;
 				}
 			}
 		}
@@ -174,8 +177,9 @@
 			margin: 120px 100px;
 			background-color: $colorGreenCake;		
 			box-shadow: 2px 2px 10px .5px black;
+			
 			@media (max-width: 700px){
-			margin: 4rem 	0rem;
+			margin: 4rem 0rem;
 			}
 			&:hover{
 				backdrop-filter: blur(7px);

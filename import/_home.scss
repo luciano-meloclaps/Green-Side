@@ -6,7 +6,7 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin: 12rem 0 0 0;
+		margin: 12rem  0;
 		text-transform: uppercase;
 		color: #d4d9d9;
 		font-weight: 600;	
@@ -21,9 +21,10 @@
 		background-color: #2d2d2d;
 		display: flex;
 		flex-direction: row;
-		margin: 12rem 10rem;
+		margin: 0rem 10rem;
 		word-spacing: .30em;	
-		align-items: center;	
+		align-items: center;
+		box-shadow: -5px 15px 14px 0px #171010;
 		
 		@media (max-width: 700px){
 				margin: 0rem;
@@ -32,6 +33,7 @@
 				flex-direction: column;
 				margin: 0 1rem;
 				border-radius: 1.5rem;
+				box-shadow:-11px 14px 11px 0px #171010;
 			}
 		.card-content-forward{
 			display: flex;
@@ -52,11 +54,13 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+				font-size: 1.8rem;
 				
 				@media (max-width: 700px){
 					display: flex;
 					align-items: center;
-					padding: 2rem 3rem;
+					padding: 3rem 2rem 0;
+					font-size: 1.2rem;	
 					}
 			}
 
@@ -66,12 +70,11 @@
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
-				font-size: 1.1rem;
-				padding: 2rem 4rem 0rem 4rem;
+				padding: 3rem 6rem 0rem 4rem;
 				
 				@media (max-width:700px){
-					font-size: 1rem;
-					padding: 0rem 2rem 0rem 2rem;
+					font-size: .85rem;
+					padding: 2rem 2rem .5rem;
 					}
 			}
 		}
@@ -94,10 +97,11 @@
 		background-color: #CFCFCF;
 		display: flex;
 		flex-direction: row-reverse;
-		margin: 0 10rem;
+		margin: 8rem 10rem;
 		word-spacing: .30em;	
 		align-items: center;	
 		word-spacing: 0.25rem;
+		box-shadow: -5px 15px 14px 0px #171010;;
 		
 		@media (max-width: 700px){
 			padding: 0;
@@ -105,6 +109,7 @@
 			flex-direction: column;
 			margin: 4rem 1rem;	
 			border-radius: 1.5rem;
+			box-shadow:-11px 14px 11px 0px #171010;
 		}
 
 		.card-content-reverse{
@@ -122,16 +127,18 @@
 
 			.card-titulo-reverse{
 				display: flex;
-				padding:2rem;
+				padding: 0 2rem;
 				color: #2d2d2d;
 				font-weight: 600;
 				justify-content: flex-start;
+				font-size: 1.8rem;
 				font-style: italic;
 
 				@media (max-width: 700px){
 					display: flex;
+					font-size: 1.2rem;
 					align-items: center;
-					padding: 2rem 3rem;
+					padding: 3rem 2rem 0;
 				}
 			}
 
@@ -141,12 +148,12 @@
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
-				font-size: 1rem;
-				padding: 0rem 2rem 0rem 2rem;
+				padding: 3rem 6rem 0rem 2rem;
 				
 				@media (max-width:700px){
-					font-size: 1rem;
-					padding: 0rem 2rem 0rem 2rem;
+					font-size: .8rem;
+					font-size: .85rem;
+					padding: 2rem 2rem .5rem;
 					}
 				}
 		}

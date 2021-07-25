@@ -42,15 +42,17 @@
 		background-color: #2d2d2d;
 		display: flex;
 		flex-direction: row;
-		margin: 15rem 10rem;
+		margin: 8rem 10rem;
 		word-spacing: .30em;	
 		align-items: center;	
+		@include shadow-card(); 
 
 		@media(max-width:700px){
 			display: flex;
 			flex-direction: column;
 			border-radius: 1.5rem;
 			margin: 4rem 1rem;	
+			@include shadow-mob(); 
 			}
 
 		.card-content-forward{
@@ -69,6 +71,10 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+
+				@media(max-width:700px){
+					@include title-mob();
+				}
 			}
 
 			.card-parrafos-forward{	
@@ -77,14 +83,13 @@
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
-				font-size: 1.1rem;
 				padding: 2rem 4rem;
 				flex-direction: column;
 				align-items: flex-start;
 
 				@media (max-width: 700px){
 					display: flex;
-				flex-direction: column;	
+					flex-direction: column;	
 				}
 
 				a{
@@ -130,12 +135,14 @@
 		word-spacing: .30em;	
 		align-items: center;	
 		word-spacing: 0.25rem;
+		@include shadow-card(); 
 		
 			@media(max-width:700px){
 				display: flex;
 				flex-direction: column;
 				margin: 0 1rem;
 				border-radius: 1.5rem;
+				@include shadow-mob(); 
 				}
 
 		.card-content-reverse{
@@ -154,6 +161,10 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+
+				@media(max-width:700px){
+					@include title-mob();
+				}
 			}
 
 			.card-parrafos-reverse{	
@@ -162,8 +173,7 @@
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
-				font-size: 1.1rem;
-				padding: 2rem 4rem 4rem 4rem;
+				padding: 2rem 4rem;
 				}
 		}
 
@@ -178,7 +188,8 @@
 				border-radius: 2rem;
 				display: flex;
 				margin: 1rem;
-			}}
+				}
+			}
 				
 	}
 

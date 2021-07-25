@@ -9,6 +9,24 @@ $colorDark: #262621;
 $colorGreenFluor: #34e89e;
 
 $colorGreenFirst: #7f9244;
+
+$titles: 1.2rem;
+
+@mixin shadow-mob{
+	box-shadow: -5px 15px 7px 0px #171010;
+}
+
+@mixin shadow-card{
+	box-shadow:-11px 14px 11px 0px #171010;
+}
+
+@mixin title-mob{
+	font-size: 1.2rem;
+	padding: 3rem 4rem 0;
+	
+}
+
+
 /* body */
 
 body{
@@ -19,6 +37,7 @@ body{
 	font-weight: 600;
 	color: White;	
 	box-sizing: border-box;
+
 	@media (max-width: 700px){
 		font-size: .8rem;
 		
@@ -31,7 +50,7 @@ body{
 /* footer */
 
 .footer-style {
-	margin: 20rem 0 6rem 0;
+	margin: 15rem 0 6rem 0;
     padding-top: 6rem;
     background-color: #262621;
 	border-top: 1.5px solid $colorWhite;

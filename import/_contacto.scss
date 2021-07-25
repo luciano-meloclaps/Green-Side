@@ -29,11 +29,13 @@
 
 .contentContact__{		
 	display: flex;
+	justify-content: center;
+	margin-bottom: 10rem;
 			
 	@media (max-width:700px){
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center;	
 	}
 
 		
@@ -58,7 +60,8 @@
 			margin-top: 5rem;
 
 				@media (max-width:700px){		
-					margin: 6rem;
+					margin: 4rem 0;
+					padding: 0;
 
 				}
 		}
@@ -124,7 +127,7 @@
 .maps-contacto{
 	width: 100%;
 	display: flex;
-	margin-top: 6rem;
+	margin-top: 8rem;
 
 	@media (max-width:700px){
 		display: flex;
@@ -134,28 +137,34 @@
 	.block-maps{
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
-		margin: 3rem;
+		margin: auto;
 
 		@media (max-width:700px){
-			margin: 0;
 			padding: 0;
-			width: 50%;
+			margin: 2rem 1rem;
+			
 		}
 		p{
 			display: flex;
 			justify-content: center;
-			margin: 3rem;
 			font-size: 1.3rem;
 			color: $colorGreenFirst;
+			margin: 2rem 6rem;
 
 			@media (max-width:700px){
-				padding: 2rem 0;
+				padding: .5rem 1rem;
+				margin: auto;
 			}
 		}
 		iframe{
 			border-radius: 1rem;
 			filter: brightness(50%);
+			width: 100%;
+
+			@media (max-width:700px){
+				width: 100%;
+				}
+
 			&:hover{
 				filter: brightness(100%);
 				transform: scale(1.03);
