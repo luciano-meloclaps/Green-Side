@@ -10,7 +10,11 @@ $colorGreenFluor: #34e89e;
 
 $colorGreenFirst: #7f9244;
 
+$titlesMax: 1.8rem;
+
 $titles: 1.2rem;
+
+$parrafos: .85rem;
 
 @mixin shadow-mob{
 	box-shadow: -5px 15px 7px 0px #171010;
@@ -56,7 +60,7 @@ body{
 	border-top: 1.5px solid $colorWhite;
 
 		@media(max-width:700px){
-			margin-top: 8rem;
+			margin-top: 2rem;
 		}
 }
 	footer {
@@ -66,6 +70,15 @@ body{
 			margin-bottom: 20px;
 			font-weight: 600;
 			padding: 0 0 0 .5rem;
+
+			@media (max-width:700px){
+				font-size: $titles;
+			}
+		}
+		p{
+			@media(max-width:700px){
+			font-size: $parrafos;
+			}
 		}
 
 	.footer-above {
@@ -83,7 +96,6 @@ body{
 
 	.footer-below {
 	padding: 50px 0;
-	background-color: #233140;
 	}
 	.list-inline{
 		margin-top: 10px;
@@ -96,6 +108,11 @@ body{
 		margin: 1rem .8rem;
 		cursor: pointer;
 		filter: grayscale(100%);
+
+			@media(max-width:700px){
+				width: 25px;
+			}
+				
 		&:hover{
 			transform: scale(1.2);
 			filter: grayscale(00%);	
@@ -133,7 +150,7 @@ body{
 			top: 48%;
 			left: 50%;
 			transform: translate(-50%, -50%) scale(0);
-			color: #fff;
+			color: black;
 			transition: .2s;
 		}
 	}
