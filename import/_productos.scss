@@ -10,11 +10,22 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-productos.jpg");
 
-		@media (max-width:700px){
+		@media (max-width: $tablet){
 			background-image: url("../galeria/img-productos-mobile.jpg");
 			padding: 0;
 		}
-}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-productos.jpg");
+			padding: 7rem;
+		}
+
+		@media (min-width: $laptop) and (max-width: $laptop-L){
+			padding: 15rem;
+		}
+	
+}	
+
 
 .capa-productos{
 	width: 100%;

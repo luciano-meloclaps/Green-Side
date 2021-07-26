@@ -13,7 +13,7 @@
     position: fixed;
     overflow: hidden;
 
-        @media (max-width:700px){
+        @media (max-width: $tablet){
             background-image: url("../galeria/img-preguntas-mobile.jpg");
         
     } 
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
 
-        @media (max-width:700px){
+        @media (max-width: $tablet){
             margin: 2rem 0 4rem 0 ;
             font-size: $titlesMax;
             border-bottom: 2px solid white;
@@ -38,14 +38,14 @@
     position: relative;
     margin-bottom: 0rem;
 
-    @media (max-width:700px){
+    @media (max-width: $tablet){
         padding: 2rem 2rem 0;
     }
 
 
         .box-question{
             padding: .8rem 0;
-            @media (max-width:700px){
+            @media (max-width: $tablet){
                 padding: .3rem;
             }
             

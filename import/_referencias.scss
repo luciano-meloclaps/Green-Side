@@ -1,5 +1,6 @@
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
-.banner-referencia{
+
+.banner-referencias{
 	width: 100%;
 	height: 100%;
 	animation: banner 10s infinite linear alternate;
@@ -11,10 +12,16 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-referencias.jpg");
 
-		@media (max-width:700px){
+		@media (max-width: $tablet){
 			background-image: url("../galeria/img-referencias-mobile.jpg");
 			padding: 0;
 		}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-referencias.jpg");
+			padding: 7rem;
+		}
+		
 }
 
 .capa-referencia{
@@ -30,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: $colorGreenCake;
+    background-color: $colorGreenFirst;
     border-radius: 1.5rem;
     padding: 5rem;
     margin: 5rem;
@@ -42,6 +49,11 @@
       align-content: center;
       margin: 3rem 0;
       width: 100%;
+    }
+
+    @media (min-width: $phone) and (max-width: $tablet){
+      justify-content: center;
+      padding: 0;
     }
 
       .videos{

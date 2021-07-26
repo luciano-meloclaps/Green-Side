@@ -12,10 +12,16 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-contacto.jpg");
 
-		@media (max-width:700px){
+		@media (max-width: $tablet){
 			background-image: url("../galeria/img-contacto-mobile.jpg");
 			padding: 0;
 		}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-contacto.jpg");
+			padding: 7rem;
+		}
+		
 }
 
 .capa-contacto{
@@ -32,7 +38,7 @@
 	justify-content: center;
 	margin-bottom: 10rem;
 			
-	@media (max-width:700px){
+	@media (max-width: $tablet){
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
@@ -42,7 +48,7 @@
 		img{
 			object-fit: contain;
 
-			@media (max-width:700px){
+			@media (max-width: $tablet){
 			width: 400px;
 			display: flex;
 			align-items: center;
@@ -59,7 +65,7 @@
 			z-index: 200;
 			margin-top: 5rem;
 
-				@media (max-width:700px){		
+				@media (max-width: $tablet){		
 					margin: 4rem 0;
 					padding: 0;
 
@@ -75,8 +81,12 @@
 			font-size: 13px;
 			font-weight: 600;
 
-			@media (max-width:700px){
+			@media (max-width: $tablet){
 				min-width: 22.5rem;
+			}
+
+			@media (min-width: $phone) and (max-width: $tablet){
+				min-width: 27rem;
 			}
 		}
 		input[type="text" i]{
@@ -129,7 +139,7 @@
 	display: flex;
 	margin-top: 8rem;
 
-	@media (max-width:700px){
+	@media (max-width: $tablet){
 		display: flex;
 		flex-direction: column;
 	}
@@ -139,10 +149,13 @@
 		flex-direction: column;
 		margin: auto;
 
-		@media (max-width:700px){
+		@media (max-width: $tablet){
 			padding: 0;
 			margin: 2rem 1rem;
-			
+		}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			margin: 4rem 5rem;
 		}
 		p{
 			display: flex;
@@ -151,7 +164,7 @@
 			color: $colorGreenFirst;
 			margin: 2rem 6rem;
 
-			@media (max-width:700px){
+			@media (max-width: $tablet){
 				padding: .5rem 1rem;
 				margin: auto;
 			}
@@ -161,7 +174,7 @@
 			filter: brightness(50%);
 			width: 100%;
 
-			@media (max-width:700px){
+			@media (max-width: $tablet){
 				width: 100%;
 				}
 

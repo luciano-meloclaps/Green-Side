@@ -11,13 +11,20 @@
 	align-items: center;
 	padding: 30rem;
 	margin-bottom: 10rem;
-	background-image: url("../galeria/img-informacion.jpg");
+	background-image: url("../galeria/img-info.jpg");
+	@include shadow-banner ();
 
-		@media (max-width:700px){
-			background-image: url("../galeria/img-informacion-mobile.jpg");
+		@media (max-width: $tablet){
+			background-image: url("../galeria/img-info-mobile.jpg");
 			padding: 0;
 			margin-bottom: 2rem;
 		}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-info.jpg");
+			padding: 7rem;
+		}
+		
 }
 
 
@@ -35,7 +42,7 @@
 	flex-direction: column;
 	margin: 10rem 0;
 
-	@media (max-width: 700px){
+	@media (max-width: $tablet){
 		margin: 6rem 0;
 	}
 
@@ -48,7 +55,7 @@
 		align-items: center;	
 		@include shadow-card(); 
 
-		@media(max-width:700px){
+		@media(max-width: $tablet){
 			display: flex;
 			flex-direction: column;
 			border-radius: 1.5rem;
@@ -61,7 +68,7 @@
 			padding: 3.5rem;
 			flex-direction: column;
 
-				@media (max-width: 700px){
+				@media (max-width: $tablet){
 					padding: 0;
 				}
 
@@ -73,7 +80,7 @@
 				justify-content: flex-start;
 				font-style: italic;
 
-				@media(max-width:700px){
+				@media(max-width: $tablet){
 					@include title-mob();
 				}
 			}
@@ -88,7 +95,7 @@
 				flex-direction: column;
 				align-items: flex-start;
 
-				@media (max-width: 700px){
+				@media (max-width: $tablet){
 					display: flex;
 					flex-direction: column;	
 				}
@@ -103,7 +110,7 @@
 					text-decoration: none;
 					font-weight: 600;
 
-					@media (max-width: 700px){
+					@media (max-width: $tablet){
 					margin: 2rem 0 0 0;
 					padding: .5rem;
 					font-size: .8rem;
@@ -119,7 +126,7 @@
 			flex-direction: row;
 			justify-content: end;
 			
-			@media (max-width: 700px){
+			@media (max-width: $tablet){
 				width: 80%;
 				border-radius: 2rem;
 				display: flex;
@@ -138,7 +145,7 @@
 		word-spacing: 0.25rem;
 		@include shadow-card(); 
 		
-			@media(max-width:700px){
+			@media(max-width: $tablet){
 				display: flex;
 				flex-direction: column;
 				margin: 0 1rem;
@@ -151,7 +158,7 @@
 			padding: 3.5rem;
 			flex-direction: column;
 
-				@media (max-width: 700px){
+				@media (max-width:  $tablet){
 					padding: 0;
 				}
 
@@ -163,7 +170,7 @@
 				justify-content: flex-start;
 				font-style: italic;
 
-				@media(max-width:700px){
+				@media(max-width: $tablet){
 					@include title-mob();
 				}
 			}
@@ -184,7 +191,7 @@
 			flex-direction: row;
 			justify-content: end;
 
-			@media (max-width: 700px){
+			@media (max-width: $tablet){
 				width: 80%;
 				border-radius: 2rem;
 				display: flex;

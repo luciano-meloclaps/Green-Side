@@ -16,12 +16,26 @@ $titles: 1.2rem;
 
 $parrafos: .85rem;
 
+$phone: 700px;
+
+$tablet: 1019px;
+
+$laptop: 1024px;
+
+$laptop-L: 1300px;
+
+$desktop: 2560;
+
 @mixin shadow-mob{
 	box-shadow: -5px 15px 7px 0px #171010;
 }
 
 @mixin shadow-card{
 	box-shadow:-11px 14px 11px 0px #171010;
+}
+
+@mixin shadow-banner {
+	box-shadow: 0px 12px 20px 0px #171010;
 }
 
 @mixin title-mob{

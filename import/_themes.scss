@@ -1,5 +1,4 @@
-
-// /*----------------------------------------------------- BANNER TITULO Y PARRAFOS ------------------------------------------------------*/		
+/*----------------------------------------------------- BANNER TITULO Y PARRAFOS ------------------------------------------------------*/		
 	.info-general{
 		z-index: 1;
 		width: 100%;
@@ -66,7 +65,8 @@
 
 .contact__{
     display: block;	
-	@media(max-width: 750px){
+
+	@media(max-width: $tablet){
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
@@ -87,7 +87,8 @@
 			color: $colorDark;
 			background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  
 			background: linear-gradient(to right, #0f3443, #34e89e); 
-			@media (max-width: 700px){
+			
+			@media (max-width: $tablet){
 				padding: 2.5rem;
 				margin: 0 0 5rem 0;
 				line-height: 2rem;
@@ -98,7 +99,8 @@
 			display: flex;
 			justify-content: center;
 			color: $colorWhite;
-			@media (max-width: 700px){
+
+			@media (max-width: $tablet){
 				padding: .5rem 2.5rem;
 				display: flex;
 				line-height: 2rem;
@@ -107,7 +109,8 @@
 		.contact__lineNosotrosContact{
 			margin: 5rem 20rem;
 			border: 1px solid $colorGreenFluor;
-			@media (max-width: 700px){
+			
+			@media (max-width: $tablet){
 			margin: 0rem 2.5rem;
 			}
 		}		
