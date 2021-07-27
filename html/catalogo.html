@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 		<!-- Required meta tags -->
 		<title>Catálogo</title>
@@ -24,9 +25,8 @@
 		<link rel="icon" href="/galeria/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">NUTRISIDE</a>
+    <a class="navbar-brand" href="#">NUTRISIDE</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -54,16 +54,17 @@
 		</div>
 	</nav>
 
-<main>
-
-        <section class="banner-catalogo">
-          <div class="capa-catalogo"></div>
-          <div class="info-general">
-            <title class="title-general">Catalogo</title>
-            <p>Brindamos productos reconocidos mundialmente por sus excelentes resultados. Conocé nuestra gama de productos y sus beneficios, y sé uno de nuestros miles de clientes satisfechos.</p>
-          </div>
-        </section>
-
+<body> 
+      <!-- BANNER>> HERO IMAGEN , TITULO E INTRODUCCION -->
+      <section class="banner-catalogo">
+        <div class="capa-catalogo"></div>
+        <div class="info-general">
+          <title class="title-general">Catalogo</title>
+          <p>Brindamos productos reconocidos mundialmente por sus excelentes resultados. Conocé nuestra gama de productos y sus beneficios, y sé uno de nuestros miles de clientes satisfechos.</p>
+        </div>
+      </section>
+      
+      <!-- GRADIENTE CON FRASE E INFORMACION -->
       <section class="contact__">
         <h3 class="contact__Titulo">En la vanguardia de la categoría</h3>
         <p class="contact__Parrafos">Desarrollamos nuestros productos específicamente para potenciar y mejorar las funciones del organismo.</p>
@@ -71,21 +72,22 @@
         <hr class="contact__lineNosotrosContact">
       </section>
 
-      <section id="container-catalogo">
-      
-      <section class="card-block-reverse__catalogo wow animate__animated animate__backInUp">
-        <div class="card-content-reverse__catalogo">	
-          <h3 class="card-titulo-reverse__catalogo">Ampliamos la gama, mantenemos la calidad</h3>
-          <strong class="card-parrafos-reverse__catalogo">
-            En estos ultimos años avanzamos en el area de nutricion y suplementos gracias a esto quisimos dar un paso mas alla, 
-            e incorporar una linea de cuidados para la piel y belleza cumpliendo con las exigencias de la marca y brindando productos de altisimo nivel para vos y tu salud.
-          </strong>
-        </div>
-          <img class = "card-img-reverse__catalogo" src="https://images.unsplash.com/photo-1596177582967-a5d143a41237?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"></img>
-      </section>	
-      </section>
+      <!-- TARJETA CON TEXTO E IMAGEN -->
+      <article id="container-catalogo">
+        <section class="card-block-reverse__catalogo wow animate__animated animate__backInUp">
+          <div class="card-content-reverse__catalogo">	
+            <h3 class="card-titulo-reverse__catalogo">Ampliamos la gama, mantenemos la calidad</h3>
+            <strong class="card-parrafos-reverse__catalogo">
+              En estos ultimos años avanzamos en el area de nutricion y suplementos gracias a esto quisimos dar un paso mas alla, 
+              e incorporar una linea de cuidados para la piel y belleza cumpliendo con las exigencias de la marca y brindando productos de altisimo nivel para vos y tu salud.
+            </strong>
+          </div>
+            <img class = "card-img-reverse__catalogo" src="https://images.unsplash.com/photo-1596177582967-a5d143a41237?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"></img>
+        </section>	
+      </article>
 
-      <section class="contentCards__ p-3">
+      <!-- SECCION PRINCIPAL CON PRODUCTOS -->
+      <main class="contentCards__ p-3">
 
         <!---------- CREATINA ---------->
         <div class="card bg-image hover-overlay" style="width: 18rem;">
@@ -433,8 +435,8 @@
                   </div>
                 </div>
 
-      </section>    
-</main>
+      </main>    
+</body>
 
 <footer class="text-center footer-style">
   <div class="container">
@@ -472,12 +474,14 @@
   </div>
 </footer>
 
-    
-
     <!-- SCRIPT WOW.JS   -->
     <script src="js/wow.js"></script>
     <script>
     new WOW().init();
     </script>
-</body>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </html>

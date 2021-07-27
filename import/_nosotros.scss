@@ -47,7 +47,6 @@
 		display: flex;
 		
 
-
 			@media (max-width: $tablet){
 				display: flex;
 				flex-direction: column;
@@ -170,6 +169,7 @@
 				}
 			}
 		}
+
 			img{
 				object-fit: contain;
 				padding: 0 12rem 0 0;
@@ -181,6 +181,7 @@
 			}
 		
 	}
+	
 		.line-nosotros{
 			border: 1px solid $colorGreenFluor;
 			margin: 3rem 10rem 12rem 10rem;

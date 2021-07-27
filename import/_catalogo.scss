@@ -11,7 +11,6 @@
 	align-items: center;
 	padding: 30rem;
 	background-image: url("../galeria/img-catalogo.jpg");
-	
 
 		@media (max-width:700px){
 			background-image: url("../galeria/img-catalogo-mobile.jpg");
@@ -37,6 +36,7 @@
 	display: flex;
 	flex-direction: column;
 	margin: 10rem 0;
+	
 	@media (max-width: $tablet){
 		margin: 5rem 0;
 	}
@@ -71,6 +71,7 @@
 			align-content: space-around;
 			/* align-items: center; */
 			justify-content: space-evenly;
+			
 			@media (max-width: $tablet){
 				flex-direction: column;	
 				padding: rem;	
@@ -84,6 +85,7 @@
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
+				
 				@media (max-width: $tablet){
 					padding: 2rem 0;
 					margin: 0;
@@ -101,6 +103,7 @@
 				line-height: 1.8rem;
 				font-size: 1.1rem;
 				padding: 2rem 4rem 4rem 4rem;
+				
 				@media (max-width: $tablet){
 					padding: 0rem;
 					font-size: .8rem;
@@ -109,6 +112,7 @@
 		}
 		.card-img-reverse__catalogo{
 			width: 25%;
+			
 			@media (max-width: $tablet){
 				width: 80%;
 				border-radius: 2rem;
@@ -135,6 +139,7 @@
 	padding: .5rem;
 	font-weight: 600;
 	word-spacing: .5rem;
+	
 	@media (max-width: $tablet){
 		display: flex;
 		align-items: center;
@@ -162,7 +167,7 @@
 		display: flex;
 		flex-direction: row;
 		align-content: center;
-	} 
+		} 
 
 		.card{	
 			margin: 120px 100px;
@@ -172,6 +177,7 @@
 			@media (max-width: $tablet){
 			margin: 4rem 0rem;
 			}
+
 			&:hover{
 				backdrop-filter: blur(7px);
 				transform: scale(1.06);
@@ -179,8 +185,10 @@
 				cursor: pointer;
 				box-shadow: 20px 20px 15px 0px black;
 			}
+
 			img{
 				filter: opacity(70%);
+
 			&:hover{
 				filter: opacity(100%);
 				}	
@@ -191,17 +199,19 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
+
 				.card-title{
 					color: #262621;
 					font-weight: 600;	
 				}
+				
 				.btn-primary{
 					background-color: #262621;
 					color: $colorGreenFluor;
 					font-weight: 600;
 					display: block;
 					border: none;
-					}
+				}
 			}
 		}	
 }
