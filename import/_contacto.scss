@@ -54,6 +54,7 @@
 			align-items: center;
 			}
 		}
+		
 		form{
 			display: flex;
 			flex-direction: column;
@@ -71,6 +72,7 @@
 
 				}
 		}
+
 		textarea{
 			background-color: $colorWhite;
 			color:  $colorGreenFirst;
@@ -89,6 +91,7 @@
 				min-width: 27rem;
 			}
 		}
+
 		input[type="text" i]{
 			background-color: $colorWhite;
 			color:  $colorGreenFirst;	

@@ -2,7 +2,7 @@
 
 $colorWhite: #CFCFCF;
 
-$colorGreenCake: #656868;
+$colorGreenCake: #2d2d2d;
 
 $colorDark: #262621;
 
@@ -64,7 +64,11 @@ body{
 
 
 /* navbar */
+nav.navbar {
+	background-color: $colorGreenCake;
 
+	
+}
 /* footer */
 
 .footer-style {
@@ -133,68 +137,5 @@ body{
 			transition: .5s;
 		}
 	
-	}
-}
-
-
-/* button */
-
-.go-top-container{
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	width: 3rem;
-	height: 3rem;
-	z-index: -1;
-}
-.go-top-button{
-	width: 0rem;
-	height: 0rem;
-	background-color: whitesmoke;
-	border-radius: 50%;
-	transition: .2s;
-	cursor: pointer;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-		i{
-			position: absolute;
-			font-size: 1.2rem;
-			top: 48%;
-			left: 50%;
-			transform: translate(-50%, -50%) scale(0);
-			color: black;
-			transition: .2s;
-		}
-	}
-
-
-.show{
-	z-index: 10;
-	.go-top-button{
-		animation: popup .3s ease-in-out;
-		width: 4rem;
-		height: 4rem;
-		z-index: 11;
-	}
-	i{
-		transform: translate(-50%, -50%) scale(1);
-	}
-	
-}
-
-@keyframes popup{
-	0%{
-		width: 0rem;
-		height: 0rem;
-	}
-	50%{
-		width: 7.5rem;
-		height: 7.5rem;
-	}
-	100%{
-		width: 5rem;
-		height: 5rem;
 	}
 }

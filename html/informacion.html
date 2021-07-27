@@ -25,7 +25,7 @@
 
 </head>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
 		<a class="navbar-brand" href="#">NUTRISIDE</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@
 			<li class="nav-item">
 				<a class="nav-link" href="../index.html">Home</a>
 			</li>
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link" href="nosotros.html">Nosotros</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="informacion.html">Información<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
@@ -58,17 +58,18 @@
 	<!-- BANNER>> HERO IMAGEN , TITULO E INFORMACION -->
 	<section class="banner-info">
 		<div class="capa-info"></div>
-		<div class="info-general">
-			<title class="title-general">informacion</title>
-			<p>Acutualmente tenemos en el mercado decena de nuestros productos para suplementar tu alimentación listos para enviarlos a tu hogar de la manera mas facil y comoda para vos</p>
-		</div>
+		<article class="info-general">
+			<title class="title-general">Información</title>
+			<p>Actualmente tenemos en el mercado decena de nuestros productos para suplementar tu alimentación listos para enviarlos a
+				tu hogar de la manera más fácil y cómoda para vos</p>
+		</article>
 	</section>
 
 	<!-- SECCION PRINCIPAL CON TODAS LAS TARJETAS -->
 	<main class="container-info">
 
 		<!-- TARJETA CON TEXTO E IMAGEN 1 -->
-		<section class="card-block-reverse wow animate__animated animate__backInUp">
+		<section class="card-block-reverse wow animate__animated animate__fadeInRight">
 			<div class="card-content-reverse">	
 				<h3 class="card-titulo-reverse">Retiros en persona</h3>
 				<strong class="card-parrafos-reverse">
@@ -80,12 +81,12 @@
 		</section>	
 
 		<!-- TARJETA CON TEXTO E IMAGEN 2 -->
-		<section class="card-block-forward wow animate__animated animate__backInUp">
+		<section class="card-block-forward wow animate__animated animate__fadeInLeft">
 			<div class="card-content-forward">
 				<h3 class="card-titulo-forward">Correo Argentino</h3>
 				<strong class="card-parrafos-forward">
 					Nuestra cobertura abarca todo el país! 
-					Podes averiguar el costo del envio y otros detalles tu código postal y rellenando el formulario que te dejamos a continuacion.
+					Podés averiguar el costo del envió y otros detalles tu código postal y rellenando el formulario que te dejamos a continuación.
 					<a href="https://www.correoargentino.com.ar/servicios/paqueteria/encomienda-correo-clasica" target="_blank">Pagina del Correo</a>
 				</strong>
 			</div >
@@ -93,11 +94,11 @@
 		</section>
 
 		<!-- TARJETA CON TEXTO E IMAGEN 3 -->
-		<section class="card-block-reverse wow animate__animated animate__backInUp">
+		<section class="card-block-reverse wow animate__animated animate__fadeInRight">
 			<div class="card-content-reverse">
 				<h3 class="card-titulo-reverse">E-pick - envios low-cost</h3>
 				<strong class="card-parrafos-reverse">
-					Cobertura: Rosario y pcia. de Santa  (ciertas zonas), La Plata, Córdoba Capital, Villa Allende, Carlos Paz, Villa María, Mendiolaza, Rosario.
+					Cobertura: Rosario y pcia. (ciertas zonas). La Plata, Córdoba Capital, Villa Allende, Carlos Paz, Villa María.
 					Podés Checkear si E-pick tiene cobertura en tu área ingresando tu dirección en el siguiente enlace.
 					Costo: $284 tarifa fija.
 				</strong>
@@ -119,11 +120,11 @@
 					</p>
 				</div>
 				<div class="col-md-4 footer-col">
-					<h3>Nuestras redes</h3>
+					<h3>Redes</h3>
 					<ul class="list-inline">
 						<li>
 							<a href="https://api.whatsapp.com/send?phone=+543751558848&text=Hola,%20cómo%20andas?" target="_blank" class="btn-social btn-outline"><img src="../galeria/whatsapp.svg"></a>
-						</li>
+							</li>
 						<li>
 							<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="btn-social btn-outline"><img src="../galeria/instagram.svg"></a>
 						</li>
@@ -137,7 +138,7 @@
 				</div>
 				<div class="col-md-4 footer-col">
 					<h3>Importantes</h3>
-					<a href="comprar.html">Como comprar</a>
+					<a href="comprar.html">Cómo comprar</a>
 					<a href="preguntas.html">Preguntas Frecuentes</a>
 				</div>
 			</div>
@@ -145,10 +146,8 @@
 </footer>
 
 	<!-- SCRIPT WOW.JS   -->
-    <script src="js/wow.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+	<script src="../js/wow.js"></script>
+	<script> new WOW().init();</script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
