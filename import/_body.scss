@@ -24,7 +24,9 @@ $laptop: 1024px;
 
 $laptop-L: 1300px;
 
-$desktop: 2560;
+$desktop: 2060px;
+
+/*---------------------------------------------------------- MIXIN ------------------------------------------------------------*/	
 
 @mixin shadow-mob{
 	box-shadow: -5px 15px 7px 0px #171010;
@@ -39,7 +41,7 @@ $desktop: 2560;
 }
 
 @mixin title-mob{
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	padding: 3rem 4rem 0;
 	
 }
@@ -56,9 +58,12 @@ body{
 	color: White;	
 	box-sizing: border-box;
 
-	@media (max-width: 700px){
+	@media (max-width: $phone){
 		font-size: .8rem;
-		
+	}
+	
+	@media (min-width: $desktop){
+		font-size: 1.2rem;
 	}
 }
 

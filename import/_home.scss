@@ -1,42 +1,47 @@
 /*------------------------------------------------------------ TEXT HOME ------------------------------------------------------------*/	
+
+@import "../import/body";
+
 #container-index{
 	display: flex;
 	flex-direction: column;	
-
+	
 	.container-slogan{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin: 12rem  0;
+		margin: 12rem  15rem;
 		text-transform: uppercase;
-		color: #d4d9d9;
+		color: $colorWhite;
 		font-weight: 600;	
 		font-size: 3rem;
+		border-bottom: 1.5px solid $colorWhite;
+		line-height: 5rem;
 
-		@media (max-width: 700px){
-			font-size: 1.8rem;
+		@media (max-width: $tablet){
+			font-size: 1.5rem;
 			line-height: 3rem;
-			margin: 4rem 2rem;
+			margin: 4rem 1rem;
 		}	
 	}
 	
 	.card-block-forward{
-		background-color: #2d2d2d;
+		background-color: $colorGreenCake;
 		display: flex;
 		flex-direction: row;
 		margin: 0rem 10rem;
 		word-spacing: .30em;	
 		align-items: center;
-		box-shadow: -5px 15px 14px 0px #171010;
+		@include shadow-banner ();
 		
-		@media (max-width: 700px){
+		@media (max-width: $tablet){
 				margin: 0rem;
 				padding: 0;
 				display: flex;
 				flex-direction: column;
 				margin: 0 1rem;
 				border-radius: 1.5rem;
-				box-shadow:-11px 14px 11px 0px #171010;
+				@include shadow-card ();
 			}
 
 		.card-content-forward{
@@ -44,7 +49,7 @@
 			padding: 3.5rem;
 			flex-direction: column;
 			
-			@media (max-width: 700px){
+			@media (max-width: $tablet){
 				margin: 0rem;
 				padding: 0;
 				display: flex;
@@ -54,13 +59,13 @@
 			.card-titulo-forward{
 				display: flex;
 				padding:1rem 1rem 0rem 4rem;
-				color: #fff;
+				color: $colorWhite;
 				font-weight: 600;
 				justify-content: flex-start;
 				font-style: italic;
 				font-size: 1.8rem;
 				
-				@media (max-width: 700px){
+				@media (max-width: $tablet){
 					display: flex;
 					align-items: center;
 					padding: 3rem 2rem 0;
@@ -70,13 +75,13 @@
 
 			.card-parrafos-forward{	
 				display: flex;
-				color: #7f9244;
+				color: $colorGreenFirst;
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
 				padding: 3rem 6rem 0rem 4rem;
 				
-				@media (max-width:700px){
+				@media (max-width: $tablet){
 					font-size: .85rem;
 					padding: 2rem 2rem .5rem;
 					}
@@ -89,31 +94,38 @@
 			flex-direction: row;
 			justify-content: end;
 			
-			@media (max-width: 700px){
+			@media (max-width: $phone){
 				width: 80%;
 				border-radius: 1rem;
 				margin: 2rem;
 			}
+
+				@media (min-width: $phone) and (max-width: $laptop){
+					width: 30%;
+					border-radius: 1rem;
+					margin: 1rem;
+				}
+			
 		}	
 	}		
 
 	.card-block-reverse{
-		background-color: #CFCFCF;
+		background-color: $colorWhite;
 		display: flex;
 		flex-direction: row-reverse;
 		margin: 8rem 10rem;
 		word-spacing: .30em;	
 		align-items: center;	
 		word-spacing: 0.25rem;
-		box-shadow: -5px 15px 14px 0px #171010;;
+		@include shadow-banner ();
 		
-		@media (max-width: 700px){
+		@media (max-width: $tablet){
 			padding: 0;
 			display: flex;
 			flex-direction: column;
 			margin: 4rem 1rem;	
 			border-radius: 1.5rem;
-			box-shadow:-11px 14px 11px 0px #171010;
+			@include shadow-card ();
 		}
 
 		.card-content-reverse{
@@ -121,7 +133,7 @@
 			padding: 3.5rem;
 			flex-direction: column;
 		
-			@media (max-width: 700px){
+			@media (max-width: $tablet){
 				margin: 0rem;
 				padding: 0;
 				display: flex;
@@ -132,13 +144,13 @@
 			.card-titulo-reverse{
 				display: flex;
 				padding: 0 2rem;
-				color: #2d2d2d;
+				color: $colorGreenCake;
 				font-weight: 600;
 				justify-content: flex-start;
 				font-size: 1.8rem;
 				font-style: italic;
 
-				@media (max-width: 700px){
+				@media (max-width: $tablet){
 					display: flex;
 					font-size: 1.2rem;
 					align-items: center;
@@ -148,13 +160,13 @@
 
 			.card-parrafos-reverse{	
 				display: flex;
-				color: #7f9244;
+				color: $colorGreenFirst;
 				align-items: center;
 				font-weight: 500;
 				line-height: 1.8rem;
 				padding: 3rem 6rem 0rem 2rem;
 				
-				@media (max-width:700px){
+				@media (max-width: $tablet){
 					font-size: .8rem;
 					font-size: .85rem;
 					padding: 2rem 2rem .5rem;
@@ -168,16 +180,22 @@
 			flex-direction: row;
 			justify-content: end;
 			
-			@media (max-width: 700px){
+			@media (max-width: $tablet){
 				width: 80%;
 				border-radius: 1rem;
 				margin: 2rem;
+			}
+			
+			@media (min-width: $phone) and (max-width: $laptop){
+				width: 30%;
+				border-radius: 1rem;
+				margin: 1rem;
 			}
 		}	
 	}
 
 	.line-index{
-		background-color: #CFCFCF;
+		background-color: $colorWhite;
 		margin: auto;
 		padding: .05rem;
 	}

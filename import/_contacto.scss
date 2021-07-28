@@ -12,16 +12,19 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-contacto.jpg");
 
-		@media (max-width: $tablet){
-			background-image: url("../galeria/img-contacto-mobile.jpg");
-			padding: 0;
-		}
+	@media (max-width: $tablet){
+		background-image: url("../galeria/img-contacto-mobile.jpg");
+		padding: 0;
+	}
 
-		@media (min-width: $phone) and (max-width: $tablet){
-			background-image: url("../galeria/img-contacto.jpg");
-			padding: 7rem;
-		}
-		
+	@media (min-width: $phone) and (max-width: $tablet){
+		background-image: url("../galeria/img-contacto.jpg");
+		padding: 7rem;
+	}
+
+	@media (min-width: $laptop) and (max-width: $laptop-L){
+		padding: 15rem;
+	}		
 }
 
 .capa-contacto{
@@ -42,6 +45,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
+	margin-bottom: 4rem;
 	}
 
 		
@@ -49,9 +53,13 @@
 			object-fit: contain;
 
 			@media (max-width: $tablet){
-			width: 400px;
+			transform: scale(.7);
 			display: flex;
 			align-items: center;
+			}
+
+			@media (min-width: $phone) and (max-width: $laptop){
+				transform: scale(1);
 			}
 		}
 		
@@ -67,9 +75,13 @@
 			margin-top: 5rem;
 
 				@media (max-width: $tablet){		
-					margin: 4rem 0;
+					transform: scale(.8);
 					padding: 0;
-
+					
+				}
+				@media (min-width: $tablet) and (max-width: $laptop){
+					margin: 4rem 2rem;
+					padding: 0;
 				}
 		}
 
@@ -186,6 +198,11 @@
 				width: 100%;
 				}
 
+			@media (min-width: $tablet) and (max-width: $laptop){
+				transform: scale(.8);
+			}
+				
+
 			&:hover{
 				filter: brightness(100%);
 				transform: scale(1.03);
@@ -194,4 +211,3 @@
 		}
 	}	
 }
-
