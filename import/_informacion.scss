@@ -1,5 +1,6 @@
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/	
 
+// BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-info{
 	width: 100%;
 	height: 100%;
@@ -28,9 +29,10 @@
 	@media (min-width: $laptop) and (max-width: $laptop-L){
 		padding: 15rem;
 	}	
+
 }
 
-
+// CAPA SOBRE LA IMAGEN>>
 .capa-info{
 	width: 100%;
 	height: 100%;
@@ -40,6 +42,7 @@
 	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
 }
 
+// SECCION PRINCIPAL CON TODAS LAS TARJETAS
 .container-info{
 	display: flex;
 	flex-direction: column;
@@ -49,6 +52,7 @@
 		margin: 6rem 0;
 	}
 
+	// TARJETA CON TEXTO E IMAGEN 1 Y 3
 	.card-block-forward{
 		background-color: #2d2d2d;
 		display: flex;
@@ -66,11 +70,11 @@
 			@include shadow-mob(); 
 			}
 
-		@media (min-width: $tablet) and (max-width: $laptop){
-			display: flex;
-			flex-direction: column;
+		@media (min-width: $laptop) and (max-width: $laptop-L){
+			align-items: stretch;
 			}
 
+		// BLOQUE INFO
 		.card-content-forward{
 			display: flex;
 			padding: 3.5rem;
@@ -80,6 +84,7 @@
 					padding: 0;
 				}
 
+			// TITULO
 			.card-titulo-forward{
 				display: flex;
 				padding:1rem 1rem 0rem 4rem;
@@ -91,8 +96,13 @@
 				@media(max-width: $tablet){
 					@include title-mob();
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
 			}
 
+			// PARRAFO
 			.card-parrafos-forward{	
 				display: flex;
 				color: #7f9244;
@@ -107,6 +117,11 @@
 					display: flex;
 					flex-direction: column;	
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
+				
 
 				a{
 					margin: 2rem 0 0 0;
@@ -126,7 +141,7 @@
 				}
 			}
 	}
-
+		// IMAGEN
 		.card-img-forward_info{
 			width: 50%;
 			display: flex;
@@ -138,7 +153,10 @@
 				border-radius: 2rem;
 				margin: 1rem;
 			}
-			
+			@media (min-width: $desktop){
+				font-size: $desktop-parrafos;
+				width: 40%;
+			}	
 		}	
 	}		
 
@@ -160,11 +178,11 @@
 				@include shadow-mob(); 
 				}
 
-				@media (min-width: $tablet) and (max-width: $laptop){
-					display: flex;
-					flex-direction: column;
+				@media (min-width: $laptop) and (max-width: $laptop-L){
+					align-items: stretch;
 					}
 
+		// BLOQUE INFO
 		.card-content-reverse{
 			display: flex;
 			padding: 3.5rem;
@@ -174,6 +192,7 @@
 					padding: 0;
 				}
 
+			// TITULO
 			.card-titulo-reverse{
 				display: flex;
 				padding:1rem 1rem 0rem 4rem;
@@ -185,8 +204,13 @@
 				@media(max-width: $tablet){
 					@include title-mob();
 				}
+			
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
 			}
 
+			// PARRAFO
 			.card-parrafos-reverse{	
 				display: flex;
 				color: #7f9244;
@@ -195,8 +219,13 @@
 				line-height: 1.8rem;
 				padding: 2rem 4rem;
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
 		}
 
+		// IMAGEN
 		.card-img-reverse_info{
 			width: 50%;
 			display: flex;
@@ -209,7 +238,12 @@
 				display: flex;
 				margin: 1rem;
 				}
+
+			@media (min-width: $desktop){
+				font-size: $desktop-parrafos;
+				width: 40%;
 			}
+		}
 				
 }
 

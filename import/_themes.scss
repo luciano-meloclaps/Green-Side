@@ -1,10 +1,11 @@
-/*----------------------------------------------------- BANNER TITULO Y PARRAFOS ------------------------------------------------------*/		
-	.info-general{
+/*----------------------------------------------------- TEXTO DENTRO DE TODOS LOS BANNERS ------------------------------------------------------*/		
+// CONTENEDOR TEXTO
+.info-general{
 		z-index: 1;
 		width: 100%;
 		text-align: center;
 		object-fit: none;
-			
+		// TITULOS Y ANIMACIONES
 		.title-general{
 			display: inline-block;
 			text-decoration: none;
@@ -48,6 +49,7 @@
 				transition: .7s;
 			}	
 		}
+		//  PARRAFOS
 		p{
 			color: $colorWhite;
 			line-height: 1.7rem;
@@ -56,13 +58,20 @@
 				@media(max-width:700px){
 					font-size: .8rem;
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+					font-weight: 500;
+					line-height: 2.1em;
+				}
 			}
 		}
 
 
 
-// /*----------------------------------------------------- INTRODUCCION SECCIONES ------------------------------------------------------*/	
+// /*----------------------------------------------------- INTRODUCCIÓN DE VARIAS SECCIONES ------------------------------------------------------*/	
 
+// GRADIENTE CON FRASE E INFORMACION 
 .contact__{
     display: block;	
 
@@ -72,7 +81,7 @@
 		justify-items: center;
 	}
 
-
+		//TITULO DENTRO DEL GRADIENTE
 		.contact__Titulo{
 			display: flex;
 			justify-content: center;
@@ -93,8 +102,12 @@
 				margin: 0 0 5rem 0;
 				line-height: 2rem;
 			}
-		}
 
+			@media (min-width: $desktop){
+				font-size: $titlesMax;
+			}
+		}
+		// TEXTO FUERA DEL GRADIENTE
 		.contact__Parrafos{
 			display: flex;
 			justify-content: center;
@@ -106,6 +119,7 @@
 				line-height: 2rem;
 			}
 		}
+		// LINEA DIVISORIA DE INTRODUCCCION
 		.contact__lineNosotrosContact{
 			margin: 5rem 20rem;
 			border: 1px solid $colorGreenFluor;

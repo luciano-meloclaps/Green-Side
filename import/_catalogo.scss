@@ -1,5 +1,6 @@
-/*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/	
+/*------------------------------------------------------------ PESTAÑA CATALOGO ------------------------------------------------------------*/	
 
+// BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-catalogo{
 	width: 100%;
 	height: 100%;
@@ -12,17 +13,22 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-catalogo.jpg");
 
-		@media (max-width:700px){
-			background-image: url("../galeria/img-catalogo-mobile.jpg");
-			padding: 0;
-		}
+	@media (max-width: $tablet){
+		background-image: url("../galeria/img-catalogo-mobile.jpg");
+		padding: 0;
+	}
 
-		@media (min-width: $phone) and (max-width: $tablet){
-			background-image: url("../galeria/img-catalogo.jpg");
-			padding: 7rem;
-		}
+	@media (min-width: $phone) and (max-width: $tablet){
+		background-image: url("../galeria/img-catalogo.jpg");
+		padding: 7rem;
+	}
+
+	@media (min-width: $laptop) and (max-width: $laptop-L){
+		padding: 15rem;
+	}
 }
 
+// CAPA SOBRE LA IMAGEN>>
 .capa-catalogo{
 	width: 100%;
 	height: 100%;
@@ -32,6 +38,7 @@
 	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
 }
 
+// BLOQUE DE TARJETA CON TEXTO E IMAGEN 
 #container-catalogo{
 	display: flex;
 	flex-direction: column;
@@ -41,6 +48,7 @@
 		margin: 5rem 0;
 	}
 
+	// TARJETA CON TEXTO E IMAGEN 
 	.card-block-reverse__catalogo{
 		background-color: #CFCFCF;
 		display: flex;
@@ -59,6 +67,12 @@
 			@include shadow-mob(); 
 		}
 
+		@media (min-width: $tablet) and (max-width: $laptop){
+			display: flex;
+			flex-direction: column;
+		}
+
+		// TEXTO DENTRO DE LA TARJETA
 		.card-content-reverse__catalogo{
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -69,15 +83,19 @@
 			-ms-flex-direction: column;
 			flex-direction: column;
 			align-content: space-around;
-			/* align-items: center; */
 			justify-content: space-evenly;
 			
 			@media (max-width: $tablet){
 				flex-direction: column;	
 				padding: rem;	
 			}	
+
+			@media (min-width: $laptop) and (max-width: $laptop-L){
+				padding: 2rem 2rem 0;
+			}
 		}
 
+			// TITULO
 			.card-titulo-reverse__catalogo{
 				display: flex;
 				padding:1rem 1rem 2rem 4rem;
@@ -93,8 +111,13 @@
 					display: flex;
 					flex-direction: column;
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
 			}
 
+			// PARRAFOS
 			.card-parrafos-reverse__catalogo{	
 				display: flex;
 				color: #7f9244;
@@ -108,8 +131,14 @@
 					padding: 0rem;
 					font-size: .8rem;
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
 			}
 		}
+
+		// IMAGEN	
 		.card-img-reverse__catalogo{
 			width: 25%;
 			
@@ -125,29 +154,19 @@
 				object-fit: none;
 				margin: 1rem;
 			}	
-		}
-		.line-index{
-			background-color: #CFCFCF;
-			margin: auto;
-			padding: .5rem;
-		}
-		
-}
-.containerCatalogo__{
-	display: flex;
-	justify-content: center;
-	padding: .5rem;
-	font-weight: 600;
-	word-spacing: .5rem;
-	
-	@media (max-width: $tablet){
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		}
-		
-	}
+			@media (min-width: $phone) and (max-width: $laptop){
+				width: 40%;
+				border-radius: 1.5rem;
+				margin: 0 0 3rem;
+				}
 
+			@media 	(min-width: $laptop) and (max-width: $laptop-L){
+				width: 30%;
+			}
+		}		
+}
+
+//  SECCION PRINCIPAL CON PRODUCTOS 
 .contentCards__{
 	max-width: 1500px;
 	margin: auto;
@@ -169,6 +188,7 @@
 		align-content: center;
 		} 
 
+		//  TARJETA CON PRODUCTOS 
 		.card{	
 			margin: 120px 100px;
 			background-color: $colorGreenCake;		
@@ -176,6 +196,11 @@
 			
 			@media (max-width: $tablet){
 			margin: 4rem 0rem;
+			}
+
+			@media (min-width: $desktop){
+				transform: scale(1.3);
+				
 			}
 
 			&:hover{
@@ -193,25 +218,34 @@
 				filter: opacity(100%);
 				}	
 			}
+			//  INFORMACION DEL PRODUCTO DENTRO DE LA TARJETA
 			.card-body{
 				min-height: 1px;
 				padding: 1.5rem;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
+					
+					// TIULO
+					.card-title{
+						color: black;
+						font-weight: 600;	
+					}
 
-				.card-title{
-					color: #262621;
-					font-weight: 600;	
-				}
-				
-				.btn-primary{
-					background-color: #262621;
-					color: $colorGreenFluor;
-					font-weight: 600;
-					display: block;
-					border: none;
-				}
+					// PARRAFOS
+					.card-text{
+						color: $colorWhite;
+						
+					}
+
+					//  BOTON VER MAS
+					.btn-primary{
+						background-color: #262621;
+						color: $colorGreenFluor;
+						font-weight: 600;
+						display: block;
+						border: none;
+					}
 			}
 		}	
 }

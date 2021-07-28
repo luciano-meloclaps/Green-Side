@@ -1,3 +1,6 @@
+/*------------------------------------------------------------ PESTAÑA COMO COMPRAR ------------------------------------------------------------*/	
+
+// IMAGEN FONDO 
 .banner-shop{    
     color: white;
     background-repeat: round;
@@ -15,23 +18,14 @@
 
         @media (max-width:700px){
             background-image: url("../galeria/img-comprar-mobile.jpg");
-    } 
+        } 
+
+        @media (min-width: $desktop){
+            background-image: url("https://images.pexels.com/photos/4099238/pexels-photo-4099238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        }
 }
 
-.titulo-shop{
-    position: relative;
-    font-size: 5rem;
-    margin: 10rem 0;
-    display: flex;
-    justify-content: center;
-
-    @media (max-width: $tablet){
-        margin: 4rem 0 4rem 0 ;
-        font-size: $titlesMax;
-        border-bottom: 2px solid white;
-    }
-}
-
+// CONTENEDOR DEL TEXTO 
 .container-shop{
     padding: 5rem 20rem;
     position: relative;
@@ -43,18 +37,22 @@
         font-size: $parrafos;
         padding: .3rem 3rem;
     }
-
-        h4{
-        margin-bottom: 4rem;
-        margin-top: 6rem;
-
+    // TITULO   
+    .titulo-shop{
+        position: relative;
+        font-size: 5rem;
+        margin: 10rem 0;
+        display: flex;
+        justify-content: center;    
+    
         @media (max-width: $tablet){
-            margin: 2rem 0;
-            font-size: 1rem;
-            }
+            margin: 4rem 0 4rem 0 ;
+            font-size: $titlesMax;
+            border-bottom: 2px solid white;
         }
-
-        p{
+    }
+     // PARRAFOS   
+    p{
         margin: 2rem 0;
 
         @media (max-width: $tablet){

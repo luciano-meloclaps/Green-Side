@@ -1,5 +1,5 @@
 /*---------------------------------------------------------- VARIABLES ------------------------------------------------------------*/	
-
+// COLORES
 $colorWhite: #CFCFCF;
 
 $colorGreenCake: #2d2d2d;
@@ -10,19 +10,25 @@ $colorGreenFluor: #34e89e;
 
 $colorGreenFirst: #7f9244;
 
+// TAMAÑO FUENTES
 $titlesMax: 1.8rem;
 
 $titles: 1.2rem;
 
 $parrafos: .85rem;
 
+$desktop-title: 3rem;
+
+$desktop-parrafos: 1.45rem;
+
+// BREACKPOINTS	
 $phone: 700px;
 
 $tablet: 1019px;
 
 $laptop: 1024px;
 
-$laptop-L: 1300px;
+$laptop-L: 1500px;
 
 $desktop: 2060px;
 
@@ -45,10 +51,9 @@ $desktop: 2060px;
 	padding: 3rem 4rem 0;
 	
 }
+/*---------------------------------------------------------- BODY--NAVBAR--FOOTER ------------------------------------------------------------*/	
 
-
-/* body */
-
+// BODY
 body{
 	background-color: $colorDark;
 	margin: 0;
@@ -68,13 +73,16 @@ body{
 }
 
 
-/* navbar */
+// NAVBAR
 nav.navbar {
 	background-color: $colorGreenCake;
 
-	
+	.navbar-brand {
+	font-weight: 400;	
+	}
 }
-/* footer */
+
+// FOOTER
 
 .footer-style {
 	margin: 15rem 0 6rem 0;
@@ -103,7 +111,6 @@ nav.navbar {
 			font-size: $parrafos;
 			}
 		}
-
 	.footer-above {
 		padding-top: 20px;
 	}
@@ -116,7 +123,6 @@ nav.navbar {
 			cursor: pointer;
 		}
 	}
-
 	.footer-below {
 		padding: 50px 0;
 	}

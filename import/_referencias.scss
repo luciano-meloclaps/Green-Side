@@ -1,5 +1,6 @@
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
 
+// BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-referencias{
 	width: 100%;
 	height: 100%;
@@ -12,18 +13,23 @@
 	padding: 30rem;
 	background-image: url("../galeria/img-referencias.jpg");
 
-		@media (max-width: $tablet){
-			background-image: url("../galeria/img-referencias-mobile.jpg");
-			padding: 0;
-		}
+  @media (max-width: $tablet){
+		background-image: url("../galeria/img-referencias.jpg");
+		padding: 0;
+	}
 
-		@media (min-width: $phone) and (max-width: $tablet){
-			background-image: url("../galeria/img-referencias.jpg");
-			padding: 7rem;
-		}
+	@media (min-width: $phone) and (max-width: $tablet){
+		background-image: url("../galeria/img-referencias.jpg");
+		padding: 7rem;
+	}
+
+	@media (min-width: $laptop) and (max-width: $laptop-L){
+		padding: 15rem;
+	}	
 		
 }
 
+// CAPA SOBRE LA IMAGEN>>
 .capa-referencia{
 	width: 100%;
 	height: 100%;
@@ -33,6 +39,7 @@
 	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
 
+// SECCION PRINCIPAL CON VIDEOS
 .content-videos{
     display: flex;
     justify-content: space-between;
@@ -56,12 +63,22 @@
       padding: 0;
     }
 
+    @media 	(min-width: $laptop) and (max-width: $laptop-L){
+      justify-content: space-around ;
+    }
+
+
       .videos{
         margin: 4rem .5rem;
         border-radius: 1rem;
 
         @media (max-width:700px){
           margin: 3rem 0rem;
+        }
+
+        @media 	(min-width: $desktop){
+          transform: scale(1.5);
+          padding: 0 8rem;
         }
       }
 

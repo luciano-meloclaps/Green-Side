@@ -1,5 +1,6 @@
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/	
 
+// BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-nosotros{
 	width: 100%;
 	height: 100%;
@@ -28,10 +29,9 @@
 		@media (min-width: $laptop) and (max-width: $laptop-L){
 			padding: 15rem;
 		}
-	
 }
 
-
+// CAPA SOBRE LA IMAGEN>>
 .capa-nosotros{
 	width: 100%;
 	height: 100%;
@@ -41,8 +41,10 @@
 	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
 }
 
+// SECCION PRINCIPAL -
 .boxNosotros__{
 
+	// APARTADO >>> 1, 3 Y 5
 	.section-nosotros-foward{
 		display: flex;
 		
@@ -54,6 +56,7 @@
 				flex-direction: column-reverse;
 			}
 			
+		// INFORMACIÓN
 		.content-nosotros-section{
 			padding: 0 0 0 10rem;
 			display: flex;
@@ -63,46 +66,48 @@
 				@media(max-width:$tablet){
 					padding: 0;
 				}
+			
+			// TITULO
+			.boxNosotros__titulos-foward{
+				display: flex;
+				flex-wrap: wrap;
+				text-align: center;
+				color: $colorGreenFluor;
+				font-size: 30px;
+				word-spacing: .25em;
+				justify-content: center;
+				font-weight: 600;	
+				align-items: center;
 				
+				@media  (max-width: $tablet){
+					font-size: 1.2rem;
+					padding: 4rem 2rem 0
+					}	
+				}
 
-	.boxNosotros__titulos-foward{
-		display: flex;
-		flex-wrap: wrap;
-		text-align: center;
-		color: $colorGreenFluor;
-		font-size: 30px;
-		word-spacing: .25em;
-		justify-content: center;
-		font-weight: 600;	
-		align-items: center;
-		
-		@media  (max-width: $tablet){
-			font-size: 1.2rem;
-			padding: 4rem 2rem 0
-			}	
-		}
-
-	.boxNosotros__info-foward{
-		display: flex;
-		flex-direction: row-reverse;
-		flex-wrap: wrap;
-		color: $colorWhite;
-		text-align: flex-start;
-		padding: 5rem 10rem 0 10rem;
-		line-height: 3.5em;
-		word-spacing: .25em;
-		font-weight: 500;
-		padding: 5rem 12rem 0rem 0rem;
-		
-		@media (max-width: $tablet){
-			display: flex;
-			margin: 0;
-			padding: 2rem;
-			font-size: 0.8rem;
+			// PARRAFO
+			.boxNosotros__info-foward{
+				display: flex;
+				flex-direction: row-reverse;
+				flex-wrap: wrap;
+				color: $colorWhite;
+				text-align: flex-start;
+				padding: 5rem 10rem 0 10rem;
+				line-height: 3.5em;
+				word-spacing: .25em;
+				font-weight: 500;
+				padding: 5rem 12rem 0rem 0rem;
+				
+				@media (max-width: $tablet){
+					display: flex;
+					margin: 0;
+					padding: 2rem;
+					font-size: 0.8rem;
+					}
+				}
 			}
-		}
-	}
 
+		// VECTOR
 		img{
 			object-fit: contain;
 			padding: 0 0 0 12rem;
@@ -118,6 +123,7 @@
 		}
 	}
 
+	// APARTADO >>> REVERSE Y 4
 	.section-nosotros-reverse{
 		display: flex;
 		flex-direction: row-reverse;
@@ -129,6 +135,7 @@
 			flex-direction: column-reverse;
 		}
 
+		// INFORMACIÓN REVERSE
 		.content-nosotros-section{
 			padding: 0 0 0 10rem;
 			display: flex;
@@ -139,7 +146,8 @@
 				padding: 0;
 			}
 			
-
+		
+		// TITULO
 		.boxNosotros__titulos-reverse{
 			display: flex;
 			flex-wrap: wrap;
@@ -154,6 +162,7 @@
 				padding: 4rem 2rem 0
 			}	
 		}
+		// PARRAFO
 		.boxNosotros__info-reverse{
 			display: flex;
 			flex-direction: row-reverse;
@@ -173,7 +182,8 @@
 				}
 			}
 		}
-
+		
+			// VECTOR
 			img{
 				object-fit: contain;
 				padding: 0 12rem 0 0;
@@ -189,7 +199,8 @@
 			}
 		
 	}
-	
+
+		// lINEA DIVISORIA
 		.line-nosotros{
 			border: 1px solid $colorGreenFluor;
 			margin: 3rem 10rem 12rem 10rem;

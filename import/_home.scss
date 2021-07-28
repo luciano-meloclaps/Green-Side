@@ -2,10 +2,12 @@
 
 @import "../import/body";
 
+// SECCION PRINCIPAL CON TODAS LAS TARJETAS y SLOGAN
 #container-index{
 	display: flex;
 	flex-direction: column;	
-	
+
+	// SLOGAN 
 	.container-slogan{
 		display: flex;
 		align-items: center;
@@ -23,8 +25,17 @@
 			line-height: 3rem;
 			margin: 4rem 1rem;
 		}	
+
+		@media (min-width: $phone) and (max-width: $laptop){
+			font-size: $titlesMax;
+			margin: 8rem ;
+		}
+		@media (min-width: $desktop){
+			font-size: 5rem;
+			margin: 15rem 20rem
+		}
 	}
-	
+	// TARJETA CON TEXTO E IMAGEN 1 Y 3
 	.card-block-forward{
 		background-color: $colorGreenCake;
 		display: flex;
@@ -43,7 +54,7 @@
 				border-radius: 1.5rem;
 				@include shadow-card ();
 			}
-
+		// BLOQUE INFO
 		.card-content-forward{
 			display: flex;
 			padding: 3.5rem;
@@ -55,7 +66,12 @@
 				display: flex;
 				justify-content: center;
 			}
-
+			
+			@media (min-width: $desktop){
+				padding: 0 12rem 0 5em;
+			}
+			
+			// TITULO
 			.card-titulo-forward{
 				display: flex;
 				padding:1rem 1rem 0rem 4rem;
@@ -71,8 +87,12 @@
 					padding: 3rem 2rem 0;
 					font-size: 1.2rem;	
 					}
-			}
 
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
+			}
+			// PARRAFO
 			.card-parrafos-forward{	
 				display: flex;
 				color: $colorGreenFirst;
@@ -85,9 +105,14 @@
 					font-size: .85rem;
 					padding: 2rem 2rem .5rem;
 					}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
+				
 			}
 		}
-
+		// IMAGEN
 		.card-img-forward{
 			width: 25%;
 			display: flex;
@@ -100,15 +125,20 @@
 				margin: 2rem;
 			}
 
-				@media (min-width: $phone) and (max-width: $laptop){
-					width: 30%;
-					border-radius: 1rem;
-					margin: 1rem;
-				}
+			@media (min-width: $phone) and (max-width: $laptop){
+				width: 30%;
+				border-radius: 1rem;
+				margin: 1rem;
+			}
+
+			@media (min-width: $desktop){
+				width: 40%;
+			}
 			
 		}	
 	}		
 
+	// TARJETA CON TEXTO E IMAGEN 2 REVERSE
 	.card-block-reverse{
 		background-color: $colorWhite;
 		display: flex;
@@ -127,7 +157,7 @@
 			border-radius: 1.5rem;
 			@include shadow-card ();
 		}
-
+		// BLOQUE INFO REVERSE
 		.card-content-reverse{
 			display: flex;
 			padding: 3.5rem;
@@ -139,8 +169,12 @@
 				display: flex;
 				justify-content: center;
 			}
-			
 
+			@media (min-width: $desktop){
+				padding: 0 12rem 0 5em;
+			}
+			
+			// TITULO
 			.card-titulo-reverse{
 				display: flex;
 				padding: 0 2rem;
@@ -156,8 +190,13 @@
 					align-items: center;
 					padding: 3rem 2rem 0;
 				}
+
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
 			}
 
+			// PARRAFO
 			.card-parrafos-reverse{	
 				display: flex;
 				color: $colorGreenFirst;
@@ -170,10 +209,15 @@
 					font-size: .8rem;
 					font-size: .85rem;
 					padding: 2rem 2rem .5rem;
-					}
 				}
+				
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
+			}
 		}
 
+		// IMAGEN
 		.card-img-reverse{
 			width: 25%;
 			display: flex;
@@ -191,9 +235,14 @@
 				border-radius: 1rem;
 				margin: 1rem;
 			}
+
+			@media (min-width: $desktop){
+				width: 40%;
+			}
 		}	
 	}
 
+	// LINEA  
 	.line-index{
 		background-color: $colorWhite;
 		margin: auto;
