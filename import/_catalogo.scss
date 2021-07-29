@@ -3,14 +3,14 @@
 // BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-catalogo{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	animation: banner 10s infinite linear alternate;
 	background-size: 100% 100%;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 30rem;
+	padding: 20rem;
 	background-image: url("../galeria/img-catalogo.jpg");
 
 	@media (max-width: $tablet){

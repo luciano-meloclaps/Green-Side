@@ -3,14 +3,14 @@
 // BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
 .banner-contacto{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	animation: banner 10s infinite linear alternate;
 	background-size: 100% 100%;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 30rem;
+	padding: 20rem;
 	background-image: url("../galeria/img-contacto.jpg");
 
 	@media (max-width: $tablet){
@@ -50,106 +50,107 @@
 	align-items: center;	
 	margin-bottom: 4rem;
 	}
-		// FORMULARIO
-		form{
-			display: flex;
-			flex-direction: column;
-			// background-color: #485a54;
-			padding: 0 8rem;
-			border-radius: .5rem;
-			color: $colorWhite;
-			line-height: 3em;
-			z-index: 200;
-			margin-top: 5rem;
 
-			@media (max-width: $tablet){		
-				transform: scale(.8);
-				padding: 0;	
-			}
+	// FORMULARIO
+	form{
+		display: flex;
+		flex-direction: column;
+		// background-color: #485a54;
+		padding: 0 8rem;
+		border-radius: .5rem;
+		color: $colorWhite;
+		line-height: 3em;
+		z-index: 200;
+		margin-top: 5rem;
 
-			@media (min-width: $tablet) and (max-width: $laptop){
-				margin: 4rem 2rem;
-				padding: 0;
-			}
-		
-			textarea{
-				background-color: $colorWhite;
-				color:  $colorGreenFirst;
-				min-width: 30rem;
-				min-height: 10rem;
-				padding: .5rem 1rem;
-				line-height: 3em;
-				font-size: 13px;
-				font-weight: 600;
-
-				@media (max-width: $tablet){
-					min-width: 22.5rem;
-				}
-
-				@media (min-width: $phone) and (max-width: $tablet){
-					min-width: 27rem;
-				}
-			}
-
-			input[type="text" i]{
-				background-color: $colorWhite;
-				color:  $colorGreenFirst;	
-				border: 0;
-				font-size: 14px;
-				font-weight: 600;
-				cursor: pointer;
-				padding: 1px 0;
-			}
-
-			input[type="number" i]{
-				padding: 1px 2px;
-				background-color: $colorWhite;
-				color:  $colorGreenFirst; 
-				border: 0;
-				font-size: 14px;
-				font-weight: 600;
-				cursor: pointer;
-			}
-	
-
-			.modal-content {
-				background-color: $colorDark;
-			}
-
-				.modal-header{
-					background-color: $colorDark;
-					color:$colorGreenFluor;
-					border: 0;
-					margin: 0;
-				}
-
-				.btn-primary{
-					background-color: black;
-					color: $colorWhite;
-					font-weight: 600;
-					border: 0;
-					box-shadow:1px 13px 10px 0.5px #171010;
-				}
+		@media (max-width: $tablet){		
+			transform: scale(.8);
+			padding: 0;	
 		}
-		
-		// VECTOR
-		img{
-			object-fit: contain;
+
+		@media (min-width: $tablet) and (max-width: $laptop){
+			margin: 4rem 2rem;
+			padding: 0;
+		}
+	
+		textarea{
+			background-color: $colorWhite;
+			color:  $colorGreenFirst;
+			min-width: 30rem;
+			min-height: 10rem;
+			padding: .5rem 1rem;
+			line-height: 3em;
+			font-size: 13px;
+			font-weight: 600;
 
 			@media (max-width: $tablet){
-			transform: scale(.7);
-			display: flex;
-			align-items: center;
+				min-width: 22.5rem;
 			}
 
-			@media (min-width: $phone) and (max-width: $laptop){
-				transform: scale(1);
-			}
-			@media (min-width: $desktop){
-				transform: scale(1.5);
-				margin: 0 10rem;
+			@media (min-width: $phone) and (max-width: $tablet){
+				min-width: 27rem;
 			}
 		}
+
+		input[type="text" i]{
+			background-color: $colorWhite;
+			color:  $colorGreenFirst;	
+			border: 0;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			padding: 1px 0;
+		}
+
+		input[type="number" i]{
+			padding: 1px 2px;
+			background-color: $colorWhite;
+			color:  $colorGreenFirst; 
+			border: 0;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+
+	}
+
+		.modal-content {
+		background-color: $colorDark;
+		}
+
+			.modal-header{
+				background-color: $colorDark;
+				color:$colorGreenFluor;
+				border: 0;
+				margin: 0;
+				}
+
+		.btn-primary{
+			background-color: black;
+			color: $colorWhite;
+			font-weight: 600;
+			border: 0;
+			box-shadow:1px 13px 10px 0.5px #171010;
+			}
+	
+	// VECTOR
+	img{
+		object-fit: contain;
+
+		@media (max-width: $tablet){
+		transform: scale(.7);
+		display: flex;
+		align-items: center;
+		}
+
+		@media (min-width: $phone) and (max-width: $laptop){
+			transform: scale(1);
+		}
+		@media (min-width: $desktop){
+			transform: scale(1.5);
+			margin: 0 10rem;
+		}
+	}
 }
 
 // BLOQUE CON MAPAS

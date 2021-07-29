@@ -627,7 +627,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA NOSOTROS ------------------------------------------------------------*/
 .banner-nosotros {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -641,7 +641,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   margin-bottom: 10rem;
   background-image: url("../galeria/img-nosotros.jpg");
   -webkit-box-shadow: 0px 12px 20px 0px #171010;
@@ -652,7 +652,7 @@ footer img:hover {
   .banner-nosotros {
     background-image: url("../galeria/img-nosotros-mobile.jpg");
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -928,7 +928,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA INFORMACION ------------------------------------------------------------*/
 .banner-info {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -942,7 +942,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   margin-bottom: 10rem;
   background-image: url("../galeria/img-info.jpg");
   -webkit-box-shadow: 0px 12px 20px 0px #171010;
@@ -953,7 +953,7 @@ footer img:hover {
   .banner-info {
     background-image: url("../galeria/img-info-mobile.jpg");
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -1015,7 +1015,7 @@ footer img:hover {
           box-shadow: -11px 14px 11px 0px #171010;
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 1024px) {
   .container-info .card-block-forward {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1031,7 +1031,7 @@ footer img:hover {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1500px) and (max-width: 2060px) {
   .container-info .card-block-forward {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -1067,6 +1067,7 @@ footer img:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-style: italic;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1019px) {
@@ -1079,6 +1080,13 @@ footer img:hover {
 @media (min-width: 2060px) {
   .container-info .card-block-forward .card-content-forward .card-titulo-forward {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 1019px) and (max-width: 1500px) {
+  .container-info .card-block-forward .card-content-forward .card-titulo-forward {
+    font-size: 1.3rem;
+    padding: 3rem 4rem 0;
   }
 }
 
@@ -1156,9 +1164,15 @@ footer img:hover {
 
 @media (max-width: 1024px) {
   .container-info .card-block-forward .card-img-forward_info {
-    width: 80%;
+    width: 50%;
     border-radius: 2rem;
     margin: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-info .card-block-forward .card-img-forward_info {
+    width: 80%;
   }
 }
 
@@ -1188,7 +1202,7 @@ footer img:hover {
           box-shadow: -11px 14px 11px 0px #171010;
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 1024px) {
   .container-info .card-block-reverse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1197,14 +1211,14 @@ footer img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 1rem;
     border-radius: 1.5rem;
+    margin: 4rem 1rem;
     -webkit-box-shadow: -5px 15px 7px 0px #171010;
             box-shadow: -5px 15px 7px 0px #171010;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 2060px) {
   .container-info .card-block-reverse {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -1240,6 +1254,7 @@ footer img:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-style: italic;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1019px) {
@@ -1255,6 +1270,13 @@ footer img:hover {
   }
 }
 
+@media (min-width: 1019px) and (max-width: 1500px) {
+  .container-info .card-block-reverse .card-content-reverse .card-titulo-reverse {
+    font-size: 1.3rem;
+    padding: 3rem 4rem 0;
+  }
+}
+
 .container-info .card-block-reverse .card-content-reverse .card-parrafos-reverse {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1266,6 +1288,12 @@ footer img:hover {
   font-weight: 500;
   line-height: 1.8rem;
   padding: 2rem 4rem;
+}
+
+@media (min-width: 2060px) {
+  .container-info .card-block-reverse .card-content-reverse {
+    font-size: 1.45rem;
+  }
 }
 
 @media (min-width: 2060px) {
@@ -1290,12 +1318,18 @@ footer img:hover {
 
 @media (max-width: 1024px) {
   .container-info .card-block-reverse .card-img-reverse_info {
-    width: 80%;
+    width: 50%;
     border-radius: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-info .card-block-reverse .card-img-reverse_info {
+    width: 80%;
   }
 }
 
@@ -1315,7 +1349,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA CONTACTO ------------------------------------------------------------*/
 .banner-contacto {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1329,7 +1363,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   background-image: url("../galeria/img-contacto.jpg");
 }
 
@@ -1463,18 +1497,18 @@ footer img:hover {
   cursor: pointer;
 }
 
-.contentContact__ form .modal-content {
+.contentContact__ .modal-content {
   background-color: #262621;
 }
 
-.contentContact__ form .modal-header {
+.contentContact__ .modal-header {
   background-color: #262621;
   color: #34e89e;
   border: 0;
   margin: 0;
 }
 
-.contentContact__ form .btn-primary {
+.contentContact__ .btn-primary {
   background-color: black;
   color: #CFCFCF;
   font-weight: 600;
@@ -1631,7 +1665,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA CATALOGO ------------------------------------------------------------*/
 .banner-catalogo {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -1645,7 +1679,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   background-image: url("../galeria/img-catalogo.jpg");
 }
 
@@ -1995,7 +2029,7 @@ footer img:hover {
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
 .banner-productos {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -2009,7 +2043,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   background-image: url("../galeria/img-productos.jpg");
 }
 
@@ -2046,7 +2080,7 @@ footer img:hover {
 /*------------------------------ PESTAÑA REFERENCIAS ------------------------------*/
 .banner-referencias {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-animation: banner 10s infinite linear alternate;
           animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -2060,7 +2094,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30rem;
+  padding: 20rem;
   background-image: url("../galeria/img-referencias.jpg");
 }
 
@@ -2153,6 +2187,9 @@ footer img:hover {
 @media (max-width: 700px) {
   .content-videos .videos {
     margin: 3rem 0rem;
+    padding: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -2230,20 +2267,22 @@ footer img:hover {
   transition: .7s;
 }
 
-.info-general p {
+.info-general .parrafo-general {
+  font-size: 1.1rem;
   color: #CFCFCF;
   line-height: 1.7rem;
+  font-weight: 500;
   padding: 2rem 5rem;
 }
 
 @media (max-width: 700px) {
-  .info-general p {
+  .info-general .parrafo-general {
     font-size: .8rem;
   }
 }
 
 @media (min-width: 2060px) {
-  .info-general p {
+  .info-general .parrafo-general {
     font-size: 1.45rem;
     font-weight: 500;
     line-height: 2.1em;
