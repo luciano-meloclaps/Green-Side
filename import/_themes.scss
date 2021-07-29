@@ -12,7 +12,7 @@
 			text-transform: uppercase;
 			color: $colorWhite;
 			font-size: 4rem;
-			letter-spacing: .35rem;
+			letter-spacing: .25rem;
 
 				@media(max-width: $phone){
 					font-size: 2rem;
@@ -56,10 +56,16 @@
 			color: $colorWhite;
 			line-height: 1.7rem;
 			font-weight: 500;
-			padding: 2rem 5rem;
+			padding: 0rem 5rem;
 
-				@media(max-width: $phone){
-					font-size: .8rem;
+				@media(max-width: $tablet){
+					font-size: $parrafos;
+				}
+
+				@media(min-width: $tablet) and (max-width: $laptop-L){
+					font-size: $titles;
+					padding: 0 2rem;
+					font-weight: 500;
 				}
 
 				@media (min-width: $desktop){

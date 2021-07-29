@@ -10,25 +10,25 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20rem;
+	padding: rem;
 	margin-bottom: 10rem;
 	background-image: url("../galeria/img-info.jpg");
 	@include shadow-banner ();
-	
-	@media (max-width: $tablet){
-		background-image: url("../galeria/img-info-mobile.jpg");
-		padding: 0;
-		margin-bottom: 1.5rem;
-	}
 
-	@media (min-width: $phone) and (max-width: $tablet){
-		background-image: url("../galeria/img-info.jpg");
-		padding: 7rem;
-	}
+		@media (max-width: $tablet){
+			background-image: url("../galeria/img-info-mobile.jpg");
+			padding: 0;
+			margin-bottom: 1.5rem;
+		}
 
-	@media (min-width: $laptop) and (max-width: $laptop-L){
-		padding: 15rem;
-	}	
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-info.jpg");
+			padding: 7rem;
+		}
+
+		@media (min-width: $tablet) and (max-width: $laptop-L){
+			padding: 15rem;
+		}
 
 }
 
@@ -68,11 +68,11 @@
 			border-radius: 1.5rem;
 			margin: 4rem 1rem;	
 			@include shadow-mob(); 
-			}
+			}	
 
-		@media (min-width: $laptop-L) and (max-width: $desktop){
-			align-items: stretch;
-		}
+			@media (min-width: $laptop) and (max-width: $desktop){
+				align-items: stretch;
+			}
 
 		// BLOQUE INFO
 		.card-content-forward{
@@ -95,7 +95,7 @@
 				font-style: italic;
 				font-size: $titles;
 
-				@media(max-width: $tablet){
+				@media(max-width: $laptop){
 					@include title-mob();
 				}
 			
@@ -204,6 +204,7 @@
 					padding: 0;
 				}
 
+
 			// TITULO
 			.card-titulo-reverse{
 				display: flex;
@@ -214,7 +215,7 @@
 				font-style: italic;
 				font-size: $titles;
 
-				@media(max-width: $tablet){
+				@media(max-width: $laptop){
 					@include title-mob();
 				}
 			
