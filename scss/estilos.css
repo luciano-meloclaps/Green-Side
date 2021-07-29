@@ -942,7 +942,7 @@ footer img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: rem;
+  padding: 20rem;
   margin-bottom: 10rem;
   background-image: url("../galeria/img-info.jpg");
   -webkit-box-shadow: 0px 12px 20px 0px #171010;
@@ -1950,6 +1950,12 @@ footer img:hover {
             flex-direction: row;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+}
+
+@media (min-width: 2060px) {
+  .contentCards__ {
+    max-width: 22	00px;
   }
 }
 
