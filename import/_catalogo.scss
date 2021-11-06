@@ -39,7 +39,7 @@
 }
 
 // BLOQUE DE TARJETA CON TEXTO E IMAGEN 
-#container-catalogo{
+.container-catalogo{
 	display: flex;
 	flex-direction: column;
 	margin: 10rem 0;
@@ -252,4 +252,37 @@
 					}
 			}
 		}	
+}
+
+// MODAL CONTAINER
+
+.modal-container{
+	height: 10vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5 ease-in;
+}
+
+.modal-active{
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal{
+	background-color: white;
+	width: 350px;
+	height: 400px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 22px;
 }

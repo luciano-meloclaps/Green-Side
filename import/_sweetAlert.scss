@@ -1,0 +1,20 @@
+.popup-class{
+    background: $colorGreenCake !important;
+}
+
+.accept-class{
+    background: $colorDark !important;
+    color: $colorGreenFluor !important;
+}
+
+.valido{
+    border: 2px green solid;
+}
+
+.invalido{
+    border: 2px red solid;
+}
+
+#input-tarea:focus{
+    outline: none;
+}

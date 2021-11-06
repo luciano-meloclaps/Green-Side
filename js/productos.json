@@ -1,0 +1,167 @@
+[
+    {
+        "producto": "CREATINA",
+        "precio": "$ 2690,00",
+        "id": "1"
+    },
+    {
+        "producto": "FACTOR MUSCLE",
+        "precio": "$ 3630,00",
+        "id": "2"
+    },
+    {
+        "producto": "MEGA MASS",
+        "precio": "$ 3630,00",
+        "id": "3"
+    },
+    {
+        "producto": "CELUFAST SUPLEMENTO DIETARIO",
+        "precio": "$ 1068,00",
+        "id": "4"
+    },
+    {
+        "producto": "THERMOLIPO DAY",
+        "precio": "$ 1368,00",
+        "id": "5"
+    },
+    {
+        "producto": "CAFE VERDE",
+        "precio": "$ 1380,00",
+        "id": "6"
+    },
+    {
+        "producto": "FAT BLOCKER",
+        "precio": "$ 1499,00",
+        "id": "7"
+    },
+    {
+        "producto": "BATIDO DULCE DE LECHE",
+        "precio": "$ 2550,00",
+        "id": "8"
+    },
+    {
+        "producto": "BATIDO CHCOLATE",
+        "precio": "$ 2550,00",
+        "id": "9"
+    },
+    {
+        "producto": "BATIDO FRUTILLA",
+        "precio": "$ 2550,00",
+        "id": "10"
+    },
+    {
+        "producto": "BATIDO MANGO",
+        "precio": "$ 2550,00",
+        "id": "11"
+    },
+    {
+        "producto": "BATIDO VAINILLA",
+        "precio": "$ 2550,00",
+        "id": "12"
+    },
+    {
+        "producto": "CELULAS MADRES NATURALES",
+        "precio": "$ 1550,00",
+        "id": "13"
+    },
+    {
+        "producto": "ACIDO HIALURÓNICO",
+        "precio": "$ 1550,00",
+        "id": "14"
+    },
+    {
+        "producto": "FILAMENTOS DE ADN",
+        "precio": "$ 1550,00",
+        "id": "15"
+    },
+    {
+        "producto": "MASCARA DE CHOCOLATE",
+        "precio": "$ 1160,00",
+        "id": "16"
+    },
+    {
+        "producto": "NUTRILAX",
+        "precio": "$ 1200,00",
+        "id": "17"
+    },
+    {
+        "producto": "EMULSION DE LIMPIEZA N-S",
+        "precio": "$ 862,00",
+        "id": "18"
+    },
+    {
+        "producto": "CREMA EXFOLIANTE N-S",
+        "precio": "$ 862,00",
+        "id": "19"
+    },
+    {
+    "producto": "TÓNICO HIDRATANTE N-S",
+    "precio": "$ 862,00",
+    "id": "20"
+    },
+    {
+        "producto": "SET LIMPIEZA NORMAL A SECO",
+        "precio": "$ 2410,00",
+        "id": "21"
+    },
+    {
+        "producto": "EMULSIÓN DE LIMPIEZA N-G",
+        "precio": "$ 862,00",
+        "id": "22"
+    },
+    {
+        "producto": "GEL EXFOLIANTE N-G",
+        "precio": "$ 862,00",
+        "id": "23"
+    },
+    {
+        "producto": "TONICO ASTRINGENTE N-G",
+        "precio": "$ 862,00",
+        "id": "24"
+    },
+    {
+        "producto": "SET LIMPIEZA NORMAL A GRASO",
+        "precio": "$ 2410,00",
+        "id": "25"
+    },
+    {
+        "producto": "CREMA ANTICELULITIS",
+        "precio": "$ 1045,00",
+        "id": "26"
+    },
+    {
+        "producto": "TRATAMIENTO CON ARGAN",
+        "precio": "$ 486,00",
+        "id": "27"
+    },
+    {
+        "producto": "TRATAMIENTO CON JALEA REAL",
+        "precio": "$ 486,00",
+        "id": "28"
+    },
+    {
+        "producto": "TRATAMIENTO CON KERATINA",
+        "precio": "$ 486,00",
+        "id": "26"
+    },
+    {
+        "producto": "TRATAMIENTO B",
+        "precio": "$ 486,00",
+        "id": "27"
+    },
+    {
+        "producto": "TRATAMIENTO CÉLULAS MADRES",
+        "precio": "$ 1045,00",
+        "id": "28"
+    },
+    {
+        "producto": "TRATAMIENTO B",
+        "precio": "$ 486,00",
+        "id": "29"
+    },
+    {
+        "producto": "TRATAMIENTO FORTALECEDOR",
+        "precio": "$ 486,00",
+        "id": "30"
+    }
+]

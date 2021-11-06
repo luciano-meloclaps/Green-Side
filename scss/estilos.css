@@ -1713,7 +1713,7 @@ footer img:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-#container-catalogo {
+.container-catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1725,12 +1725,12 @@ footer img:hover {
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo {
+  .container-catalogo {
     margin: 5rem 0;
   }
 }
 
-#container-catalogo .card-block-reverse__catalogo {
+.container-catalogo .card-block-reverse__catalogo {
   background-color: #CFCFCF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1750,7 +1750,7 @@ footer img:hover {
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo .card-block-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo {
     margin: 4rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1766,7 +1766,7 @@ footer img:hover {
 }
 
 @media (min-width: 1019px) and (max-width: 1030px) {
-  #container-catalogo .card-block-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1777,7 +1777,7 @@ footer img:hover {
   }
 }
 
-#container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
+.container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1794,7 +1794,7 @@ footer img:hover {
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1804,12 +1804,12 @@ footer img:hover {
 }
 
 @media (min-width: 1030px) and (max-width: 1500px) {
-  #container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-content-reverse__catalogo {
     padding: 2rem 2rem 0;
   }
 }
 
-#container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
+.container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1823,7 +1823,7 @@ footer img:hover {
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
     padding: 2rem 0;
     margin: 0;
     font-size: 1.2rem;
@@ -1838,12 +1838,12 @@ footer img:hover {
 }
 
 @media (min-width: 2060px) {
-  #container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-titulo-reverse__catalogo {
     font-size: 3rem;
   }
 }
 
-#container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
+.container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1858,24 +1858,24 @@ footer img:hover {
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
     padding: 0rem;
     font-size: .8rem;
   }
 }
 
 @media (min-width: 2060px) {
-  #container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
+  .container-catalogo .card-block-reverse__catalogo .card-parrafos-reverse__catalogo {
     font-size: 1.45rem;
   }
 }
 
-#container-catalogo .card-img-reverse__catalogo {
+.container-catalogo .card-img-reverse__catalogo {
   width: 25%;
 }
 
 @media (max-width: 1019px) {
-  #container-catalogo .card-img-reverse__catalogo {
+  .container-catalogo .card-img-reverse__catalogo {
     width: 80%;
     border-radius: 2rem;
     display: -webkit-box;
@@ -1895,7 +1895,7 @@ footer img:hover {
 }
 
 @media (min-width: 700px) and (max-width: 1030px) {
-  #container-catalogo .card-img-reverse__catalogo {
+  .container-catalogo .card-img-reverse__catalogo {
     width: 40%;
     border-radius: 1.5rem;
     margin: 0 0 3rem;
@@ -1903,7 +1903,7 @@ footer img:hover {
 }
 
 @media (min-width: 1030px) and (max-width: 1500px) {
-  #container-catalogo .card-img-reverse__catalogo {
+  .container-catalogo .card-img-reverse__catalogo {
     width: 30%;
   }
 }
@@ -2030,6 +2030,42 @@ footer img:hover {
   font-weight: 600;
   display: block;
   border: none;
+}
+
+.modal-container {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5 ease-in;
+  transition: all 0.5 ease-in;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 22px;
 }
 
 /*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/
@@ -2555,5 +2591,26 @@ footer img:hover {
 
 .container-preguntas .box-question p {
   padding: .5rem 0rem;
+}
+
+.popup-class {
+  background: #2d2d2d !important;
+}
+
+.accept-class {
+  background: #262621 !important;
+  color: #34e89e !important;
+}
+
+.valido {
+  border: 2px green solid;
+}
+
+.invalido {
+  border: 2px red solid;
+}
+
+#input-tarea:focus {
+  outline: none;
 }
 /*# sourceMappingURL=estilos.css.map */
