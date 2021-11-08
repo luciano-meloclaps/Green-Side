@@ -88,363 +88,57 @@
         </section>	
       </article>
 
-      <!-- SECCION PRINCIPAL CON PRODUCTOS -->
-      <main id="items" class="contentCards__ p-3">
+      
         
-        <!---------- CREATINA ---------->
+      <div class="container">
+        <h1>Carrito</h1>
+        <hr>
+        <div class="row" id="items"></div>
+      
+
         
-        <div id="cards">
-          <div class="card bg-image hover-overlay" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00041_m.jpg?9416" class="card-img-top" alt="Creatina">
+      <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
             <div class="card-body">
-              <p class="card-title">CREATINA</p>
-              <p class="card-text">Monohidrato de Creatina en estado puro.</p>
-              <button onclick="btnCarrito(), generadorIds();" class="btn btn-primary">Agregar</button>
-            </div>
-            </div>
-          </div>  
-          
-          <!---------- FACTOR MUSCLE ---------->
-          <div id="cards">
-            <div class="card bg-image hover-overlay" style="width: 18rem;">
-              <img src="https://www.nutrirte.com/products/00040_m.jpg?414" class="card-img-top" alt="Factor Muscle">
-              <div class="card-body">
-                <h5 class="card-title">FACTOR MUSCLE</h5>
-                <p class="card-text">100% Proteina + Precursor de OXIDO NITRICO.</p>
-                <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-              </div>
+              <h5>Titulo</h5>
+              <p>Precio</p>
+              <button class="btn btn-dark">Comprar</button>
             </div>
           </div>
+        </div>
+      </template>
 
-        <!---------- MEGA MASS ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00039_m.jpg?8737" class="card-img-top" alt="Mega Mass">
-            <div class="card-body">
-              <p class="card-title">MEGA MASS</p>
-              <p class="card-text">100% Proteina + 500 kal + CREATINA</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
 
-          <!---------- CELUFAST SUPLEMENTO DIETARIO ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00015_m.jpg?8676" 
-            class="card-img-top" alt="CELUFAST SUPLEMENTO DIETARIO">
-            <div class="card-body">
-              <p class="card-title">CELUFAST SUPLEMENTO DIETARIO</p>
-              <p class="card-text">La mejor combinación del mercado para luchar contra la celulitis</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
 
-          <!---------- THERMOLIPO DAY ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00027_m.jpg?1123" class="card-img-top" alt="Thermolipo Day">
-            <div class="card-body">
-              <p class="card-title">THERMOLIPO DAY</p>
-              <p class="card-text">TÉ verde de ThermoLipoDay, 25 veces mejor que la Vitamina C.</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- CAFE VERDE ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00055_m.jpg?7939" class="card-img-top" alt="Cafe Verde">
-            <div class="card-body">
-              <p class="card-title">CAFE VERDE</p>
-              <p class="card-text"> Junto con la SPIRULINA son el MAYOR y más POTENTE antioxidante</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- FAT BLOCKER ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00078_m.jpg?2794" class="card-img-top" alt="Fat Blocker">
-            <div class="card-body">
-              <p class="card-title">FAT BLOCKER</p>
-              <p class="card-text"> Inhibidor del proceso de absorción de grasas</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- SUPLEMENTOS Dlce de Leche ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00034_m.jpg?2675" class="card-img-top" alt="Suplemento Dlce de Leche">
-            <div class="card-body">
-              <p class="card-title">BATIDO DULCE DE LECHE</p>
-              <p class="card-text">IDEAL para Subir, Bajar o Mantener el Peso</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-
-          <!---------- SUPLEMENTOS Chocolate ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00053_m.jpg?6089" class="card-img-top" alt="Suplemento Chocolate">
-            <div class="card-body">
-              <p class="card-title">BATIDO CHCOLATE</p>
-              <p class="card-text">IDEAL para Subir, Bajar o Mantener el Peso</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- SUPLEMENTOS Frutilla ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00054_m.jpg?3938" class="card-img-top" alt="Suplemento Frutilla">
-            <div class="card-body">
-              <p class="card-title">BATIDO FRUTILLA</p>
-              <p class="card-text">IDEAL para Subir, Bajar o Mantener el Peso</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- SUPLEMENTOS Mango ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00076_m.jpg?9641" class="card-img-top" alt="Suplemento Mango">
-            <div class="card-body">
-              <p class="card-title">BATIDO MANGO</p>
-              <p class="card-text">IDEAL para Subir, Bajar o Mantener el Peso</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- SUPLEMENTOS Vainilla ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00025_m.jpg?9402" class="card-img-top" alt="Suplemento Vainilla">
-            <div class="card-body">
-              <p class="card-title">BATIDO VAINILLA</p>
-              <p class="card-text">IDEAL para Subir, Bajar o Mantener el Peso</p>
-              <button onclick="btnCarrito()" class="btn btn-primary">Agregar</button>
-            </div>
-          </div>
-
-          <!---------- CELULAS MADRES NATURALES ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00002_m.jpg?9316" class="card-img-top" alt="CELULAS MADRES NATURALES">
-            <div class="card-body">
-              <h5 class="card-title">CELULAS MADRES NATURALES</h5>
-              <p class="card-text">Anti-age con Celulas Madre Naturales + colágeno + elastina</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- ACIDO HIALURÓNICO ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00001_m.jpg?9706" class="card-img-top" alt="ACIDO HIALURÓNICO">
-            <div class="card-body">
-              <p class="card-title">ACIDO HIALURÓNICO</p>
-              <p class="card-text">Anti-age + colágeno + elastina</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- FILAMENTOS DE ADN ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00003_m.jpg?5451" class="card-img-top" alt="FILAMENTOS DE ADN">
-            <div class="card-body">
-              <p class="card-title">FILAMENTOS DE ADN</p>
-              <p class="card-text">Anti-age + colágeno + elastina</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- MASCARA DE CHOCOLATE ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00004_m.jpg?3235" class="card-img-top" alt="MASCARA DE CHOCOLATE">
-            <div class="card-body">
-              <p class="card-title">MASCARA DE CHOCOLATE</p>
-              <p class="card-text">Estimulación de la producción de colágeno</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- NUTRILAX ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00026_m.jpg?2952" class="card-img-top" alt="NutriLax">
-            <div class="card-body">
-              <p class="card-title">NUTRILAX</p>
-              <p class="card-text">Combinación de Fibras Naturales de Trigo con Minerales</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- EMULSION DE LIMPIEZA N-S ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00005_m.jpg?4731" class="card-img-top" alt="EMULSION DE LIMPIEZA N-S">
-            <div class="card-body">
-              <p class="card-title">EMULSION DE LIMPIEZA N-S</p>
-              <p class="card-text">Normal a seco</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- CREMA EXFOLIANTE N-S ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00006_m.jpg?9701" class="card-img-top" alt="CREMA EXFOLIANTE N-S">
-            <div class="card-body">
-              <p class="card-title">CREMA EXFOLIANTE N-S</p>
-              <p class="card-text">Normal a seco</p>
-              <a href="productos.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- TÓNICO HIDRATANTE N-S ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00007_m.jpg?1464" 
-            class="card-img-top" alt="TÓNICO HIDRATANTE N-S">
-            <div class="card-body">
-              <p class="card-title">TÓNICO HIDRATANTE N-S</p>
-              <p class="card-text">Normal a seco</p>
-              <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-          <!---------- SET LIMPIEZA NORMAL A SECO ---------->
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.nutrirte.com/products/00008_m.jpg?3568" 
-            class="card-img-top" alt="SET LIMPIEZA NORMAL A SECO">
-            <div class="card-body">
-              <p class="card-title">SET LIMPIEZA NORMAL A SECO</p>
-              <p class="card-text">Emulsión + Crema + Tónico Hidratante</p>
-              <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-
-            <!---------- EMULSIÓN DE LIMPIEZA N-G ---------->
-            <div class="card" style="width: 18rem;">
-              <img src="https://www.nutrirte.com/products/00009_m.jpg?4032" 
-              class="card-img-top" alt="EMULSIÓN DE LIMPIEZA N-G">
-              <div class="card-body">
-                <p class="card-title">EMULSIÓN DE LIMPIEZA N-G</p>
-                <p class="card-text">Normal a graso</p>
-                <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-              </div>
-            </div>
-
-              <!---------- GEL EXFOLIANTE N-G ---------->
-              <div class="card" style="width: 18rem;">
-                <img src="https://www.nutrirte.com/products/00010_m.jpg?625" 
-                class="card-img-top" alt="GEL EXFOLIANTE N-G">
-                <div class="card-body">
-                  <p class="card-title">GEL EXFOLIANTE N-G</p>
-                  <p class="card-text">Normal a graso</p>
-                  <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                </div>
-              </div>
-
-              <!---------- TONICO ASTRINGENTE N-G ---------->
-              <div class="card" style="width: 18rem;">
-                <img src="https://www.nutrirte.com/products/00011_m.jpg?6790" 
-                class="card-img-top" alt="TONICO ASTRINGENTE N-G">
-                <div class="card-body">
-                  <p class="card-title">TONICO ASTRINGENTE N-G</p>
-                  <p class="card-text">Normal a graso</p>
-                  <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                </div>
-              </div>
-
-              <!---------- SET LIMPIEZA NORMAL A GRASO ---------->
-              <div class="card" style="width: 18rem;">
-                <img src="https://www.nutrirte.com/products/00012_m.jpg?9801" 
-                class="card-img-top" alt="SET LIMPIEZA NORMAL A GRASO">
-                <div class="card-body">
-                  <p class="card-title">SET LIMPIEZA NORMAL A GRASO</p>
-                  <p class="card-text">Emulsión + Gel + Tónico Astringente</p>
-                  <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                </div>
-              </div>
-
-                <!---------- CREMA ANTICELULITIS ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00013_m.jpg?7957" 
-                  class="card-img-top" alt="CREMA ANTICELULITIS">
-                  <div class="card-body">
-                    <p class="card-title">CREMA ANTICELULITIS</p>
-                    <p class="card-text">Reductoras, reafirmante y modeladora</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- GEL ANTICELULITIS ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00014_m.jpg?9098" 
-                  class="card-img-top" alt="GEL ANTICELULITIS">
-                  <div class="card-body">
-                    <p class="card-title">GEL ANTICELULITIS</p>
-                    <p class="card-text">Reductor, reafirmante y modelador</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO CON ARGAN ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00016_m.jpg?7479" 
-                  class="card-img-top" alt="TRATAMIENTO CON ARGAN">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO CON ARGAN</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO CON JALEA REAL ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00017_m.jpg?3568" 
-                  class="card-img-top" alt="TRATAMIENTO CON JALEA REAL">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO CON JALEA REAL</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO CON KERATINA ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00018_m.jpg?9862" 
-                  class="card-img-top" alt="TRATAMIENTO CON KERATINA">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO CON KERATINA</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO B ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00019_m.jpg?9854" 
-                  class="card-img-top" alt="TRATAMIENTO B">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO B</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO CÉLULAS MADRES ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00020_m.jpg?3347" 
-                  class="card-img-top" alt="TRATAMIENTO B">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO CON CÉLULAS MADRES</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-                <!---------- TRATAMIENTO FORTALECEDOR ---------->
-                <div class="card" style="width: 18rem;">
-                  <img src="https://www.nutrirte.com/products/00021_m.jpg?979" 
-                  class="card-img-top" alt="TRATAMIENTO B">
-                  <div class="card-body">
-                    <p class="card-title">TRATAMIENTO CON FORTALECEDOR</p>
-                    <p class="card-text">Línea Exclusiva RECUPERA HAIR TOTAL</p>
-                    <a href="proximamente.html" class="btn btn-primary">Ver mas</a>
-                  </div>
-                </div>
-
-      </main>    
-</body>
-
+        </div>
 <footer class="text-center footer-style">
   <div class="container">
     <div class="row">
@@ -479,7 +173,7 @@
 			</div>
     </div>
   </div>
-</footer>
+</footer> -->
 
     <!-- SCRIPT DESARROLLO WEB  -->
     <script src="../js/sweetAlert.js"></script>

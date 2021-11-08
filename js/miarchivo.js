@@ -1,107 +1,79 @@
+// Cards
+// const cards = document.getElementById('cards')
+const items = document.getElementById('items')
+// const footer = document.getElementById('footer')
+const templateCard = document.getElementById('template-card').content
+// const templateFooter = document.getElementById('template-footer').content
+// const templateCarrito = document.getElementById('template-carrito').content
+const fragment = document.createDocumentFragment()
 
-/// text area
-// $("#input-tarea").on("input", () =>{
-//     const val = $("#input-tarea").val().trim()
+//Crear carrito
+let carrito = {}
 
-//     if( val.length <=10 ){
-//         $("#input-tarea").addClass("invalido")
-//         $("#input-tarea").removeClass("valido")
-//     } else {
-//         $("#input-tarea").addClass("valido")
-//         $("#input-tarea").removeClass("invalido")
-//     }
-// })
-
-///cartas
-
-const cards = document.getElementById('cards')
-// const templateCard = document.getElementsByClassName('template-card').content
-// const fragment = document.createDocumentFragment()
-
-
-document.addEventListener('DOMContentLoaded', () => {
+// Eventos
+document.addEventListener('DOMContentLoaded', () =>{
     fetchData()
+});
+
+items.addEventListener('click', e => {
+    addCarrito(e)
 })
 
 const fetchData = async () => {
-    try{
-        const res = await fetch ("../js/productos.json")
+    try { 
+        const res = await fetch('../js/productos.json');
         const data = await res.json()
-        console.log(data)
-        // pintarCards(data)
+    // console.log(data)
+    pintarCards(data)
     } catch (error) {
-            console.log(error)
+        console.log(error)
     }
 }
 
+// Pintar productos
+const pintarCards = data => {
+    console.log(data)
+    data.forEach(producto => {
+        templateCard.querySelector('h5').textContent = producto.producto
+        templateCard.querySelector('p').textContent = producto.precio
+        templateCard.querySelector('.btn-dark').dataset.id = producto.id
+        // templateCard.querySelector('img').setAttribute('src', producto.thumbnailUrl)
 
-///add 
-const items = document.getElementById('cards')
+        const clone = templateCard.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+        items.appendChild(fragment)
+}
 
-items.addEventListener('click', e  => {
-        addCarrito(e)
-        })
-
-
-///carrito add
+//Ejecutamos evento y mandamos a setCarrito
 const addCarrito = e => {
     // console.log(e.target)
-    // console.log(e.target.classList.contains('btn-primary'))
-    if (e.target.classList.contains('btn-primary')) {
+    // console.log(e.target.classList.contains('btn-dark'))
+    if (e.target.classList.contains('btn-dark')) {
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
+    
 }
 
-const cardID = data => { 
-    console.log(data)
-    data.foreach(producto => {
-cards.querySelector('btn-primary').dataset.id = producto.id
-})
-}
-
-///carrito 
-
-let carrito = {}
-
+//Capturar elementos
 const setCarrito = objeto => {
-    console.log(objeto)
     const producto = {
-        id: objeto.querySelector('.btn-primary').dataset.id,
-        // title: objeto.querySelector('card-title').textContent,
-        cantidad: 1
+        //Accedo a la informacion
+        id: objeto.querySelector('.btn-dark').dataset.id,
+        title: objeto.querySelector('h5').textContent,
+        precio: objeto.querySelector('p').textContent,
+        cantidad: 1 
     }
 
-    if (carrito.hasOwnProperty(producto.id)) {
+    //Se pregunta si existe el elemento y se aumenta la cantidad
+    if(carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
 
-    carrito[producto.id] = { ...producto }
+    //Empujar al carrito 
+    carrito[producto.id] = {...producto}
     
-    // pintarCarrito()
+    console.log(carrito)
 }
 
-// id dinamicos
-
-// function*generadorIds( id = 1){
-//     while(true){
-//         yield id;
-//         ++id;
-//     }
-// } 
-
-// let genarador = generadorIds();
-
-const idGen = data => {
-    console.log(data)
-    data.foreach(producto =>{
-        items.querySelector('btn-primary').dataset.id = producto.id
-    })
-}
-
-
-// async function fetchMoviesJSON() {
-//     const response = await fetch(‘/movies’);
-//     const movies = await response.json();
-//     return movies;
-// }
