@@ -98,7 +98,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
 
         //botones
-        templateCarrito.querySelector('.btn-info').dataset.id = producto.id
+        templateCarrito.querySelector('.btn-dark').dataset.id = producto.id
         templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
 
         //Clonar
@@ -147,13 +147,15 @@ const pintarFooter = () => {
         //Mostrar
         pintarCarrito()
     })
-}           
+    
+    //Btn Finalizar Compra
+}
 
-//Botones Funcion
+//Botones Funcion + -
 
 const btnAccion = e => {
     //Aumentar
-    if (e.target.classList.contains('btn-info')) {
+    if (e.target.classList.contains('btn-dark')) {
         console.log(carrito[e.target.dataset.id]) 
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
@@ -178,3 +180,91 @@ const btnAccion = e => {
     e.stopPropagation()
 }
 
+// API MERCADO PAGO 
+
+//Finalizar Compra 
+const finalizarCompra = () => {
+
+    //Return al carrito 
+
+    console.log(carrito)//BORAR
+
+    const itemsToMP = carrito.map( (producto) => {
+        return {
+            title: producto.producto,
+            quantity: producto.cantidad,
+            category_id: producto.id,
+            currency_id: "ARS",
+            unit_price: producto.precio,
+            description: "",
+            picture_url: ""
+        }
+    })
+
+    console.log(itemsToMP)//BORAR
+
+    fetch('https://api.mercadopago.com/checkout/preferences', {
+        method: 'POST',
+        headers: {
+            Authorization: "Bearer TEST-3041818924671039-111215-5a12551ccf3bdd4477ef6175fac83573-235267743"
+        },
+        body: JSON.stringify({
+            items: itemsToMP,
+            back_urls: {
+                success: window.location.href,
+                failure: window.location.href
+            }
+        })
+    })
+        .then (res => res.json())
+        .then( data => {
+            console.log(data)
+
+            window.location.replace(data.init_point)
+        })
+
+}
+
+// curl -X POST \
+//     'https://api.mercadopago.com/checkout/preferences' \
+//     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+//     -H 'Content-Type: application/json' \
+//     -d '{
+//   "items": [
+//     {
+//       "title": "Dummy Title",
+//       "description": "Dummy description",
+//       "picture_url": "http://www.myapp.com/myimage.jpg",
+//       "category_id": "cat123",
+//       "quantity": 1,
+//       "currency_id": "U$",
+//       "unit_price": 10
+//     }
+//   ],
+//   "payer": {
+//     "phone": {},
+//     "identification": {},
+//     "address": {}
+//   },
+//   "payment_methods": {
+//     "excluded_payment_methods": [
+//       {}
+//     ],
+//     "excluded_payment_types": [
+//       {}
+//     ]
+//   },
+//   "shipments": {
+//     "free_methods": [
+//       {}
+//     ],
+//     "receiver_address": {}
+//   },
+//   "back_urls": {},
+//   "differential_pricing": {},
+//   "tracks": [
+//     {
+//       "type": "google_ad"
+//     }
+//   ]
+// }
