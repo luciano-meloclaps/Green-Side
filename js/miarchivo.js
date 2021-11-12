@@ -13,7 +13,13 @@ let carrito = {}
 // Eventos
 document.addEventListener('DOMContentLoaded', () =>{
     fetchData()
-});
+
+    //LocalStorage
+    if(localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
+})
 
 cards.addEventListener('click', e => {
     addCarrito(e)
@@ -41,7 +47,7 @@ const pintarCards = data => {
         templateCard.querySelector('h5').textContent = producto.producto
         templateCard.querySelector('p').textContent = producto.precio
         templateCard.querySelector('.btn-dark').dataset.id = producto.id
-        // templateCard.querySelector('img').setAttribute('src', producto.thumbnailUrl)
+        templateCard.querySelector('img').setAttribute('src', producto.thumbnailUrl)
 
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
@@ -105,6 +111,8 @@ const pintarCarrito = () => {
 
     pintarFooter()
 
+    //LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 //Mostar el mensaje del footer

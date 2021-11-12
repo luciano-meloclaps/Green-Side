@@ -38,135 +38,135 @@
 	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
 }
 
-// // BLOQUE DE TARJETA CON TEXTO E IMAGEN 
-// .container-catalogo{
-// 	display: flex;
-// 	flex-direction: column;
-// 	margin: 10rem 0;
+ // BLOQUE DE TARJETA CON TEXTO E IMAGEN 
+.container-catalogo{
+	display: flex;
+	flex-direction: column;
+	margin: 10rem 0;
 	
-// 	@media (max-width: $tablet){
-// 		margin: 5rem 0;
-// 	}
+	@media (max-width: $tablet){
+		margin: 5rem 0;
+	}
 
 // 	// TARJETA CON TEXTO E IMAGEN 
-// 	.card-block-reverse__catalogo{
-// 		background-color: #CFCFCF;
-// 		display: flex;
-// 		flex-direction: row-reverse;
-// 		margin: 0 10rem;
-// 		word-spacing: .30em;	
-// 		align-items: center;	
-// 		word-spacing: 0.25rem;
-// 		@include shadow-card(); 
+	.card-block-reverse__catalogo{
+		background-color: #CFCFCF;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 10rem;
+		word-spacing: .30em;	
+		align-items: center;	
+		word-spacing: 0.25rem;
+		@include shadow-card(); 
 		
-// 		@media (max-width: $tablet){
-// 			margin: 4rem 1rem;	
-// 			display: flex;
-// 			flex-direction: column;
-// 			border-radius: 1.5rem;
-// 			@include shadow-mob(); 
-// 		}
+		@media (max-width: $tablet){
+			margin: 4rem 1rem;	
+			display: flex;
+			flex-direction: column;
+			border-radius: 1.5rem;
+			@include shadow-mob(); 
+		}
 
-// 		@media (min-width: $tablet) and (max-width: $laptop){
-// 			display: flex;
-// 			flex-direction: column;
-// 		}
+		@media (min-width: $tablet) and (max-width: $laptop){
+			display: flex;
+			flex-direction: column;
+		}
 
-// 		// TEXTO DENTRO DE LA TARJETA
-// 		.card-content-reverse__catalogo{
-// 			display: -webkit-box;
-// 			display: -ms-flexbox;
-// 			display: flex;
-// 			padding: 3.5rem;
-// 			-webkit-box-orient: vertical;
-// 			-webkit-box-direction: normal;
-// 			-ms-flex-direction: column;
-// 			flex-direction: column;
-// 			align-content: space-around;
-// 			justify-content: space-evenly;
+		// TEXTO DENTRO DE LA TARJETA
+		.card-content-reverse__catalogo{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 3.5rem;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			align-content: space-around;
+			justify-content: space-evenly;
 			
-// 			@media (max-width: $tablet){
-// 				flex-direction: column;	
-// 				padding: rem;	
-// 			}	
+			@media (max-width: $tablet){
+				flex-direction: column;	
+				padding: rem;	
+			}	
 
-// 			@media (min-width: $laptop) and (max-width: $laptop-L){
-// 				padding: 2rem 2rem 0;
-// 			}
-// 		}
+			@media (min-width: $laptop) and (max-width: $laptop-L){
+				padding: 2rem 2rem 0;
+			}
+		}
 
-// 			// TITULO
-// 			.card-titulo-reverse__catalogo{
-// 				display: flex;
-// 				padding:1rem 1rem 2rem 4rem;
-// 				color: #2d2d2d;
-// 				font-weight: 600;
-// 				justify-content: flex-start;
-// 				font-style: italic;
+			// TITULO
+			.card-titulo-reverse__catalogo{
+				display: flex;
+				padding:1rem 1rem 2rem 4rem;
+				color: #2d2d2d;
+				font-weight: 600;
+				justify-content: flex-start;
+				font-style: italic;
 				
-// 				@media (max-width: $tablet){
-// 					padding: 2rem 0;
-// 					margin: 0;
-// 					font-size: 1.2rem;
-// 					display: flex;
-// 					flex-direction: column;
-// 				}
+				@media (max-width: $tablet){
+					padding: 2rem 0;
+					margin: 0;
+					font-size: 1.2rem;
+					display: flex;
+					flex-direction: column;
+				}
 
-// 				@media (min-width: $desktop){
-// 					font-size: $desktop-title;
-// 				}
-// 			}
+				@media (min-width: $desktop){
+					font-size: $desktop-title;
+				}
+			}
 
-// 			// PARRAFOS
-// 			.card-parrafos-reverse__catalogo{	
-// 				display: flex;
-// 				color: #7f9244;
-// 				align-items: center;
-// 				font-weight: 500;
-// 				line-height: 1.8rem;
-// 				font-size: 1.1rem;
-// 				padding: 2rem 4rem 4rem 4rem;
+			// PARRAFOS
+			.card-parrafos-reverse__catalogo{	
+				display: flex;
+				color: #7f9244;
+				align-items: center;
+				font-weight: 500;
+				line-height: 1.8rem;
+				font-size: 1.1rem;
+				padding: 2rem 4rem 4rem 4rem;
 				
-// 				@media (max-width: $tablet){
-// 					padding: 0rem;
-// 					font-size: .8rem;
-// 				}
+				@media (max-width: $tablet){
+					padding: 0rem;
+					font-size: .8rem;
+				}
 
-// 				@media (min-width: $desktop){
-// 					font-size: $desktop-parrafos;
-// 				}
-// 			}
-// 		}
+				@media (min-width: $desktop){
+					font-size: $desktop-parrafos;
+				}
+			}
+		}
 
-// 		// IMAGEN	
-// 		.card-img-reverse__catalogo{
-// 			width: 25%;
+		// IMAGEN	
+		.card-img-reverse__catalogo{
+			width: 25%;
 			
-// 			@media (max-width: $tablet){
-// 				width: 80%;
-// 				border-radius: 2rem;
-// 				display: flex;
-// 				-ms-flex-direction: row;
-// 				flex-direction: row;
-// 				-webkit-box-pack: end;
-// 				-ms-flex-pack: end;
-// 				justify-content: end;
-// 				object-fit: none;
-// 				margin: 1rem;
-// 			}	
-// 			@media (min-width: $phone) and (max-width: $laptop){
-// 				width: 40%;
-// 				border-radius: 1.5rem;
-// 				margin: 0 0 3rem;
-// 				}
+			@media (max-width: $tablet){
+				width: 80%;
+				border-radius: 2rem;
+				display: flex;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-box-pack: end;
+				-ms-flex-pack: end;
+				justify-content: end;
+				object-fit: none;
+				margin: 1rem;
+			}	
+			@media (min-width: $phone) and (max-width: $laptop){
+				width: 40%;
+				border-radius: 1.5rem;
+				margin: 0 0 3rem;
+				}
 
-// 			@media 	(min-width: $laptop) and (max-width: $laptop-L){
-// 				width: 30%;
-// 			}
-// 		}		
-// }
+			@media 	(min-width: $laptop) and (max-width: $laptop-L){
+				width: 30%;
+			}
+		}		
+}
 
-// //  SECCION PRINCIPAL CON PRODUCTOS 
+// // //  SECCION PRINCIPAL CON PRODUCTOS 
 // .contentCards__{
 // 	max-width: 1500px;
 // 	margin: auto;
@@ -192,7 +192,7 @@
 // 		max-width: 22	00px;
 // 	}
 
-// 		//  TARJETA CON PRODUCTOS 
+// // 		//  TARJETA CON PRODUCTOS 
 // 		.card{	
 // 			margin: 120px 100px;
 // 			background-color: $colorGreenCake;		
@@ -253,6 +253,32 @@
 // 			}
 // 		}	
 // }
+
+// TABLA
+
+.container{
+	.table{
+		color: $colorWhite;
+		margin-bottom: 5rem;
+	td{
+		border-top: 0;
+	}
+
+	th{
+		border-top: 0;
+	}
+	}
+
+}
+
+//CARD
+
+.card{
+	margin: 0;
+	background-color: $colorGreenCake;
+	width: 75%;
+	margin: 3rem;
+}
 
 // MODAL CONTAINER
 
