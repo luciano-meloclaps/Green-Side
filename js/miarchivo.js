@@ -37,7 +37,7 @@ const fetchData = async () => {
     // console.log(data)
     pintarCards(data)
     } catch (error) {
-        console.log(error)
+        // console.log(error)
     }
 }
 
@@ -57,8 +57,6 @@ const pintarCards = data => {
 
 //Ejecutamos evento y mandamos a setCarrito
 const addCarrito = e => {
-    // console.log(e.target)
-    // console.log(e.target.classList.contains('btn-dark'))
     if (e.target.classList.contains('btn-dark')) {
         setCarrito(e.target.parentElement)
     }
@@ -68,6 +66,7 @@ const addCarrito = e => {
 
 //Capturar elementos que van a ser empujados en el carrito
 const setCarrito = objeto => {
+    console.log(objeto)
     const producto = {
         //Accedo a la informacion
         id: objeto.querySelector('.btn-dark').dataset.id,
@@ -120,7 +119,7 @@ const pintarFooter = () => {
     footer.innerHTML = ""  
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = `
-            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th> `
+            <th scope="row" colspan="5">Carrito vacío - agregué productos para comprar!</th> `
 
             return
     }
@@ -149,6 +148,11 @@ const pintarFooter = () => {
     })
     
     //Btn Finalizar Compra
+    const btnFinalizar = document.getElementById('finalizar-carrito')
+    btnFinalizar.addEventListener('click', () => {
+
+        finalizarCompra()
+    })
 }
 
 //Botones Funcion + -
@@ -191,7 +195,7 @@ const finalizarCompra = () => {
 
     const itemsToMP = carrito.map( (producto) => {
         return {
-            title: producto.producto,
+            title: producto.title,
             quantity: producto.cantidad,
             category_id: producto.id,
             currency_id: "ARS",
