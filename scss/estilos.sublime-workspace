@@ -1,0 +1,764 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"contac",
+				"contacto.html"
+			],
+			[
+				"nos",
+				"nosotros.html"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"pro",
+				"productos.html"
+			],
+			[
+				"noso",
+				"nosotros.html"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ali",
+				"align-content"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"content",
+				"contentComentarios"
+			],
+			[
+				"space",
+				"space-around"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ju",
+				"justify-content"
+			],
+			[
+				"ita",
+				"italic"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"spa",
+				"space-evenly"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"s",
+				"stretch"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"mensa",
+				"mensajeGracias"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"j",
+				"justify-content"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"curso",
+				"cursor"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"pla",
+				"placeholder"
+			],
+			[
+				"Whi",
+				"whitesmoke"
+			],
+			[
+				"bro",
+				"brown"
+			],
+			[
+				"g",
+				"green"
+			],
+			[
+				"tras",
+				"transition"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fonm",
+				"font-family"
+			],
+			[
+				"i",
+				"img"
+			],
+			[
+				"obj",
+				"object-fit"
+			],
+			[
+				"js",
+				"justify-content"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"disp",
+				"display"
+			],
+			[
+				"abso",
+				"absolute"
+			],
+			[
+				"conten",
+				"content"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"parr",
+				"parrafosBody"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"felx",
+				"flex-start"
+			],
+			[
+				"space-aroun",
+				"space-around"
+			],
+			[
+				"cent",
+				"center"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"ra",
+				"border-radius"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"colu",
+				"column"
+			],
+			[
+				"parra",
+				"parrafosBody"
+			],
+			[
+				"paraf",
+				"parrafosBody"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"str",
+				"stretch"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"fe",
+				"flex-direction"
+			],
+			[
+				"gr",
+				"grid"
+			],
+			[
+				"buton",
+				"buttonContainer"
+			],
+			[
+				"just",
+				"justify-items"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"prod",
+				"productos.html"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"conta",
+				"contacto.html"
+			],
+			[
+				"ch",
+				"checkbox"
+			],
+			[
+				"info",
+				"infoNosotros2"
+			],
+			[
+				"FON",
+				"font-family"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"top",
+				"top"
+			],
+			[
+				"dire",
+				"flex-direction"
+			],
+			[
+				"displa",
+				"display"
+			],
+			[
+				"ala",
+				"alignment-baseline"
+			],
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"sapce",
+				"space-around"
+			],
+			[
+				"bg",
+				"bgColorBlack"
+			],
+			[
+				"l",
+				"link"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"transti",
+				"transition\tabc"
+			],
+			[
+				"objet",
+				"object-fit\tproperty"
+			],
+			[
+				"fs",
+				"font-style\tproperty"
+			],
+			[
+				"redes",
+				"redesStiky2\tabc"
+			],
+			[
+				"t",
+				"top\tCSS - top: 0;"
+			],
+			[
+				"st",
+				"sticky\tposition"
+			],
+			[
+				"mari",
+				"margin\tabc"
+			],
+			[
+				"contain",
+				"container\t(contacto.html)"
+			],
+			[
+				"borderbo",
+				"border-box\tabc"
+			],
+			[
+				"over",
+				"overflow\tabc"
+			],
+			[
+				"le",
+				"left\tabc"
+			],
+			[
+				"trans",
+				"transition\tabc"
+			],
+			[
+				"lete",
+				"letter-spacing\tproperty"
+			],
+			[
+				"re",
+				"relative\tabc"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vmen",
+				"View: Toggle Menu"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 200.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Diseño Web/Proyecto/package.json",
+		"/C/Diseño Web/Proyecto/scss/miweb.scss",
+		"/C/Diseño Web/Proyecto/css/style.css",
+		"/C/Diseño Web/Proyecto/style.css",
+		"/C/Diseño Web/Proyecto/contacto.html",
+		"/C/Diseño Web/Proyecto/referencias.html",
+		"/C/Diseño Web/Proyecto/productos.html",
+		"/C/Diseño Web/Proyecto/nosotros.html",
+		"/C/Diseño Web/Proyecto/index.html",
+		"/C/Diseño Web/Proyecto/scss/package.json",
+		"/C/Diseño Web/Links/estilo.css",
+		"/C/Diseño Web/Proyecto/bootstrap.html",
+		"/C/Diseño Web/Proyecto/index3.html",
+		"/C/Diseño Web/Proyecto/ventanaEnviar.html",
+		"/C/MiProyecto/Html-Css/tarea.css",
+		"/C/MiProyecto/Html-Css/infoAyuda.html",
+		"/C/MiProyecto/Html-Css/bordados.html",
+		"/C/Diseño Web/Proyecto/comentarios.html",
+		"/C/Diseño Web/Proyecto/productos2.html",
+		"/C/Diseño Web/Links/productos.html",
+		"/D/meloc/Documents/Links/productos.html",
+		"/C/Diseño Web/Links/nosotrosFlexBox.html",
+		"/C/Diseño Web/Links/contacto.html",
+		"/C/Diseño Web/Links/nosotros.html",
+		"/C/MiProyecto/Html-Css/social.html",
+		"/C/MiProyecto/Html-Css/aboutme.html",
+		"/C/Diseño Web/Links/flexbox2.html",
+		"/C/Diseño Web/Links/flexBox.html",
+		"/C/MiProyecto/Html-Css/index.html",
+		"/C/Diseño Web/Links/index.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/estilo.css",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/nosotros.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/contacto.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/productos.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/index.html",
+		"/C/Users/meloc/OneDrive/Escritorio/paginaOriginal.css",
+		"/C/Users/meloc/OneDrive/Escritorio/index.backup.html",
+		"/C/MiProyecto/Html-Css/productos.html",
+		"/C/MiProyecto/Html-Css/nosotros.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/Html-Css/tarea.css",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/Html-Css/index.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/tarea.css",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/contacto.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/nosotros.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/index.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/productos.html",
+		"/C/Users/meloc/OneDrive/Escritorio/practica.css",
+		"/C/Users/meloc/OneDrive/Escritorio/practica.html",
+		"/C/Users/meloc/OneDrive/Escritorio/MiProyecto/tarea.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/normalize.css",
+		"/C/Users/meloc/OneDrive/Escritorio/Clase/nosotros.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Clase/contacto.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Clase/productos.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Clase/home.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/Sobre nosotros.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/Clase/tarea.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/comunicate.html",
+		"/C/Users/meloc/OneDrive/Escritorio/Diseño Web/Tamara Cabrera _ Salud&Belleza (@nutrirtefullbienestar) • Fotos y videos de Instagram.html"
+	],
+	"find":
+	{
+		"height": 25.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.3333333333
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "estilos.sublime-project",
+	"replace":
+	{
+		"height": 46.6666666667
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

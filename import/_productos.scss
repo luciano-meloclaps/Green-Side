@@ -1,0 +1,40 @@
+/*------------------------------------------------------------ PESTAÑA PRODUCTOS ------------------------------------------------------------*/	
+
+// BANNER>> HERO IMAGEN Y CAPA BACKGROUND (EL TEXTO ESTA EN _THEMES.SCSS) 
+.banner-productos{
+	width: 100%;
+	height: auto;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20rem;
+	background-image: url("../galeria/img-productos.jpg");
+
+		@media (max-width: $tablet){
+			background-image: url("../galeria/img-productos-mobile.jpg");
+			padding: 0;
+		}
+
+		@media (min-width: $phone) and (max-width: $tablet){
+			background-image: url("../galeria/img-productos.jpg");
+			padding: 7rem;
+		}
+
+		@media (min-width: $tablet) and (max-width: $laptop-L){
+			padding: 15rem;
+		}
+	
+}
+	
+// CAPA SOBRE LA IMAGEN>>
+.capa-productos{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.9) 100%);
+}

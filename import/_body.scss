@@ -1,0 +1,152 @@
+/*---------------------------------------------------------- VARIABLES ------------------------------------------------------------*/	
+// COLORES
+$colorWhite: #CFCFCF;
+
+$colorGreenCake: #2d2d2d;
+
+$colorDark: #262621;
+
+$colorGreenFluor: #34e89e;
+
+$colorGreenFirst: #7f9244;
+
+// TAMAÑO FUENTES
+$titlesMax: 1.8rem;
+
+$titles: 1.2rem;
+
+$parrafos: .85rem;
+
+$desktop-title: 3rem;
+
+$desktop-parrafos: 1.45rem;
+
+// BREACKPOINTS	
+$phone: 700px;
+
+$tablet: 1019px;
+
+$laptop: 1030px;
+
+$laptop-L: 1500px;
+
+$desktop: 2060px;
+
+/*---------------------------------------------------------- MIXIN ------------------------------------------------------------*/	
+
+@mixin shadow-mob{
+	box-shadow: -5px 15px 7px 0px #171010;
+}
+
+@mixin shadow-card{
+	box-shadow:-11px 14px 11px 0px #171010;
+}
+
+@mixin shadow-banner {
+	box-shadow: 0px 12px 20px 0px #171010;
+}
+
+@mixin title-mob{
+	font-size: 1.3rem;
+	padding: 3rem 4rem 0;
+	
+}
+/*---------------------------------------------------------- BODY--NAVBAR--FOOTER ------------------------------------------------------------*/	
+
+// BODY
+body{
+	background-color: $colorDark;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: White;	
+	box-sizing: border-box;
+
+	@media (max-width: $phone){
+		font-size: .8rem;
+	}
+	
+	@media (min-width: $desktop){
+		font-size: 1.2rem;
+	}
+}
+
+
+// NAVBAR
+nav.navbar {
+	background-color: $colorGreenCake;
+
+	.navbar-brand {
+	font-weight: 400;	
+	}
+}
+
+// FOOTER
+
+.footer-style {
+	margin: 15rem 0 6rem 0;
+    padding-top: 6rem;
+    background-color: #262621;
+	border-top: 1.5px solid $colorWhite;
+
+		@media(max-width:700px){
+			margin-top: 2rem;
+		}
+}
+	footer {
+	color: white;
+		
+		h3 {
+			margin-bottom: 20px;
+			font-weight: 600;
+			padding: 0 0 0 .5rem;
+
+			@media (max-width:700px){
+				font-size: $titles;
+			}
+		}
+		p{
+			@media(max-width:700px){
+			font-size: $parrafos;
+			}
+		}
+	.footer-above {
+		padding-top: 20px;
+	}
+	.footer-col {
+		margin-bottom: 20px;
+		
+		a{
+			display: block;
+			color: white;
+			cursor: pointer;
+		}
+	}
+	.footer-below {
+		padding: 50px 0;
+	}
+	.list-inline{
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	img{
+		width: 30px;
+		display: inline;
+		margin: 1rem .8rem;
+		cursor: pointer;
+		filter: grayscale(100%);
+
+			@media(max-width:700px){
+				width: 25px;
+			}
+				
+		&:hover{
+			transform: scale(1.2);
+			filter: grayscale(00%);	
+			transition: .5s;
+		}
+	
+	}
+}

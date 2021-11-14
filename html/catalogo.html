@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<!-- Required meta tags -->
+		<title>Catálogo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		
+    <!-- Proyecto CSS -->
+		<link rel="stylesheet" type="text/css" href="../scss/estilos.css">
+	
+    <!-- Animate CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+    <!-- Fonts Google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" alt= "icono-palta" href="/galeria/favicon.ico" type="image/x-icon">
+</head>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="../index.html">NUTRISIDE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="nosotros.html">Nosotros</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="informacion.html">Información</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="catalogo.html">Catálogo<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="referencias.html">Referencias</a>
+			</li>
+			</ul>
+		</div>
+	</nav>
+
+
+      <!-- BANNER>> HERO IMAGEN , TITULO E INTRODUCCION -->
+      <section class="banner-catalogo">
+        <div class="capa-catalogo"></div>
+        <article class="info-general">
+          <title class="title-general">Catálogo</title>
+          <p class="parrafo-general">Brindamos productos reconocidos mundialmente por sus excelentes resultados. Conocé nuestra gama de productos y sus beneficios, y sé 
+            uno de nuestros miles de clientes satisfechos.</p>
+        </article>
+      </section>
+      
+      <!-- GRADIENTE CON FRASE E INFORMACION -->
+      <section class="contact__">
+        <h1 class="contact__Titulo">En la vanguardia de la categoría</h1>
+        <p class="contact__Parrafos">Desarrollamos nuestros productos específicamente para potenciar y mejorar las funciones del organismo.</p>
+        <p class="contact__Parrafos">Trabajamos con especialistas de altísimo nivel.</p>
+        <!-- LINEA DIVISORIA DE INTRODUCCCION -->
+        <hr class="contact__lineNosotrosContact">
+      </section>
+      
+      <!-- BLOQUE DE TARJETA CON TEXTO E IMAGEN -->
+      <section class="container-catalogo" >
+        <section class="card-block-reverse__catalogo wow animate__animated animate__fadeIn">
+          <div class="card-content-reverse__catalogo">	
+            <title class="card-titulo-reverse__catalogo">Ampliamos la gama, mantenemos la calidad</title>
+            <strong class="card-parrafos-reverse__catalogo">
+              En estos últimos años avanzamos en el área de nutrición y suplementos gracias a esto quisimos dar un paso más allá, 
+              e incorporar una línea de cuidados para la piel y belleza cumpliendo con las exigencias de la marca y brindando productos de altísimo nivel para vos y tu salud.
+            </strong>
+          </div>
+            <img class= "card-img-reverse__catalogo" alt= "pastillas-Omega" src= "https://images.unsplash.com/photo-1596177582967-a5d143a41237?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"></img>
+        </section>	
+      </section> 
+
+      <!-- SECCION PRINCIPAL  -->
+      <div class="container">
+        <h1>Carrito</h1>
+        <hr>
+
+        <!-- SECCION TABLAS -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <!-- ITEMS DEL CARRITO DE COMPRAS -->
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+          </tfoot>
+        </table>
+        
+        <div class="row" id="cards"></div>
+      </div>
+
+      <!-- SECCION CARRITO -->
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>cafe</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-dark btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+
+      <!-- SECCION FOOTER -->
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+
+      <!-- SECCION CARDS -->
+      <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>Precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+
+<footer class="text-center footer-style">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-col">
+        <h3>Dirección</h3>
+        <p>
+          Santa Fe - Argentina <br/>	
+          Codigo Postal 2000
+        </p>
+      </div>
+      <div class="col-md-4 footer-col">
+				<h3>Redes</h3>
+				<ul class="list-inline">
+					<li>
+						<a href="https://api.whatsapp.com/send?phone=+543751558848&text=Hola,%20cómo%20andas?" target="_blank" class="btn-social btn-outline"><img src="../galeria/whatsapp.svg"></a>
+						</li>
+					<li>
+						<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="btn-social btn-outline"><img src="../galeria/instagram.svg"></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/home" target="_blank" class="btn-social btn-outline"><img src="../galeria/twitter.svg"></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" target="_blank" class="btn-social btn-outline"><img src="../galeria/facebook.svg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 footer-col">
+				<h3>Importantes</h3>
+				<a href="comprar.html">Cómo comprar</a>
+				<a href="preguntas.html">Preguntas Frecuentes</a>
+			</div>
+    </div>
+  </div>
+</footer> -->
+
+    <!-- SCRIPT DESARROLLO WEB  -->
+    <script src="../js/sweetAlert.js"></script>
+    <script src="../js/miarchivo.js"></script>
+    
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sweetAlert.js"></script>
+
+    <!-- JQUERY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- SCRIPT WOW.JS   -->
+    <script src="../js/wow.js"></script>
+    <script> new WOW().init();</script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</html>

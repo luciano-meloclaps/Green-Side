@@ -1,0 +1,67 @@
+/*------------------------------------------------------------ PESTAÑA PREGUNTAS FRECUENTES ------------------------------------------------------------*/	
+
+// IMAGEN FONDO 
+.banner-preguntas{    
+    color: white;
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-image: url("../galeria/img-preguntas.jpg");
+    width: 100%;
+    filter: brightness(0.35);
+    height: 100%;
+    box-shadow: 1px 6px 20px 1px grey;
+    position: fixed;
+    overflow: hidden;
+
+        @media (max-width: $phone){
+            background-image: url("../galeria/img-preguntas-mobile.jpg");
+        } 
+        
+        @media (min-width: $desktop){
+            background-image: url("https://images.unsplash.com/photo-1504708706948-13d6cbba4062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80");
+        }
+}
+
+
+// CONTENEDOR DEL TEXTO 
+.container-preguntas{
+    padding: 5rem 20rem;
+    position: relative;
+    margin-bottom: 0rem;
+
+    @media (max-width: $tablet){
+        padding: 2rem 2rem 0;
+    }
+
+    // TITULO 
+    .titulo-preguntas{
+        position: relative;
+        font-size: 5rem;
+        margin: 10rem 0;
+        display: flex;
+        justify-content: center;
+    
+            @media (max-width: $tablet){
+                margin: 2rem 0 4rem 0 ;
+                font-size: $titlesMax;
+                border-bottom: 2px solid white;
+            }
+        }
+
+        // SECCION PREGUNTA Y RESPUESTA
+        .box-question{
+            padding: .8rem 0;
+            
+            @media (max-width: $tablet){
+                padding: .3rem;
+            }
+            
+
+                p{
+                    padding: .5rem 0rem ;
+                }
+        }
+}
